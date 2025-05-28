@@ -1,0 +1,39 @@
+/* 共用css區 */
+
+.mark-link{
+    text-align: right;
+    font-size: 1.5rem;
+    color: indigo;
+    width: 413px ;
+    border: 2px inset lightyellow; 
+    border-radius: 5px;
+}
+
+.main-title{
+    text-align: center;
+    color: black;
+    font-size: 6rem;
+}
+        
+.vice-title{
+    text-align: center;
+    color: rgb(1, 20, 105);
+    font-size: 2.8rem;
+}
+
+.directions-title{
+    text-align: left;
+    color: black;
+    font-size: 2.8rem;
+}
+
+.directions-d-title{
+    text-align: left;
+    color: black;
+    font-size: 2.5rem;
+}
+
+body{
+    background-color:cornsilk;
+    font-family: cursive;
+}
