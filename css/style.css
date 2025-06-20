@@ -1,25 +1,87 @@
 /* 共用css區 */
 
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color:cornsilk;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-text-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 52px;
+    margin: 10px 0;
+}
+
+.image-text-row img {
+    flex: 1 1 40%;
+    max-width: 50%;
+    height: auto;
+    border: 8px outset lightyellow;
+    border-radius: 10px;
+}
+
+.image-text-row .text {
+    flex: 1 1 45%;
+    min-width: 280px;
+}
+
+.title {
+    color: red;
+    background-color: beige;
+    font-size: 3rem;
+    display: inline-block;
+    width: auto;
+    max-width: 90%;
+    text-align: center;
+    padding: 0px 20px;
+    border: 6px outset lightyellow;
+    border-radius: 10px;
+}
+
+.center-title {
+    margin: 0 auto;
+    text-align: center;
+    display: block; 
+}
+
+.container {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
 .mark-link {
-    width: 30%;
+    width: 90%;
     display: inline-block;
 }
 
 .main-title{
     text-align: center;
     color: black;
-    font-size: 580%;
+    font-size: 4rem;
 }
         
 .vice-title{
     text-align: center;
     color: rgb(1, 20, 105);
-    font-size: 250%;
+    font-size: 2rem;
 }
 
 .directions-title{
     flex: 1.5;
-    font-size: 110%;
+    font-size: 1rem;
     line-height: 1.3;
     text-align: center;
     color: rgb(35, 2, 95);
@@ -27,48 +89,87 @@
 
 .directions-d-title {
     flex: 1.5;
-    font-size: 115%;
+    font-size: 1rem;
     line-height: 1.3;
     text-align: center;
     color: rgb(40, 2, 109);
 }
 
-body{
-    background-color:cornsilk;
-    font-family: cursive;
+#picture{
+    text-align: center;
+    margin: 0px 90px;
+    padding: 10px;
+    border: 8px outset lightyellow;
+    border-radius: 10px;
+    margin-left: 3.5rem;
 }
 
-@media (max-width: 800px) {
-
-            .main-title {
-                font-size: 3rem;
-                margin-top: 24px;
-            }
-
-            .vice-title {
-                font-size: 2rem;
-                margin-top: 24px;
-            }
-
-            .mark-link {
-                width: 100%;
-            }
-
-            .image-text-row {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .image-text-row img {
-                width: 100%;
-            }
-
-            .directions-d-title {
-                width: 100%;
-            }
-        }
 
 
-        #container {
-            margin: 24px;
-        }
+
+
+
+@media (max-width: 768px) {
+
+    .main-title {
+        font-size: 2rem;
+        margin-top: 16px;
+    }
+
+    .vice-title {
+        font-size: 1.5rem;
+        margin-top: 24px;
+    }
+
+    .mark-link {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .image-text-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-text-row img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .image-text-row .text {
+        width: 100%;
+    }
+
+    .title {
+        text-align: center;
+        margin: 16px 0;
+    }
+
+    .directions-title,.directions-d-title {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    #picture{
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    border: 8px outset lightyellow;
+    border-radius: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+    iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+        max-width: 560px;
+        display: block;
+        margin: 0 auto;
+    }
+    
+}

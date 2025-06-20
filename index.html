@@ -8,35 +8,95 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- 影響整個網頁css設計 -->
     <style>
-        .title {
+        .title1 {
+            text-align: center;
             color: red;
             background-color: beige;
-            font-size: 240%;
+            font-size: 1.5rem;
             display: inline-block;
-            width: 23%;
-            margin: 5px 3px;
-            padding: 3px;
-            border: 5px outset lightyellow;
+            width: auto;
+            max-width: 90%;
+            padding: 0px 20px;
+            border: 6px outset lightyellow;
             border-radius: 10px;
         }
 
-        .image-text-row {
-            display:flex;
-            align-items: flex-start;
-            gap: 29px;
-            flex-wrap:wrap;
-            margin: 15px 30px;
+        .experience-table, .experience-table2 {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            font-size: inherit;
+            display: block;
+            overflow-x: auto;
         }
 
-        .image-text-row img {
-            width: 38%;
-            text-align: left;
-            border: 8px outset lightyellow;
-            border-radius: 5px;
-            max-width: 100%;
-            
+        .experience-table td {
+            vertical-align: top;
+            padding: 6px 12px;
         }
-   
+
+        .experience-table td:first-child {
+            width: 40%;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .experience-table td:nth-child(2) {
+            padding-left: 1rem; 
+        }
+
+        .experience-table2 th:first-child,
+        .experience-table2 td:first-child {
+            width: 12%;
+            white-space: nowrap;
+        }
+
+        .experience-table2 td {
+            padding: 0px 30px;
+            vertical-align: top;
+        }
+
+        .experience-table2 td:nth-child(2) {
+            padding-left: 0rem; 
+        }
+
+        .section-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 0.5rem;
+        }
+
+        .video-section {
+            flex: 2;
+        }
+
+        .honor-board {
+            flex: 2;
+            min-width: 250px;
+            text-align: left;
+        }
+
+        .video-container {
+            display: flex;
+            gap: 3.5rem; 
+            flex-wrap: wrap; 
+            margin-top: 0.5rem;
+        }
+
+        .video-block {
+            max-width: 360px;
+        }
+
+        .video-block iframe {
+            width: 100%;
+            max-width: 360px; 
+            aspect-ratio: 16 / 9;
+            border-radius: 10px;
+        }
+
     </style>
 </head>
 
@@ -63,141 +123,344 @@
         思慕滋生的觸動因與眾不同而維繫，將想念的滋味傳遞特別的你/妳</div>
     <br>
     <br>
+    
+    <div class="container">
+        <div class="image-text-row">
+            <img src="images/IMG_9263.JPG" alt="">
+            <div class="text">
+                <div class="title"><b>🎼 教授講師</b></div>
+                <h1>
+                    💁‍♀️ Muz 慕梓老師
+                </h1>
 
-    <div class="image-text-row">
-        <img src="images/IMG_9263.JPG" alt="">
-        <div class="text">
-            <div class="title"><b>🎼 教授講師</b></div>
-            <h1>
-                💁‍♀️ Muz 慕梓老師
-            </h1>
+                <div class="title"><b>🎼 教授項目</b></div>
+                <h2>
+                    <p> 🪈 長笛演奏/陪練 (可以試上✔️家長可以旁聽🙆‍♀️) </p>
+                    <p> 🎹 鋼琴演奏/陪練 (可以試上✔️家長可以旁聽🙆‍♀️) </p>
+                    🎶 音樂班/音樂系升學考試 (器樂課程可以試上✔️家長可以旁聽🙆‍♀️) <br>
+                    𝄞 𝄡 𝄢 樂理教學 - 音樂班/音樂系專屬課程 ♭ ♮ ♯
+                </h2>
 
-            <div class="title"><b>🎼 教授項目</b></div>
+                <div class="title"><b>🎼 教授地點</b></div>
             <h2>
-                <p> 🪈 長笛演奏/陪練 (可以試上✔️家長可以旁聽🙆‍♀️) </p>
-                <p> 🎹 鋼琴演奏/陪練 (可以試上✔️家長可以旁聽🙆‍♀️) </p>
-                🎶 音樂班/音樂系升學考試 (器樂課程可以試上✔️家長可以旁聽🙆‍♀️) <br>
-                𝄞 𝄡 𝄢 樂理教學 - 音樂班/音樂系專屬課程 ♭ ♮ ♯
+                🚅 捷運環狀線 - 中和捷運站<br>
+                <span style="display:inline-block; margin-left: 2em;">(出站後走路約3-5分鐘抵達，元大銀行連城分行附近)</span>
             </h2>
 
-             <div class="title"><b>🎼 教授地點</b></div>
-        <h2>
-            🚅 捷運環狀線 - 中和捷運站 (出站後走路約3-5分鐘抵達，元大銀行連城分行附近)
-        </h2>
+                <div class="title"><b>🎼 教授經歷</b></div>
+                <h2>
+                    <table class="experience-table">
+                        <tr>
+                            <td>📚 <u>新北市</u>裕德雙語高級中等學校</td>
+                            <td>教務處課務組長兼音樂老師</td>
+                        </tr>
+                        <tr>
+                            <td>📚 <u>新北市</u>松本樂器&音樂教室</td>
+                            <td>長笛老師、鋼琴老師</td>
+                        </tr>
+                        <tr>
+                            <td>📚 <u>基隆市</u>河合安可音樂教室</td>
+                            <td>長笛老師、鋼琴老師</td>
+                        </tr>
+                        <tr>
+                            <td>📚 <u>台北市</u>河合璟欣音樂教室</td>
+                            <td>長笛老師、鋼琴老師、烏克麗麗老師、<br>
+                                吉他老師、爵士鼓老師、樂理老師</td>
+                        </tr>
+                        <tr>
+                            <td>📚 <u>基隆市</u>河合筱錄音樂教室</td>
+                            <td>長笛老師、鋼琴老師、烏克麗麗老師、<br>
+                                吉他老師、爵士鼓老師、樂理老師</td>
+                        </tr>
+                        <tr>
+                            <td>📚 <u>基隆市</u>建德國小管樂班</td>
+                            <td>長笛老師</td>
+                        </tr>
+                        <tr>
+                            <td>📚 <u>基隆市</u>銘傳國中管樂團</td>
+                            <td>長笛老師</td>
+                        </tr>
+                        <tr>
+                            <td>📚 佳家 Do Re Mi 個人音樂工作室</td>
+                            <td>長笛老師、鋼琴老師</td>
+                        </tr>
+                        <tr>
+                            <td>📚 碇內個人音樂工作室</td>
+                            <td>長笛老師、鋼琴老師</td>
+                        </tr>
+                        <tr>
+                            <td>📚 小作曲家樂器行</td>
+                            <td>鋼琴老師</td>
+                        </tr>
+                        <tr>
+                            <td>📚 帕姆琴克樂器</td>
+                            <td>鋼琴老師</td>
+                        </tr>
+                    </table>
+                </h2>
+            </div>
+        </div>
+    </div>
 
-            <div class="title"><b>🎼 教授經歷</b></div>
+    <hr width="95%" size="5" color="SlateGray">
+
+    <div style="margin-left: 3rem;">
+        <div class="center-title title" style="width: 50%;"><b>🎼 音樂 表演/教學/比賽/評審 相關經歷</b></div>
+        <div>
             <h2>
-                <p>
-                    📚 <u>新北市</u>裕德雙語高級中等學校 教務處課務組長兼音樂老師<br>
-                    📚 <u>新北市</u>松本樂器&音樂教室 長笛老師、鋼琴老師<br>
-                    📚 <u>基隆市</u>河合安可音樂教室 長笛老師、鋼琴老師<br>
-                    📚 <u>台北市</u>河合璟欣音樂教室 長笛老師、鋼琴老師、烏克麗麗老師、吉他老師、爵士鼓老師、樂理老師<br>
-                    📚 <u>基隆市</u>河合筱錄音樂教室 長笛老師、鋼琴老師、烏克麗麗老師、吉他老師、爵士鼓老師、樂理老師<br>
-                    📚 <u>基隆市</u>建德國小管樂班 長笛老師<br>
-                    📚 <u>基隆市</u>銘傳國中管樂團 長笛老師<br>
-                    📚 佳家 Do Re Mi 個人音樂工作室 長笛老師、鋼琴老師<br>
-                    📚 碇內個人音樂工作室 長笛老師、鋼琴老師<br>
-                    📚 小作曲家樂器行 鋼琴老師<br>
-                    📚 帕姆琴克樂器 鋼琴老師
-                </p>
+                <table class="experience-table2">
+
+                    <tr>
+                        <td>🏅 2025.08</td>
+                        <td>指導學生參加 2025 松本樂器&音樂教室年度音樂會，擔任學生演出鋼琴伴奏</td>
+                    </tr>
+                    <tr>
+                        <td>🏅 2025.07</td>
+                        <td>參與《經典與未來》國家音樂廳音樂會演出（長笛）</td>
+                    </tr>
+                    <tr>
+                        <td>🏅 2025.06</td>
+                        <td>指導學生錄取國立屏東大學音樂系（原一般高中普通班重考學生－長笛副修老師）</td>
+                    </tr>
+                    <tr>
+                        <td>🏅 2025.05</td>
+                        <td>指導學生參加學校年級班級直笛競賽，擔任鋼琴伴奏</td>
+                    </tr>
+                    <tr>
+                        <td>🏅 2025.05</td>
+                        <td>指導學生參加布拉格音樂機構檢定通過（鋼琴 1 人）</td>
+                    </tr>
+                    <tr>
+                        <td>🏅 2024.11</td>
+                        <td>指導學生參加布拉格音樂機構檢定通過(長笛1人)</td>
+                    </tr>
+                    <tr>
+                        <td>🏅 2019~2024</td>
+                        <td>擔任裕德雙語高級中等學校街頭藝人評審(共十學期)</td>
+                    </tr>
+                    <tr>
+                        <td>🏅 2024.05</td>
+                        <td>指導學生參加布拉格音樂機構檢定通過(長笛4人、鋼琴4人)</td>
+                    </tr>
+                    <tr>
+                        <td>🏅 2024.03</td>
+                        <td>指導學生參加2024松本樂器&音樂教室年度音樂會、擔任學生演出鋼琴伴奏</td>
+                    </tr>
+                    <tr>
+                        <td>🏅 2023.11</td>
+                        <td>指導學生參加布拉格音樂機構檢定通過(長笛2人)</td>
+                    </tr>    
+                    <tr>
+                        <td>🏅 2023</td>
+                        <td>指導裕德雙語高級中等學校四年級學生參加新北市112年度國民小學中區英語歌曲演唱競賽榮獲中年級組佳作(區賽)</td>
+                    </tr>    
+                    <tr>
+                        <td>🏅 2022</td>
+                        <td>指導裕德雙語高級中等學校國小三年級學生參加新北市111年度國民小學英語歌曲演唱競賽榮獲優等(市賽)</td>
+                    </tr>    
+                    <tr>
+                        <td>🏅 2022</td>
+                        <td>指導裕德雙語高級中等學校國小二、三年級學生參加新北市111年度國民小學中區英語歌曲演唱競賽榮獲低年級組佳作、中年級組特優(區賽)</td>
+                    </tr> 
+                    <tr>
+                        <td>🏅 2022.06</td>
+                        <td>擔任裕德雙語高級中等學校畢業典禮音樂表演指導老師</td>
+                    </tr> 
+                    <tr>
+                        <td>🏅 2021.08</td>
+                        <td>指導學生參加東和河合檢定通過</td>
+                    </tr> 
+                    <tr>
+                        <td>🏅 2021.06</td>
+                        <td>擔任裕德雙語高級中等學校畢業典禮音樂饗宴表演者(長笛)</td>
+                    </tr> 
+                    <tr>
+                        <td>🏅 2021.03</td>
+                        <td>指導長笛學生代表基隆市參加全國音樂比賽榮獲長笛全國甲等(國賽)</td>
+                    </tr> 
+                    <tr>
+                        <td>🏅 2021.03</td>
+                        <td>參與<<琴深藝濃>>國家音樂廳音樂會演出(長笛)</td>
+                    </tr> 
+                    <tr>
+                        <td>🏅 2020.12</td>
+                        <td>指導裕德雙語高級中等學校國小六年級學生參加新北市109年度國民小學英語歌曲演唱競賽榮獲佳作(市賽)</td>
+                    </tr> 
+                    <tr>
+                        <td>🏅 2020.11</td>
+                        <td>指導長笛學生參加基隆市學生音樂比賽榮獲優等第一名 - 取得全國學生音樂比賽代表權(市賽)</td>
+                    </tr> 
+                    <tr>
+                        <td>🏅 2020.10</td>
+                        <td>指導裕德雙語高級中等學校國小六年級學生參加新北市109年度國民小學中區英語歌曲演唱競賽榮獲高年級組特優(區賽)</td>
+                    </tr> 
+                    <tr>
+                        <td>🏅 2020.09</td>
+                        <td>指導學生參加2020年Vienna維也納菁英獎全國音樂大賽鋼琴組榮獲優等獎(分別有兒童二年級組、兒童三年級組、兒童四年級組、少年組、高中組)</td>
+                    </tr> 
+                    <tr>
+                        <td>🏅 2020.09</td>
+                        <td>參加基隆市河合安可音樂教室秋季音樂會當任主持人並指導學生表演</td>
+                    </tr> 
+                    <tr>
+                        <td>🏅 2020.08</td>
+                        <td>指導學生錄取國立臺灣藝術大學音樂系(高中音樂班-長笛主修陪練老師)</td>
+                    </tr>
+                    <tr>
+                        <td>🏅 2019.08</td>
+                        <td>指導學生參加東和河合檢定通過</td>
+                    </tr>
+                    <tr>
+                        <td>🏅 2018.08</td>
+                        <td>指導學生參加東和河合檢定通過</td>
+                    </tr>
+                    <tr>
+                        <td>🏅 2018.08</td>
+                        <td>指導學生錄取國立屏東大學音樂系(高中音樂班-長笛主修陪練老師)</td>
+                    </tr>
+                    <tr>
+                        <td>🏅 2017.06</td>
+                        <td>擔任關貿網路股份有限公司-魏總經理退休歡送會音樂表演者</td>
+                    </tr>
+                    <tr>
+                        <td>🏅 2016</td>
+                        <td>與台灣新北市新店高中音樂班同至馬來西亞擔任國際音樂交流會音樂志工-協助華僑學校募款(長笛)</td>
+                    </tr>
+                    <tr>
+                        <td>🏅 2016</td>
+                        <td>舉辦<u>高X旋</u>長笛獨奏會</td>
+                    </tr>
+                    <tr>
+                        <td>🏅 2014~2016</td>
+                        <td>擔任實習音樂會、畢業音樂會主持人、總召、招待、工作人員</td>
+                    </tr>
+                    <tr>
+                        <td>🏅 2016</td>
+                        <td>參與培德工家105級畢業音樂會(長笛)</td>
+                    </tr> 
+                    <tr>
+                        <td>🏅 2014~2015</td>
+                        <td>參與實踐大學系上音樂會演出(長笛;國家音樂廳)</td>
+                    </tr> 
+                    <tr>
+                        <td>🏅 2015</td>
+                        <td>參與培德工家104級畢業音樂會及校友音樂會(長笛)</td>
+                    </tr> 
+                    <tr>
+                        <td>🏅 2015</td>
+                        <td>參與國際指揮營示範樂隊(長笛)</td>
+                    </tr> 
+                    <tr>
+                        <td>🏅 2015</td>
+                        <td>參與第十二屆台北國際爵士音樂營(長笛)</td>
+                    </tr> 
+                    <tr>
+                        <td>🏅 2015</td>
+                        <td>參與實踐大學與示範樂隊合作音樂會(長笛)</td>
+                    </tr> 
+                    <tr>
+                        <td>🏅 2014~2015</td>
+                        <td>參與實踐大學畢業典禮典禮樂隊(國父紀念館)</td>
+                    </tr>
+                    <tr>
+                        <td>🏅 2014.11</td>
+                        <td>參與Mr.Big大人物合唱團演唱會工作人員(Ticc)</td>
+                    </tr>
+                    <tr>
+                        <td>🏅 2014</td>
+                        <td>參與實踐大學音樂系與中央音樂學院學術交流(長笛)</td>
+                    </tr>
+                    <tr>
+                        <td>🏅 2014</td>
+                        <td>參與雙連安養院音樂志工演出(長笛)</td>
+                    </tr>
+                    <tr>
+                        <td>🏅 2013~2014</td>
+                        <td>參與和信治癌中心音樂志工演出(長笛)</td>
+                    </tr>
+                    <tr>
+                        <td>🏅 2013~2014</td>
+                        <td>參與真理大學系上音樂會演出(長笛;國家演奏廳、淡水圖書館)</td>
+                    </tr>
+                    <tr>
+                        <td>🏅 2010</td>
+                        <td>受台北市政府邀請參與國際三八婦女節100週年慶祝晚會(合唱團;小巨蛋)</td>
+                    </tr>
+                    <tr>
+                        <td>🏅 2010</td>
+                        <td>受實踐大學音樂系邀請參與貝多芬第九號交響曲演出協演(合唱團;國家音樂廳)</td>
+                    </tr>
+                    <tr>
+                        <td>🏅 2008~2010</td>
+                        <td>受邀基隆市中元祭遊行行進樂隊(長笛)</td>
+                    </tr>
+                    <tr>
+                        <td>🏅 2008~2010</td>
+                        <td>參與基隆市中小學聯運典禮樂隊(長笛)</td>
+                    </tr>
+                    <tr>
+                        <td>🏅 2008~2010</td>
+                        <td>參與全國學生管樂音樂比賽代表基隆市參與全國決賽(長笛)</td>
+                    </tr>
+                    <tr>
+                        <td>🏅 2004~2007</td>
+                        <td>參與全國學生合唱團音樂比賽代表基隆市參與全國決賽(國語與鄉土民謠)</td>
+                    </tr>
+                </table>
             </h2>
         </div>
     </div>
 
+    <hr width="95%" size="5" color="SlateGray">
 
-    <hr>
+    <div style="margin-left: 3rem; text-align: left;">
+        <div class="section-container">
+            <div class="video-section">
+                <div class="title1"><b>𝄞 音樂影片連結 𝄞</b></div>
+                <div class="video-container">
+                    <div class="video-block">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=F5rQlydQk4M">
+                            🎞️ 美女與野獸(鋼琴&長笛）cover by HUD&<u>榕旋</u>
+                        </a><br>
+                        <iframe src="https://www.youtube.com/embed/F5rQlydQk4M"
+                            title="美女與野獸(鋼琴&amp;長笛）cover by HUD&amp;榕旋" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
 
-        <div class="title" style="width: 38%;"><b>🎼 音樂表演/教學/比賽/評審 相關經歷</b></div>
-        <div>
-            <h3>
-                <p>2025.08 指導學生參加2025松本樂器&音樂教室年度音樂會<br>
-                    2025.08 指導學生考上 --- 大學音樂系(長笛副修老師)<br>
-                    2025.05 指導學生參加布拉格音樂機構檢定通過(鋼琴1人)<br>
-                    2024.11 指導學生參加布拉格音樂機構檢定通過(長笛1人)<br>
-                    2019~2024 擔任裕德雙語高級中等學校街頭藝人評審(共十學期)<br>
-                    2024.05 指導學生參加布拉格音樂機構檢定通過(長笛4人、鋼琴4人)<br>
-                    2024.03 指導學生參加2024松本樂器&音樂教室年度音樂會<br>
-                    2023.11 指導學生參加布拉格音樂機構檢定通過(長笛2人)<br>
-                    2023 指導裕德雙語高級中等學校四年級學生參加新北市112年度國民小學中區英語歌曲演唱競賽榮獲中年級組佳作(區賽)<br>
-                    2022 指導裕德雙語高級中等學校國小三年級學生參加新北市111年度國民小學英語歌曲演唱競賽榮獲優等(市賽)<br>
-                    2022 指導裕德雙語高級中等學校國小二、三年級學生參加新北市111年度國民小學中區英語歌曲演唱競賽榮獲低年級組佳作、中年級組特優(區賽)<br>
-                    2022.06 擔任裕德雙語高級中等學校畢業典禮音樂表演指導老師<br>
-                    2021.08 指導學生參加東和河合檢定通過<br>
-                    2021.06 擔任裕德雙語高級中等學校畢業典禮音樂饗宴表演者(長笛)<br>
-                    2021.03 指導長笛學生代表基隆市參加全國音樂比賽榮獲長笛全國甲等(國賽)<br>
-                    2021.03 參與<<琴深藝濃>>國家音樂廳音樂會演出(長笛)<br>
-                        2020.12 指導裕德雙語高級中等學校國小六年級學生參加新北市109年度國民小學英語歌曲演唱競賽榮獲佳作(市賽)<br>
-                        2020.11 指導長笛學生參加基隆市學生音樂比賽榮獲甲等第一名取得全國學生音樂比賽代表權(市賽)<br>
-                        2020.10 指導裕德雙語高級中等學校國小六年級學生參加新北市109年度國民小學中區英語歌曲演唱競賽榮獲高年級組特優(區賽)<br>
-                        2020.09 指導學生參加2020年Vienna維也納菁英獎全國音樂大賽鋼琴組榮獲優等獎(分別有兒童二年級組、兒童三年級組、兒童四年級組、少年組、高中組)<br>
-                        2020.09 參加基隆市河合安可音樂教室秋季音樂會當任主持人並指導學生表演<br>
-                        2020.08 指導學生考上國立臺灣藝術大學音樂系(長笛陪練老師)<br>
-                        2019.08 指導學生參加東和河合檢定通過<br>
-                        2018.08 指導學生參加東和河合檢定通過<br>
-                        2018.08 指導學生考上國立屏東大學音樂系(長笛陪練老師)<br>
-                        2017.06 擔任關貿網路股份有限公司-魏總經理退休歡送會音樂表演者<br>
-                        2016 參與台灣新店高中與馬來西亞國際音樂交流會音樂志工<br>
-                        2016 舉辦<u>高榕旋</u>長笛獨奏會<br>
-                        2014~2016 擔任實習音樂會、畢業音樂會主持人、總召、招待、工作人員<br>
-                        2016 參與培德工家105級畢業音樂會(長笛)<br>
-                        2014~2015 參與實踐大學系上音樂會演出(長笛;國家音樂廳)<br>
-                        2015 參與培德工家104級畢業音樂會及校友音樂會(長笛)<br>
-                        2015 參與國際指揮營示範樂隊(長笛)<br>
-                        2015 參與第十二屆台北國際爵士音樂營(長笛)<br>
-                        2015 參與實踐大學與示範樂隊合作音樂會(長笛)<br>
-                        2014~2015 參與實踐大學畢業典禮典禮樂隊(國父紀念館)<br>
-                        2014.11 參與Mr.Big大人物合唱團演唱會工作人員(Ticc)<br>
-                        2014 參與實踐大學音樂系與中央音樂學院學術交流(長笛)<br>
-                        2014 參與雙連安養院音樂志工演出(長笛)<br>
-                        2013~2014 參與和信治癌中心音樂志工演出(長笛)<br>
-                        2013~2014 參與真理大學系上音樂會演出(長笛;國家演奏廳、淡水圖書館)<br>
-                        2010 受台北市政府邀請參與國際三八婦女節100週年慶祝晚會(合唱團;小巨蛋)<br>
-                        2010 受實踐大學音樂系邀請參與貝多芬第九號交響曲演出協演(合唱團;國家音樂廳)<br>
-                        2008~2010 受邀基隆市中元祭遊行行進樂隊(長笛)<br>
-                        2008~2010 參與基隆市中小學聯運典禮樂隊(長笛)<br>
-                        2008~2010 參與全國學生管樂音樂比賽代表基隆市參與全國決賽(長笛)<br>
-                        2004~2007 參與全國學生合唱團音樂比賽代表基隆市參與全國決賽(國語與鄉土民謠)</p>
-            </h3>
+                    <div class="video-block">
+                        <a target="_blank" href="https://youtu.be/NrxqtNiVAt4">
+                            🎞️ A Whole New World | cover by HUD&<u>榕旋</u>
+                        </a><br>
+                        <iframe src="https://www.youtube.com/embed/NrxqtNiVAt4"
+                            title="A Whole New World | cover by HUD&amp;榕旋" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="honor-board">
+                <div class="title1"><b>𝄞 榮譽榜 𝄞</b></div>
+                <h3>
+                    <p>
+                        <a target="_blank" href="http://www.yuteh.ntpc.edu.tw/p/16-1000-367.php?Lang=zh-tw">
+                        🎉 裕德雙語高級中等學校-恭喜本校學生參加109學年度新北市國小英語歌唱比賽獲得佳績
+                        </a><br>
+                        <a target="_blank" href="http://www.yuteh.ntpc.edu.tw/p/404-1000-344.php?Lang=zh-tw">
+                        🎉 裕德雙語高級中等學校-109學年度獲獎紀錄-音樂類
+                        </a><br>
+                        <a target="_blank" href="http://www.yuteh.ntpc.edu.tw/p/404-1000-635.php?Lang=zh-tw">
+                        🎉 裕德雙語高級中等學校-111學年度獲獎紀錄-藝術類
+                        </a><br>
+                    </p>
+                </h3>
+            </div>
         </div>
-
-        <hr size="1">
-
-        <div class="title" style="width: 11%;" ><b>𝄞 榮譽榜 𝄞</b></div>
-        <div>
-            <p>
-                <a target="_blank" href="http://www.yuteh.ntpc.edu.tw/p/16-1000-367.php?Lang=zh-tw">
-                    <h3><li>裕德雙語高級中等學校-恭喜本校學生參加109學年度新北市國小英語歌唱比賽獲得佳績</li></h3>
-                </a><br>
-                <a target="_blank" href="http://www.yuteh.ntpc.edu.tw/p/404-1000-344.php?Lang=zh-tw">
-                    <h3><li>裕德雙語高級中等學校-109學年度獲獎紀錄-音樂類</li></h3>
-                </a><br>
-                <a target="_blank" href="http://www.yuteh.ntpc.edu.tw/p/404-1000-635.php?Lang=zh-tw">
-                    <h3><li>裕德雙語高級中等學校-111學年度獲獎紀錄-藝術類</li></h3>
-                </a><br>
-            </p>
-        </div>
-
-        <div class="title" style="width: 17.5%;"><b>𝄞 音樂影片連結 𝄞</b></div>
-        <div>
-            <p>
-                <a target="_blank" href="https://www.youtube.com/watch?v=F5rQlydQk4M">
-                    <h3><li>美女與野獸(鋼琴&長笛）cover by HUD&<u>榕旋</u></li></h3>
-                </a><br>
-                <iframe width="50%" height="50%" src="https://www.youtube.com/embed/F5rQlydQk4M"
-                    title="美女與野獸(鋼琴&amp;長笛）cover by HUD&amp;榕旋" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <a target="_blank" href="https://youtu.be/NrxqtNiVAt4">
-                    <h3><li>A Whole New World | cover by HUD&<u>榕旋</u></li></h3>
-                </a><br>
-                <iframe width="50%" height="50%" src="https://www.youtube.com/embed/NrxqtNiVAt4"
-                    title="A Whole New World | cover by HUD&amp;榕旋" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </p>
-        </div>
-    </div>
+    </div>     
+    
 <hr>
+
 <div class="directions-title"><b>
 M•S•= Miss & Meets      ->  錯過、想念、遇見，送上最特別的心意、關懷與陪伴 ➕ Muzisweet = Music+sweet  ->  一個喜愛烘焙甜點的音樂人</b><br></div>
 <div class="directions-d-title"><b>
