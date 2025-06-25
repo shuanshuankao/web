@@ -124,9 +124,14 @@ img {
 
     .mark-link {
         width: 100%;
-        display: block;
+        /* display: block; */
         text-align: center;
         margin-bottom: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        font-size: 0.9rem;
     }
 
     .image-text-row {
@@ -154,10 +159,13 @@ img {
         font-size: 1.2rem;
     }
 
-    .directions-title,.directions-d-title {
+    .directions-title,
+    .directions-d-title {
         width: 100%;
         font-size: 1rem;
         padding: 0.5rem;
+        word-break: break-word;
+        text-align: center;
     }
 
     .experience-table2,
