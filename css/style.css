@@ -113,12 +113,12 @@ img {
 @media (max-width: 768px) {
 
     .main-title {
-        font-size: 2rem;
+        font-size: 1rem;
         /* margin-top: 16px; */
     }
 
     .vice-title {
-        font-size: 1.5rem;
+        font-size: 0.5rem;
         /* margin-top: 24px; */
     }
 
