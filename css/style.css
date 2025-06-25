@@ -114,6 +114,15 @@ img {
 
 @media (max-width: 768px) {
 
+    .main-title,
+    .vice-title,
+    .directions-title,
+    .directions-d-title {
+        white-space: nowrap;   /* 不換行 */
+        overflow-x: auto;      /* 超出寬度時出現橫向滾動條 */
+        -webkit-overflow-scrolling: touch; /* iOS 平滑滾動 */
+    }
+    
     .main-title {
         font-size: 2rem;
         /* margin-top: 16px; */
@@ -163,11 +172,11 @@ img {
 
     .directions-title,
     .directions-d-title {
-        width: 100%;
+        /* width: 100%; */
         font-size: 1rem;
-        padding: 0.5rem;
-        word-break: break-word;
-        text-align: center;
+        /* padding: 0.5rem; */
+        /* word-break: break-word; */
+        /* text-align: center; */
     }
 
     .experience-table2,
