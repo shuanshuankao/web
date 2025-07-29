@@ -97,11 +97,40 @@ img {
     color: rgb(40, 2, 109);
 }
 
+.section-heading-all {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  /* 先靠左排，選單再微調 */
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
 .section-heading {
     text-align: center;
     font-size: 4.5rem;
     padding: 0 1rem;
+    width: 100%;
 }
+
+.section-heading-select {
+    align-self: flex-end; /* 讓它靠右 */
+    margin-top: 5px;
+    margin-right: 200px; /* 靠右一點 */
+}
+
+.custom-select {
+            padding: 2px;
+            font-size: 12px;
+            border: 1px solid #141414;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            color: #333;
+            background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+            background-repeat: no-repeat;
+            background-position: right 1px center;
+            background-size: 20px;
+        }
 
 #picture{
     text-align: center;
