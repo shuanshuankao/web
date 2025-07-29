@@ -132,6 +132,10 @@ img {
             background-size: 20px;
         }
 
+.small-text {
+            font-size: 1em; /* 調整這個數值來控制縮小比例 */
+        }
+
 #picture{
     text-align: center;
     margin: 0px 90px;

@@ -23,6 +23,16 @@
             height: auto;
         }
     </style>
+
+    <script>
+        document.getElementById("quick-jump").addEventListener("change", function () {
+            const target = this.value;
+            if (target) {
+            location.hash = target; // 跳轉到指定區塊
+            this.selectedIndex = 0; // 重置選單回到第一個項目（請選擇...）
+            }
+        });
+    </script>
 </head>
 <body>
     <div style="text-align: right;">
@@ -50,15 +60,26 @@
 思慕滋生的觸動因與眾不同而維繫，將想念的滋味傳遞特別的你/妳</div>
 <br>
 
-<div class="section-heading">
-💳 專業證照/課程認證 💳<br>
+<div class="section-heading-all">
+    <div class="section-heading">💳 專業證照/課程認證 💳</div>
+    <div class="section-heading-select">
+        <label for="type">
+            <span class="small-text">快速到達:</span>
+        </label>
+        <select class="custom-select" name="type" onchange="location.href = this.value;" id="quick-jump">
+            <option value="">請選擇...</option>
+            <option value="#section-documents"> 📋 行政文書類</option>
+            <option value="#section-design"> 🖌️ 設計軟體類</option>
+            <option value="#section-code"> 💻 程式軟體類</option>
+        </select>
+    </div>
 </div>
 <hr width="80%" size="5">
 <br>
 
 
 <div class="title-total">
-<div class="title"><b>📋 行政文書</b></div>
+<div id="section-documents" class="title"><b>📋 行政文書</b></div>
 </div>
         <div style="margin-left: 3rem;">
             <p>
@@ -88,7 +109,7 @@
 <br>
 <br>
 <div class="title-total">
-<div class="title"><b>🖌️ 設計軟體</b></div>
+<div id="section-design" class="title"><b>🖌️ 設計軟體</b></div>
 </div>
     <div style="margin-left: 3rem;">
         <p>
@@ -108,7 +129,7 @@
 <br>
 <br>
 <div class="title-total">
-<div class="title"><b>💻 程式軟體</b></div>
+<div id="section-code" class="title"><b>💻 程式軟體</b></div>
 </div>
         <div style="margin-left: 3rem;">
             <p>

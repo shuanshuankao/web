@@ -57,14 +57,21 @@
             margin-bottom: 10px;
         }
 
-        .small-text {
-            font-size: 0.2em; /* 調整這個數值來控制縮小比例 */
-        }
-
-
+        
 
     </style>
+
+    <script>
+        document.getElementById("quick-jump").addEventListener("change", function () {
+            const target = this.value;
+            if (target) {
+            location.hash = target; // 跳轉到指定區塊
+            this.selectedIndex = 0; // 重置選單回到第一個項目（請選擇...）
+            }
+        });
+    </script>
 </head>
+
 <body>
     <div style="text-align: right;">
         <div class="mark-link">🙋‍♀️更多關於我<b>👉
@@ -97,25 +104,25 @@
         <label for="type">
             <span class="small-text">快速到達:</span>
         </label>
-        <select class="custom-select" name="type" id="">
-            <option value="程式網頁類">程式網頁類</option>
-            <option value="資料/數據分析、網路爬蟲類">資料/數據分析、網路爬蟲類</option>
-            <option value="設計類">設計類</option>
+        <select class="custom-select" name="type" onchange="location.href = this.value;" id="quick-jump">
+            <option value="">請選擇...</option>
+            <option value="#section-code"> 💻 程式網頁類</option>
+            <option value="#section-data"> 📈 資料/數據分析、網路爬蟲類</option>
+            <option value="#section-design"> 🖌️ 設計類</option>
         </select>
     </div>
-    <br>
 </div>
 <hr width="80%" size="5">
 <br>
 
 <div class="title-total">
-<div class="title"><b>💻 程式網頁</b></div>
+<div id="section-code" class="title"><b>💻 程式網頁</b></div>
 </div>
     <div style="margin-left: 3rem;">
         <p>
             <a target="_blank" href="index.html"><h1 style="text-align: center;"><b><u>1️⃣ 🎵 M•S•慕滋思維特 個人工作室 🎵 </u></b>
             <br><b><u>M•S•Muzisweet Personal Studio</u></b></h1></a> 
-            <h2><b>使用技能工具 : Python、CSS、HTML、Bulma、Javascript、Django、Jinja2、VS Code&nbsp;&nbsp;🔜&nbsp;
+            <h2><b>使用技能工具 : Python、CSS、HTML、Bulma、Javascript、Django、Jinja、MySQL、VS Code&nbsp;&nbsp;🔜&nbsp;
             <a target="_blank" href="https://github.com/shuanshuankao/web.git">
             <u>💻 點我查看程式碼(前端)</u></a>&nbsp;&nbsp;&nbsp;
             <a target="_blank" href="https://github.com/shuanshuankao/weblist-project">
@@ -133,7 +140,7 @@
 <br>
 
 <div class="title-total">
-<div class="title"><b>📈 資料/數據分析、網路爬蟲</b></div>
+<div id="section-data" class="title"><b>📈 資料/數據分析、網路爬蟲</b></div>
 </div>
     <div style="margin-left: 3rem;">
         <p>
@@ -189,7 +196,7 @@
 <br>
 
 <div class="title-total">
-<div class="title"><b>🖌️ 設計</b></div>
+<div id="section-design" class="title"><b>🖌️ 設計</b></div>
 </div>
         <div style="margin-left: 3rem;">
             <p>
