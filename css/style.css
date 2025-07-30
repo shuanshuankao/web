@@ -37,6 +37,10 @@ img {
     min-width: 280px;
 }
 
+.title-total{
+            text-align: center;
+        }
+
 .title {
     color: red;
     background-color: beige;
