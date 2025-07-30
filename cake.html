@@ -7,6 +7,20 @@
     <meta name="keywords" content="音樂,長笛,鋼琴,樂理,烘焙,手工餅乾,蛋糕,甜點,程式語言,網頁設計">
     <title>🍰 甜點蛋糕 🍰</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        
+    </style>
+
+    <script>
+        document.getElementById("quick-jump").addEventListener("change", function () {
+            const target = this.value;
+            if (target) {
+            location.hash = target; // 跳轉到指定區塊
+            this.selectedIndex = 0; // 重置選單回到第一個項目（請選擇...）
+            }
+        });
+    </script>
+
 </head>
 <body>
     <div style="text-align: right;">
@@ -34,15 +48,51 @@
 思慕滋生的觸動因與眾不同而維繫，將想念的滋味傳遞特別的你/妳</div>
 <br>
 
-<div class="section-heading">
-🍰 甜點蛋糕 🍰<br>
+<div class="section-heading-all">
+    <div class="section-heading">🍰 甜點蛋糕 🍰</div>
+    <div class="section-heading-select">
+        <label for="type">
+            <span class="small-text">快速到達:</span>
+        </label>
+        <select class="custom-select" name="type" onchange="location.href = this.value;" id="quick-jump">
+            <option value="">請選擇...</option>
+            <option value="#section-cake"> 🍰 蛋糕類</option>
+            <option value="#section-tappai"> 🥧 塔派類</option>
+            <option value="#section-taiwanesemacaron"> 🍩 臺式馬卡龍(牛粒)</option>
+        </select>
+    </div>
+</div>
 <hr width="80%" size="5">
 <br>
-敬請期待，謝謝您 🤗
-</div>
 
+<div class="title-total">
+<div id="section-cake" class="title"><b>🍰 蛋糕類</b></div>
+</div>
+    <div style="text-align: center;">
+        <h2>
+           敬請期待，謝謝您 🤗             
+        </h2>
+    </div>
 <br>
+
+<div class="title-total">
+<div id="section-tappai" class="title"><b>🥧 塔派類</b></div>
+</div>
+    <div style="text-align: center;">
+        <h2>
+           敬請期待，謝謝您 🤗             
+        </h2>
+    </div>
 <br>
+
+<div class="title-total">
+<div id="section-taiwanesemacaron" class="title"><b>🍩 臺式馬卡龍(牛粒)</b></div>
+</div>
+    <div style="text-align: center;">
+        <h2>
+           敬請期待，謝謝您 🤗             
+        </h2>
+    </div>
 <br>
 <br>
 
