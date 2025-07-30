@@ -8,9 +8,54 @@
     <title>🍪 手工餅乾 🍪</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-        
+        /* 表格 */
+        table {
+            width: 90%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #fffaf5;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-family: "Microsoft JhengHei", sans-serif;
+        }
+
+        th, td {
+            border: 2px solid #d39e8c;
+            padding: 5px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #ffe0cc;
+            color: #4e3c31;
+            font-weight: bold;
+            font-size: 1.2em;          /* 字體略大 */
+            border: 2px solid #d39e8c; 
+        }
+
+        tr:nth-child(even) {
+            background-color: #fff5f0;
+        }
+
+        tr:hover {
+            background-color: #ffe9dd;
+        }
+
+        /* 表格第一欄 "樣式型態" 設定 */
+        tr.style-type th{
+            background-color: #f5cbaa;  
+            color: #4e2e1e;             
+            font-weight: bold;
+        }
+
+        /* 表格下方文字 */
+        .ingredients {
+            width: 90%;
+            margin: 5px auto;
+            font-family: "Microsoft JhengHei", sans-serif;
+        }
     </style>
 
+    <!-- 標題下拉選單 -->
     <script>
         document.getElementById("quick-jump").addEventListener("change", function () {
             const target = this.value;
@@ -69,11 +114,130 @@
 <div class="title-total">
 <div id="section-cookie" class="title"><b>🍪 曲奇類</b></div>
 </div>
-    <div style="margin-left: 3rem;">
-        <p>
-                        
-        </p>
-    </div>
+<br>
+
+<div>
+    <table border="5">
+        <thead>
+            <tr class="style-type">
+                <th>樣式型態</th>
+                <th colspan="11">常態樣式</th>
+            </tr>
+
+            <tr>
+                <th>樣式圖片</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>樣式名稱</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>單片克數</th>
+                <td>約 XX 克</td>
+                <td>約 XX 克</td>
+                <td>約 XX 克</td>
+                <td>約 XX 克</td>
+                <td>約 XX 克</td>
+                <td>約 XX 克</td>
+                <td>約 XX 克</td>
+                <td>約 XX 克</td>
+                <td>約 XX 克</td>
+                <td>約 XX 克</td>
+                <td>約 XX 克</td>
+            </tr>
+
+            <tr>
+                <th>規格<br>(長x寬x高)</th>
+                <td>XX x XX x 5</td>
+                <td>XX x XX x 5</td>
+                <td>XX x XX x 5</td>
+                <td>XX x XX x 5</td>
+                <td>XX x XX x 5</td>
+                <td>XX x XX x 5</td>
+                <td>XX x XX x 5</td>
+                <td>XX x XX x 5</td>
+                <td>XX x XX x 5</td>
+                <td>XX x XX x 5</td>
+                <td>XX x XX x 5</td>
+            </tr>
+
+            <tr>
+                <th>口味種類</th>
+                <td><select>
+                    <option value="">請選擇口味</option>
+                    <option value="original">原味</option>
+                    
+                    <option value="Milo">美祿</option>
+                    
+                    <option value="matcha">抹茶</option>
+                    <option value="coffee">咖啡</option>
+                    <option value="hojicha">焙茶</option>
+                    <option value="milk tea">奶茶</option>
+                    <option value="chocolate">巧克力</option>
+                    <option value="almond chocolate">杏仁巧克力</option>
+                    <option value="almond matcha">杏仁抹茶</option>
+                </select></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>單價</th>
+                <td>XX / 片</td>
+                <td>XX / 片</td>
+                <td>XX / 片</td>
+                <td>XX / 片</td>
+                <td>XX / 片</td>
+                <td>XX / 片</td>
+                <td>XX / 片</td>
+                <td>XX / 片</td>
+                <td>XX / 片</td>
+                <td>XX / 片</td>
+                <td>XX / 片</td>
+            </tr>
+        </tbody>
+        
+    </table>
+</div>
+<div class="ingredients">
+    <ul>
+        <li><b>成份 : 無鹽奶油、牛奶、雞蛋、砂糖、低筋麵粉、泡打粉、檸檬汁、各味道茶粉及果乾果皮</b></li>
+        <li><b>皆使用「 減糖 」配方製作</b></li>
+    </ul>
+</div>
 <br>
 
 <div class="title-total">
