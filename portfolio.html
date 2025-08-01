@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +13,8 @@
             line-height: 1.6;
             padding: 0.5rem 1rem;
         }
-        
-        .image-style1{
+
+        .image-style1 {
             background-color: azure;
             padding: 0.5%;
             border: 1% solid;
@@ -22,8 +23,8 @@
             max-width: 100%;
             margin-bottom: 10px;
         }
-        
-        .image-style2{
+
+        .image-style2 {
             background-color: azure;
             padding: 0.5%;
             border: 1% solid;
@@ -32,8 +33,8 @@
             max-width: 100%;
             margin-bottom: 10px;
         }
-        
-        .image-style3{
+
+        .image-style3 {
             background-color: azure;
             padding: 0.5%;
             border: 1% solid;
@@ -43,7 +44,7 @@
             margin-bottom: 10px;
         }
 
-        .image-style4{
+        .image-style4 {
             background-color: azure;
             padding: 0.5%;
             border: 1% solid;
@@ -52,17 +53,14 @@
             max-width: 100%;
             margin-bottom: 10px;
         }
-
-        
-
     </style>
 
     <script>
         document.getElementById("quick-jump").addEventListener("change", function () {
             const target = this.value;
             if (target) {
-            location.hash = target; // 跳轉到指定區塊
-            this.selectedIndex = 0; // 重置選單回到第一個項目（請選擇...）
+                location.hash = target; // 跳轉到指定區塊
+                this.selectedIndex = 0; // 重置選單回到第一個項目（請選擇...）
             }
         });
     </script>
@@ -71,82 +69,85 @@
 <body>
     <div style="text-align: right;">
         <div class="mark-link">🙋‍♀️更多關於我<b>👉
-                <a href="index.html" title="Music">🎼</a> 
-                <a target="_blank" href="cookie.html" title="Cookie">🍪</a> 
-                <a target="_blank" href="cake.html" title="Cake">🍰</a> 
-                <a target="_blank" href="https://github.com/shuanshuankao/web.git" title="Github">💻</a> 
+                <a href="index.html" title="Music">🎼</a>
+                <a target="_blank" href="cookie.html" title="Cookie">🍪</a>
+                <a target="_blank" href="cake.html" title="Cake">🍰</a>
+                <a target="_blank" href="https://github.com/shuanshuankao/web.git" title="Github">💻</a>
                 <a target="_blank" href="portfolio.html" title="Portfolio">📝</a>
                 <a target="_blank" href="certificate.html" title="Certificate">💳</a>
-                <a target="_blank"
-                    href="https://www.instagram.com/m.s.muzisweet?igsh=dWFnb2ExOXYybWht&utm_source=qr" title="IG"> 
-                <img width="0.7%"
-                        src="images/IG.jpg" alt=""></a><br>
-                <a href="message.html" title="Message">✍️<u>直接留言</u></a></b> 
-                <a href="https://github.com/shuanshuankao/weblist-project" title="Log in and register">🔐<u>登入/註冊</u></a></b>
+                <a target="_blank" href="https://www.instagram.com/m.s.muzisweet?igsh=dWFnb2ExOXYybWht&utm_source=qr"
+                    title="IG">
+                    <img width="0.7%" src="images/IG.jpg" alt=""></a><br>
+                <a href="message.html" title="Message">✍️<u>直接留言</u></a>
+                <a href="https://github.com/shuanshuankao/weblist-project"
+                    title="Log in and register">🔐<u>登入/註冊</u></a></b>
         </div>
     </div>
 
-<div class="main-title"><b>🎵 M•S•慕滋思維特 個人工作室 🎵</b><br>
+    <div class="main-title"><b>🎵 M•S•慕滋思維特 個人工作室 🎵</b><br>
         <em>M•S•Muzisweet Personal Studio<br></b></em>
     </div>
 
-<div class="vice-title">關於音樂、手工餅乾、甜點的小天地 🎼🍪🍰<br>
-思慕滋生的觸動因與眾不同而維繫，將想念的滋味傳遞特別的你/妳</div>
-<br>
+    <div class="vice-title">關於音樂、手工餅乾、甜點的小天地 🎼🍪🍰<br>
+        思慕滋生的觸動因與眾不同而維繫，將想念的滋味傳遞特別的你/妳</div>
+    <br>
 
-<div class="section-heading-all">
-    <div class="section-heading">📝 作品集 📝</div>
-    <div class="section-heading-select">
-        <label for="type">
-            <span class="small-text">快速到達:</span>
-        </label>
-        <select class="custom-select" name="type" onchange="location.href = this.value;" id="quick-jump">
-            <option value="">請選擇...</option>
-            <option value="#section-code"> 💻 程式網頁類</option>
-            <option value="#section-data"> 📈 資料/數據分析、網路爬蟲類</option>
-            <option value="#section-design"> 🖌️ 設計類</option>
-        </select>
+    <div class="section-heading-all">
+        <div class="section-heading">📝 作品集 📝</div>
+        <div class="section-heading-select">
+            <label for="type">
+                <span class="small-text">快速到達:</span>
+            </label>
+            <select class="custom-select" name="type" onchange="location.href = this.value;" id="quick-jump">
+                <option value="">請選擇...</option>
+                <option value="#section-code"> 💻 程式網頁類</option>
+                <option value="#section-data"> 📈 資料/數據分析、網路爬蟲類</option>
+                <option value="#section-design"> 🖌️ 設計類</option>
+            </select>
+        </div>
     </div>
-</div>
-<hr width="80%" size="5">
-<br>
+    <hr width="80%" size="5">
+    <br>
 
-<div class="title-total">
-<div id="section-code" class="title"><b>💻 程式網頁</b></div>
-</div>
+    <div class="title-total">
+        <div id="section-code" class="title"><b>💻 程式網頁</b></div>
+    </div>
     <div style="margin-left: 3rem;">
         <p>
-            <a target="_blank" href="index.html"><h1 style="text-align: center;"><b><u>1️⃣ 🎵 M•S•慕滋思維特 個人工作室 🎵 </u></b>
-            <br><b><u>M•S•Muzisweet Personal Studio</u></b></h1></a> 
-            <h2><b>使用技能工具 : Python、CSS、HTML、Bulma、Javascript、Django、Jinja、MySQL、VS Code&nbsp;&nbsp;🔜&nbsp;
-            <a target="_blank" href="https://github.com/shuanshuankao/web.git">
-            <u>💻 點我查看程式碼(前端)</u></a>&nbsp;&nbsp;&nbsp;
-            <a target="_blank" href="https://github.com/shuanshuankao/weblist-project">
-            <u>💻 點我查看程式碼(後端)</u></a></b></h2>
-            <h2>網站是慕梓老師送自己的禮物也是從很早以前就想做的事情!!! 完工的那一刻，眼淚都快滴下來了 😭<br>
-                前端到後端皆自己完成(當然少不了辛苦被我問東問西的老師幫忙解惑啦，感謝遇到有責任感願意付出的好老師🥰)，前端網頁已完成90%，後端功能還在持續規劃新增中。<br>
-                準備過程中，生活事物的觸發，慕梓老師逐漸有了很大的想法改變及認知。原本覺得自己能力不足沒有勇氣面對一大堆的程式碼，沒敢想過在短時間裡去接觸後端工作。 <br>
-                卻在這一次寫網頁過程中越寫越興奮及感興趣，竟然還為了想趕快把網頁寫完跟妹妹說晚上上課不想上課，要請假回家寫網頁，慕梓老師的妹妹聽到可是嚇壞了說 🤣</h2>            
+            <a target="_blank" href="index.html">
+                <h1 style="text-align: center;"><b><u>1️⃣ 🎵 M•S•慕滋思維特 個人工作室 🎵 </u></b>
+                    <br><b><u>M•S•Muzisweet Personal Studio</u></b>
+                </h1>
+            </a>
+        <h2><b>使用技能工具 : Python、CSS、HTML、Bulma、Javascript、Django、Jinja、MySQL、VS Code&nbsp;&nbsp;🔜&nbsp;
+                <a target="_blank" href="https://github.com/shuanshuankao/web.git">
+                    <u>💻 點我查看程式碼(前端)</u></a>&nbsp;&nbsp;&nbsp;
+                <a target="_blank" href="https://github.com/shuanshuankao/weblist-project">
+                    <u>💻 點我查看程式碼(後端)</u></a></b></h2>
+        <h2>網站是慕梓老師送自己的禮物也是從很早以前就想做的事情!!! 完工的那一刻，眼淚都快滴下來了 😭<br>
+            前端到後端皆自己完成(當然少不了辛苦被我問東問西的老師幫忙解惑啦，感謝遇到有責任感願意付出的好老師🥰)，前端網頁已完成90%，後端功能還在持續規劃中。<br>
+            準備過程中，生活事物的觸發，慕梓老師逐漸有了很大的想法改變及認知。原本覺得自己能力不足沒有勇氣面對一大堆的程式碼，沒敢想過在短時間裡去接觸後端工作。 <br>
+            卻在這一次寫網頁過程中越寫越興奮及感興趣，竟然還為了想趕快把網頁寫完跟妹妹說晚上上課不想上課，要請假回家寫網頁，慕梓老師的妹妹聽到可是嚇壞了說 🤣</h2>
         </p>
     </div>
-<br>
-<br>
-<br>
-<br>
-<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-<div class="title-total">
-<div id="section-data" class="title"><b>📈 資料/數據分析、網路爬蟲</b></div>
-</div>
+    <div class="title-total">
+        <div id="section-data" class="title"><b>📈 資料/數據分析、網路爬蟲</b></div>
+    </div>
     <div style="margin-left: 3rem;">
         <p>
-            <h1 style="text-align: center;"><b><u>1️⃣ 標籤貼紙製程</u></b></h1>
-            <h2><b>使用技能工具 : Python、Pandas、Numpy、Jupyter Notebook</b></h2>
-            <h2>在工作上的第一個資料分析(其實不是業務內的工作，但是自己希望想做的)。剛開始做的時候覺得超級麻煩!! 跟老師討論了一翻，我都想撈出資料表後用手動做了 🤣<br>
-                資料分散在不同資料庫及資料表，分析前還要先花一段工將分析需使用的欄位找齊、合併、計算(資料檔超級大，有些欄位還不能直接抓取使用喔!)，才能順利進行分析~<br>
-                想到...生出來...可以多一個作品集以及累積成長經驗還是硬著頭皮撐完了...可是腦袋瓜好累壓 😵 可見，資料、數據的完整性有多重要了❗❗❗
-            </h2>
-            <div id="picture">
+        <h1 style="text-align: center;"><b><u>1️⃣ 標籤貼紙製程</u></b></h1>
+        <h2><b>使用技能工具 : Python、Pandas、Numpy、Jupyter Notebook、MSSQL</b></h2>
+        <h2>在工作上的第一個資料分析(其實不是業務內的工作，但是自己希望想做的)。剛開始做的時候覺得超級麻煩!! 跟老師討論了一翻，我都想撈出資料表後用手動做了 🤣<br>
+            資料分散在不同資料庫及資料表，分析前還要先花一段工將分析需使用的欄位找齊、合併、計算(資料檔超級大，有些欄位還不能直接抓取使用喔!)，才能順利進行分析~<br>
+            想到...生出來...可以多一個作品集以及累積成長經驗還是硬著頭皮撐完了...可是腦袋瓜好累壓 😵 可見，資料、數據的完整性有多重要了❗❗❗
+        </h2>
+        <div id="picture">
             <img class="image-style1" src="images/標籤貼紙製程時間及完工數分析-1.jpg" alt="">
             <img class="image-style1" src="images/標籤貼紙製程時間及完工數分析-2.jpg" alt="">
             <img class="image-style1" src="images/標籤貼紙製程時間及完工數分析-3.jpg" alt="">
@@ -155,13 +156,13 @@
             <br>
             <img class="image-style2" src="images/標籤貼紙製程時間及完工數分析-6.jpg" alt="">
             <img class="image-style2" src="images/標籤貼紙製程時間及完工數分析-7.jpg" alt="">
-            </div>
-            <br>
-            <h2>一開始設定想看的資料到上方就完成了，後又新增了其他的條件要求，開始了一連串無止盡的重跑程式... <br>
-                資料大到 Kernel狂死➕電腦還會黑屏後自動重新開機...(超像玩遊戲當機閃退的啦🤣)，還發現有些資料連資料庫裡都沒有...這樣無限輪迴了 "🔟" 個版本❗❗❗🤦‍♀️<br>
-                同時，認真地體會到... 想成為一位厲害、精準的數據/資料分析師，除了有經驗、對公司(含使用的系統軟體)及產業別瞭解還要對後端具備基本能力不害怕後端才行... 
-            </h2>
-            <div id="picture">
+        </div>
+        <br>
+        <h2>一開始設定想看的資料到上方就完成了，後又新增了其他的條件要求，開始了一連串無止盡的重跑程式... <br>
+            資料大到 Kernel狂死➕電腦還會黑屏後自動重新開機...(超像玩遊戲當機閃退的啦🤣)，還發現有些資料連資料庫裡都沒有...這樣無限輪迴了 "🔟" 個版本❗❗❗🤦‍♀️<br>
+            同時，認真地體會到... 想成為一位厲害、精準的數據/資料分析師，除了有經驗、對公司(含使用的系統軟體)及產業別瞭解還要對後端具備基本能力不害怕後端才行...
+        </h2>
+        <div id="picture">
             <img class="image-style3" src="images/標籤貼紙製程時間及完工數分析-8.jpg" alt="">
             <img class="image-style3" src="images/標籤貼紙製程時間及完工數分析-9.jpg" alt="">
             <img class="image-style3" src="images/標籤貼紙製程時間及完工數分析-10.jpg" alt="">
@@ -169,75 +170,80 @@
             <br>
             <img class="image-style2" src="images/標籤貼紙製程時間及完工數分析-12.jpg" alt="">
             <img class="image-style2" src="images/標籤貼紙製程時間及完工數分析-13.jpg" alt="">
-            </div>
-            <br>
-            <h2>無限輪迴了🔟個版本後...，下個任務是做一個相關的比對資料...(我也還在思考為什麼不能跟之前的檔案一起做XD) 還好這次一次就解決 🎉 <br>
-                交功課後...主管說...啊❗之前少跟你說也要分製程+製程裡面還要新增一組項目...這樣前一份完成的資料也要加喔因為之前沒有這一個... 這樣可以出得來嗎? <br>
-                我 : 當然可以壓 👌 程式碼再多重跑幾遍試試改改程式碼而已 (其實我心裡是... "what ⁉️ 恩...Kernel要多死幾次電腦多關機幾次") 👉 我很壞我知道，成就滿分🤣                
-            </h2>
-            <div id="picture">
+        </div>
+        <br>
+        <h2>無限輪迴了🔟個版本後...，下個任務是做一個相關的比對資料...(我也還在思考為什麼不能跟之前的檔案一起做XD) 還好這次一次就解決 🎉 <br>
+            交功課後...主管說...啊❗之前少跟你說也要分製程+製程裡面還要新增一組項目...這樣前一份完成的資料也要加喔因為之前沒有這一個... 這樣可以出得來嗎? <br>
+            我 : 當然可以壓 👌 程式碼再多重跑幾遍試試改改程式碼而已 (其實我心裡是... "what ⁉️ 恩...Kernel要多死幾次電腦多關機幾次") 👉 我很壞我知道，成就滿分🤣
+        </h2>
+        <div id="picture">
             <img class="image-style4" src="images/標籤貼紙製程時間及完工數分析-14.jpg" alt="">
             <img class="image-style4" src="images/標籤貼紙製程時間及完工數分析-15.jpg" alt="">
             <img class="image-style4" src="images/標籤貼紙製程時間及完工數分析-18.jpg" alt="">
             <br>
             <img class="image-style2" src="images/標籤貼紙製程時間及完工數分析-16.jpg" alt="">
             <img class="image-style2" src="images/標籤貼紙製程時間及完工數分析-17.jpg" alt="">
-            </div>
+        </div>
         </p>
     </div>
-<br>
-<br>
-<br>
-<br>
-<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-<div class="title-total">
-<div id="section-design" class="title"><b>🖌️ 設計</b></div>
-</div>
-        <div style="margin-left: 3rem;">
-            <p>
-                <h1 style="text-align: center;"><b><u>1️⃣ Adobe photoshop 課堂練習作品</u></b></h1>
-                <h2><b>使用技能工具 : Adobe Photoshop</b></h2>
-                <div id="picture">
-                <img class="image-style3" src="images/08152024 鈔票練習.jpg" alt="">
-                <img class="image-style3" src="images/08202024 智慧型物件.jpg" alt="">
-                <img class="image-style3" src="images/08292024 練習.jpg" alt="">
-                <img class="image-style3" src="images/09032024 練習.jpg" alt="">
-                </div>
-
-                <br>
-                <br>
-                <br>
-
-                <h1 style="text-align: center;"><b><u>2️⃣ Adobe photoshop - AI 生成應用 練習作品</u></b></h1>
-                <h2><b>使用技能工具 : Adobe Photoshop、Leonardo AI、Adobe Firefly</b></h2>
-                <h2>第三張圖使用 Leonardo AI 生成，其實不是練習作品。是我為了換個電腦桌布又找不到喜歡的圖片、照片，只好用AI生出來的啦 🤣 <br>
-                    雖然長笛尾管一直無法生出我滿意的樣子，但還蠻好玩的說~~</h2>
-                <div id="picture">
-                <img class="image-style4" src="images/08272024 AI生成圖面應用.jpg" alt="">
-                <img class="image-style4" src="images/08272024 眼睛.jpg" alt="">
-                <img class="image-style4" src="images/Leonardo 生成.jpg" alt="">
-                </div>
-            </p>
-        </div>
-<br>
-
-<div style="text-align: center;">
-    <a href="index.html" title="Music">返回首頁 🔜 🎼</a>
-    <div>🙋‍♀️更多關於我<b>👉
-        <a target="_blank" href="cookie.html" title="Cookie">🍪</a> 
-        <a target="_blank" href="cake.html" title="Cake">🍰</a> 
-        <a target="_blank" href="https://github.com/shuanshuankao/web.git" title="Github">💻</a> 
-        <a target="_blank" href="certificate.html" title="Certificate">💳</a>
-        <a target="_blank" href="https://www.instagram.com/m.s.muzisweet?igsh=dWFnb2ExOXYybWht&utm_source=qr" title="IG"> 
-        <img width="0.7%" src="images/IG.jpg" alt=""></a>
+    <div class="title-total">
+        <div id="section-design" class="title"><b>🖌️ 設計</b></div>
     </div>
-</div>
+    <div style="margin-left: 3rem;">
+        <p>
+        <h1 style="text-align: center;"><b><u>1️⃣ Adobe photoshop 課堂練習作品</u></b></h1>
+        <h2><b>使用技能工具 : Adobe Photoshop</b></h2>
+        <div id="picture">
+            <img class="image-style3" src="images/08152024 鈔票練習.jpg" alt="">
+            <img class="image-style3" src="images/08202024 智慧型物件.jpg" alt="">
+            <img class="image-style3" src="images/08292024 練習.jpg" alt="">
+            <img class="image-style3" src="images/09032024 練習.jpg" alt="">
+        </div>
 
-<hr>
-<div class="directions-title"><b>
-M•S•= Miss & Meets      ->  錯過、想念、遇見，送上最特別的心意、關懷與陪伴 ➕ Muzisweet = Music+sweet  ->  一個喜愛烘焙甜點的音樂人</b><br></div>
-<div class="directions-d-title"><b>
-生活酸甜苦辣，離不開音樂述說與陪伴 ; 沒有不散筵席，珍惜仍留下感謝已錯過 ⏳ 觸動的旋律、手工的餅乾傳遞最真誠的關懷與心意甜入心，陪伴彼此每一刻喜怒哀樂 ❤️ </b><br></div>
+        <br>
+        <br>
+        <br>
+
+        <h1 style="text-align: center;"><b><u>2️⃣ Adobe photoshop - AI 生成應用 練習作品</u></b></h1>
+        <h2><b>使用技能工具 : Adobe Photoshop、Leonardo AI、Adobe Firefly</b></h2>
+        <h2>第三張圖使用 Leonardo AI 生成，其實不是練習作品。是我為了換個電腦桌布又找不到喜歡的圖片、照片，只好用AI生出來的啦 🤣 <br>
+            雖然長笛尾管一直無法生出我滿意的樣子，但還蠻好玩的說~~</h2>
+        <div id="picture">
+            <img class="image-style4" src="images/08272024 AI生成圖面應用.jpg" alt="">
+            <img class="image-style4" src="images/08272024 眼睛.jpg" alt="">
+            <img class="image-style4" src="images/Leonardo 生成.jpg" alt="">
+        </div>
+        </p>
+    </div>
+    <br>
+
+    <div style="text-align: center;">
+        <a href="message.html" title="Message"><b>詢問需求 🔜 ✍️<u>直接留言</u></a></b> &nbsp&nbsp&nbsp&nbsp
+        <a href="index.html" title="Music"><b>返回首頁 🔜 🎼<u>音樂</u></a></b> &nbsp&nbsp&nbsp&nbsp
+        <a href="https://github.com/shuanshuankao/weblist-project" title="Log in and register"><b>合作資訊 🔜
+                🔐<u>登入/註冊</u></a></b>
+        <div>🙋‍♀️更多關於我<b>👉
+                <a target="_blank" href="cookie.html" title="Cookie">🍪</a>
+                <a target="_blank" href="cake.html" title="Cake">🍰</a>
+                <a target="_blank" href="https://github.com/shuanshuankao/web.git" title="Github">💻</a>
+                <a target="_blank" href="certificate.html" title="Certificate">💳</a>
+                <a target="_blank" href="https://www.instagram.com/m.s.muzisweet?igsh=dWFnb2ExOXYybWht&utm_source=qr"
+                    title="IG">
+                    <img width="0.7%" src="images/IG.jpg" alt=""></a>
+        </div>
+    </div>
+
+    <hr>
+    <div class="directions-title"><b>
+            M•S•= Miss & Meets -> 錯過、想念、遇見，送上最特別的心意、關懷與陪伴 ➕ Muzisweet = Music+sweet -> 一個喜愛烘焙甜點的音樂人</b><br></div>
+    <div class="directions-d-title"><b>
+            生活酸甜苦辣，離不開音樂述說與陪伴 ; 沒有不散筵席，珍惜仍留下感謝已錯過 ⏳ 觸動的旋律、手工的餅乾傳遞最真誠的關懷與心意甜入心，陪伴彼此每一刻喜怒哀樂 ❤️ </b><br></div>
 </body>
+
 </html>

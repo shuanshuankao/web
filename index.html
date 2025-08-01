@@ -18,15 +18,56 @@
             display: inline-block;
             width: auto;
             max-width: 90%;
-            padding: 0px 20px;
+            padding: px 20px;
             border: 6px outset lightyellow;
             border-radius: 10px;
         }
 
-        .experience-table, .experience-table2 {
+        .center-title {
+            margin: 0 auto;
+            text-align: center;
+            display: block;
+        }
+
+        /* 上半部照片用 */
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 150px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .image-text-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 100px;
+            margin: 5px auto;
+        }
+
+        .image-text-row img {
+            flex: 1 1 50%;
+            max-width: 44%;
+            height: auto;
+            border: 10px outset lightyellow;
+            border-radius: 10px;
+        }
+
+        .image-text-row .text {
+            flex: 1 1 50%;
+            min-width: 50%;
+        }
+
+        /* 以下為影片區上方文字區 */
+        .experience-table,
+        .experience-table2 {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 1rem;
+            margin-top: 1.5rem;
             font-size: inherit;
             display: block;
             overflow-x: auto;
@@ -34,39 +75,42 @@
 
         .experience-table td {
             vertical-align: top;
-            padding: 6px 12px;
+            padding: 1px 3px;
         }
 
         .experience-table td:first-child {
-            width: 40%;
+            width: 50%;
             font-weight: bold;
             white-space: nowrap;
         }
 
         .experience-table td:nth-child(2) {
-            padding-left: 1rem; 
+            padding-left: 1rem;
         }
 
         .experience-table2 th:first-child,
         .experience-table2 td:first-child {
-            width: 12%;
+            width: 15%;
             white-space: nowrap;
         }
 
         .experience-table2 td {
-            padding: 0px 30px;
+            padding: 0px 110px;
             vertical-align: top;
         }
 
         .experience-table2 td:nth-child(2) {
-            padding-left: 0rem; 
+            padding-left: 0rem;
         }
 
+        /* 以下為下方影片及榮譽區 */
         .section-container {
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
             flex-wrap: wrap;
+            margin-left: 3.5rem;
+            text-align: left;
         }
 
         .video-section {
@@ -80,8 +124,8 @@
 
         .video-container {
             display: flex;
-            gap: 2.5rem; 
-            flex-wrap: wrap; 
+            gap: 5rem;
+            flex-wrap: wrap;
         }
 
         .video-block {
@@ -90,69 +134,102 @@
 
         .video-block iframe {
             width: 100%;
-            max-width: 460px; 
+            max-width: 460px;
             aspect-ratio: 16 / 9;
             border-radius: 10px;
         }
 
         .indent {
-            text-decoration: none; 
+            text-decoration: none;
         }
-
     </style>
 </head>
 
 <body>
     <div style="text-align: right;">
         <div class="mark-link">🙋‍♀️更多關於我<b>👉
-                <a href="index.html" title="Music">🎼</a> 
-                <a target="_blank" href="cookie.html" title="Cookie">🍪</a> 
-                <a target="_blank" href="cake.html" title="Cake">🍰</a> 
-                <a target="_blank" href="https://github.com/shuanshuankao/web.git" title="Github">💻</a> 
+                <a href="index.html" title="Music">🎼</a>
+                <a target="_blank" href="cookie.html" title="Cookie">🍪</a>
+                <a target="_blank" href="cake.html" title="Cake">🍰</a>
+                <a target="_blank" href="https://github.com/shuanshuankao/web.git" title="Github">💻</a>
                 <a target="_blank" href="portfolio.html" title="Portfolio">📝</a>
                 <a target="_blank" href="certificate.html" title="Certificate">💳</a>
-                <a target="_blank"
-                    href="https://www.instagram.com/m.s.muzisweet?igsh=dWFnb2ExOXYybWht&utm_source=qr" title="IG"> 
-                <img width="0.7%"
-                        src="images/IG.jpg" alt=""></a><br>
-                <a href="message.html" title="Message">✍️<u>直接留言</u></a></b> 
-                <a href="https://github.com/shuanshuankao/weblist-project" title="Log in and register">🔐<u>登入/註冊</u></a></b>
+                <a target="_blank" href="https://www.instagram.com/m.s.muzisweet?igsh=dWFnb2ExOXYybWht&utm_source=qr"
+                    title="IG">
+                    <img width="0.7%" src="images/IG.jpg" alt=""></a><br>
+                <a href="message.html" title="Message">✍️<u>直接留言</u></a>
+                <a href="https://github.com/shuanshuankao/weblist-project"
+                    title="Log in and register">🔐<u>登入/註冊</u></a></b>
         </div>
     </div>
 
     <div class="main-title"><b>🎵 M•S•慕滋思維特 個人工作室 🎵</b><br>
         <em>M•S•Muzisweet Personal Studio<br></b></em>
     </div>
-    
+
     <div class="vice-title">關於音樂、手工餅乾、甜點的小天地 🎼🍪🍰<br>
         思慕滋生的觸動因與眾不同而維繫，將想念的滋味傳遞特別的你/妳</div>
     <br>
+
+    <div class="section-heading-all">
+        <div class="section-heading">🎼 音樂 🎼</div>
+        <div class="section-heading-select">
+            <label for="type">
+                <span class="small-text">快速到達:</span>
+            </label>
+            <select class="custom-select" name="type" onchange="location.href = this.value;" id="quick-jump">
+                <option value="">請選擇...</option>
+                <option value="#section-teacher"> 🎼 教授講師</option>
+                <option value="#section-type"> 🎼 教授項目</option>
+                <option value="#section-area"> 🎼 教授地點</option>
+                <option value="#section-teach experience"> 🎼 教授經歷</option>
+                <option value="#section-experience"> 🎼 音樂 表演/教學/比賽/評審 相關經歷</option>
+                <option value="#section-video"> 𝄞 音樂影片連結 𝄞</option>
+                <option value="#section-honor roll"> 𝄞 榮譽榜 𝄞</option>
+            </select>
+        </div>
+    </div>
+    <hr width="80%" size="5">
     <br>
-    
+
     <div class="container">
         <div class="image-text-row">
             <img src="images/IMG_9263.JPG" alt="">
             <div class="text">
-                <div class="title"><b>🎼 教授講師</b></div>
+                <div id="section-teacher" class="title"><b>🎼 教授講師</b></div>
                 <h1>
-                    💁‍♀️ Muz 慕梓老師
+                    <table class="experience-table">
+                        <tr>
+                            <td>💁‍♀️ Muz 慕梓老師</d>
+                        </tr>
+                    </table>
                 </h1>
 
-                <div class="title"><b>🎼 教授項目</b></div>
+                <div id="section-type" class="title"><b>🎼 教授項目</b></div>
                 <h2>
-                    <p> 🪈 長笛演奏/陪練 (&nbsp;可以試上✔️&nbsp;&nbsp;家長可以旁聽🙆‍♀️&nbsp;) </p>
-                    <p> 🎹 鋼琴演奏/陪練 (&nbsp;可以試上✔️&nbsp;&nbsp;家長可以旁聽🙆‍♀️&nbsp;) </p>
-                    <p> 🎶 音樂班/音樂系升學考試 (&nbsp;器樂課程可以試上✔️&nbsp;&nbsp;家長可以旁聽🙆‍♀️&nbsp;) <br>
-                    &nbsp  &nbsp  𝄞 𝄡 𝄢 升學樂理、和聲教學 - 音樂班/音樂系專屬課程 ♭ ♮ ♯</p>   
+                    <table class="experience-table">
+                        <tr>
+                            <td>🪈 長笛演奏/陪練 (&nbsp;可以試上✔️&nbsp;&nbsp;家長可以旁聽🙆‍♀️&nbsp;)</td>
+                        </tr>
+                        <td> 🎹 鋼琴演奏/陪練 (&nbsp;可以試上✔️&nbsp;&nbsp;家長可以旁聽🙆‍♀️&nbsp;)</td>
+                        </tr>
+                        <td> 🎶 音樂班/音樂系升學考試 (&nbsp;器樂課程可以試上✔️&nbsp;&nbsp;家長可以旁聽🙆‍♀️&nbsp;) <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;𝄞 𝄡 𝄢 升學樂理、和聲教學 - 音樂班/音樂系專屬課程 ♭ ♮ ♯</td>
+                        </tr>
+                    </table>
                 </h2>
 
-                <div class="title"><b>🎼 教授地點</b></div>
-            <h2>
-                🚅 捷運環狀線 - 中和捷運站<br>
-                <span style="display:inline-block; margin-left: 2em;">(出站後走路約3-5分鐘抵達)</span>
-            </h2>
+                <div id="section-area" class="title"><b>🎼 教授地點</b></div>
+                <h2>
+                    <table class="experience-table">
+                        <tr>
+                            <td>🚅 捷運環狀線 - 中和捷運站<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;(出站後走路約3-5分鐘抵達)</td>
+                        </tr>
+                    </table>
+                </h2>
 
-                <div class="title"><b>🎼 教授經歷</b></div>
+                <div id="section-teach experience" class="title"><b>🎼 教授經歷</b></div>
                 <h2>
                     <table class="experience-table">
                         <tr>
@@ -210,7 +287,7 @@
     <hr width="95%" size="5" color="SlateGray">
 
     <div style="margin-left: 3rem;">
-        <div class="center-title title" style="width: 50%;"><b>🎼 音樂 表演/教學/比賽/評審 相關經歷</b></div>
+        <div id="section-experience" class="center-title title" style="width: 50%;"><b>🎼 音樂 表演/教學/比賽/評審 相關經歷</b></div>
         <div>
             <h2>
                 <table class="experience-table2">
@@ -225,7 +302,7 @@
                     </tr>
                     <tr>
                         <td>🏅 2025.06</td>
-                        <td>指導學生錄取國立屏東大學音樂系  (原一般高中普通班重考學生－長笛副修老師)</td>
+                        <td>指導學生錄取國立屏東大學音樂系 (原一般高中普通班重考學生－長笛副修老師)</td>
                     </tr>
                     <tr>
                         <td>🏅 2025.05</td>
@@ -254,59 +331,59 @@
                     <tr>
                         <td>🏅 2023.11</td>
                         <td>指導學生參加布拉格音樂機構檢定通過 (長笛2人)</td>
-                    </tr>    
+                    </tr>
                     <tr>
                         <td>🏅 2023</td>
                         <td>指導裕德雙語高級中等學校四年級學生參加新北市112年度國民小學中區英語歌曲演唱競賽榮獲中年級組佳作 (區賽)</td>
-                    </tr>    
+                    </tr>
                     <tr>
                         <td>🏅 2022</td>
                         <td>指導裕德雙語高級中等學校國小三年級學生參加新北市111年度國民小學英語歌曲演唱競賽榮獲優等 (市賽)</td>
-                    </tr>    
+                    </tr>
                     <tr>
                         <td>🏅 2022</td>
                         <td>指導裕德雙語高級中等學校國小二、三年級學生參加新北市111年度國民小學中區英語歌曲演唱競賽榮獲低年級組佳作、中年級組特優 (區賽)</td>
-                    </tr> 
+                    </tr>
                     <tr>
                         <td>🏅 2022.06</td>
                         <td>擔任裕德雙語高級中等學校畢業典禮音樂表演指導老師</td>
-                    </tr> 
+                    </tr>
                     <tr>
                         <td>🏅 2021.08</td>
                         <td>指導學生參加東和河合檢定通過</td>
-                    </tr> 
+                    </tr>
                     <tr>
                         <td>🏅 2021.06</td>
                         <td>擔任裕德雙語高級中等學校畢業典禮音樂饗宴表演者 (長笛)</td>
-                    </tr> 
+                    </tr>
                     <tr>
                         <td>🏅 2021.03</td>
                         <td>指導長笛學生代表基隆市參加全國音樂比賽榮獲長笛全國甲等 (國賽)</td>
-                    </tr> 
+                    </tr>
                     <tr>
                         <td>🏅 2021.03</td>
                         <td>參與<<琴深藝濃>>國家音樂廳音樂會演出 (長笛)</td>
-                    </tr> 
+                    </tr>
                     <tr>
                         <td>🏅 2020.12</td>
                         <td>指導裕德雙語高級中等學校國小六年級學生參加新北市109年度國民小學英語歌曲演唱競賽榮獲佳作 (市賽)</td>
-                    </tr> 
+                    </tr>
                     <tr>
                         <td>🏅 2020.11</td>
                         <td>指導長笛學生參加基隆市學生音樂比賽榮獲優等第一名 - 取得全國學生音樂比賽代表權 (市賽)</td>
-                    </tr> 
+                    </tr>
                     <tr>
                         <td>🏅 2020.10</td>
                         <td>指導裕德雙語高級中等學校國小六年級學生參加新北市109年度國民小學中區英語歌曲演唱競賽榮獲高年級組特優 (區賽)</td>
-                    </tr> 
+                    </tr>
                     <tr>
                         <td>🏅 2020.09</td>
                         <td>指導學生參加2020年Vienna維也納菁英獎全國音樂大賽鋼琴組榮獲優等獎 (分別有兒童二年級組、兒童三年級組、兒童四年級組、少年組、高中組)</td>
-                    </tr> 
+                    </tr>
                     <tr>
                         <td>🏅 2020.09</td>
                         <td>參加基隆市河合安可音樂教室秋季音樂會當任主持人並指導學生表演</td>
-                    </tr> 
+                    </tr>
                     <tr>
                         <td>🏅 2020.08</td>
                         <td>指導學生錄取國立臺灣藝術大學音樂系 (高中音樂班-長笛主修陪練老師)</td>
@@ -342,27 +419,27 @@
                     <tr>
                         <td>🏅 2016</td>
                         <td>參與培德工家105級畢業音樂會 (長笛)</td>
-                    </tr> 
+                    </tr>
                     <tr>
                         <td>🏅 2014~2015</td>
                         <td>參與實踐大學系上音樂會演出 (長笛;國家音樂廳)</td>
-                    </tr> 
+                    </tr>
                     <tr>
                         <td>🏅 2015</td>
                         <td>參與培德工家104級畢業音樂會及校友音樂會 (長笛)</td>
-                    </tr> 
+                    </tr>
                     <tr>
                         <td>🏅 2015</td>
                         <td>參與國際指揮營示範樂隊 (長笛)</td>
-                    </tr> 
+                    </tr>
                     <tr>
                         <td>🏅 2015</td>
                         <td>參與第十二屆台北國際爵士音樂營 (長笛)</td>
-                    </tr> 
+                    </tr>
                     <tr>
                         <td>🏅 2015</td>
                         <td>參與實踐大學與示範樂隊合作音樂會 (長笛)</td>
-                    </tr> 
+                    </tr>
                     <tr>
                         <td>🏅 2014~2015</td>
                         <td>參與實踐大學畢業典禮典禮樂隊 (國父紀念館)</td>
@@ -418,118 +495,136 @@
 
     <hr width="95%" size="3" color="SlateGray">
 
-    <div style="margin-left: 2.5rem; text-align: left;">
-        <div class="section-container">
-            <div class="video-section">
-                <div class="title1"><b>𝄞 音樂影片連結 𝄞</b></div>
-                <div class="video-container">
-                    <div class="video-block">
-                        <a target="_blank" href="https://www.youtube.com/watch?v=YDzEEHW5vCk">
-                            🎞️ 英語教育資源中心-<u>109裕德高中附設國小_高年級</u>
-                            </a>
-                            <h4>
-                            &nbsp;&nbsp;&nbsp;&nbsp;這是我帶的第一屆英語歌唱比賽(區賽影片)，一場讓我在音樂教學中收穫滿滿的一次比賽經驗。<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;區賽順利取下代表權進入市賽(驕傲的告訴大家，那一年學校只有這個班級取下代表權喔)。<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;市賽比賽時，孩子們唱得太興奮大趕拍，當我覺得孩子們下一段會開天窗時...<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;孩子們卻令我驚豔的同時整齊地停在同一個動作等音樂跑完，在下一段音樂時整齊的開口➕動作也沒有忘記，身為老師經歷過大大小小場面的我都不得不佩服這一群六年級的孩子們!!!
-                            能遇見這個班的孩子，是我音樂教育生涯中的一大驕傲與成就 🏆<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;同時也很感謝一起合作的班級導師及英文導師，沒有兩位老師參與幫忙，就沒有機會看到這一甜美果實成熟 😊
-                            </h4>
-                    <iframe src="https://www.youtube.com/embed/YDzEEHW5vCk" 
-                            title="109裕德高中附設國小_高年級" frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    
-                    <div class="video-block">
-                        <a target="_blank" href="https://www.youtube.com/watch?v=kRUBkA0_DYE">
-                            🎞️ 新北市裕德高級中等學校-109學年度小學部畢業典禮 YouTube
-                            </a><br>
-                            <h4>
-                                &nbsp;&nbsp;&nbsp;&nbsp;結束後，這支影片應該就沒有機會於公開處看到。意外發現家長側錄放上youtube，滿滿懷念➕鼻酸。<br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;那一年，疫情因素，為了不讓畢業生留下遺憾轉為線上。指導老師轉成演出者(突然降臨的演出，陳老師和我也是很緊張呢~卻也成了往後懷念的回憶)<br>
-                                🔜 "59:30" 今年夏天🌞遺憾沒能實體送畢業生們踏出校門，相信音樂會代全體老師們傳遞滿滿的祝福 💌🕊️<br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;✨ 沒錯!此表演同時出現於中學部的畢業典禮直播，小學有中學肯定也有🎊<br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;當天訊息響不完👉 看到家長們傳給我的截圖...認真意識到調好內分泌系統跟維持體態的重要... <br>
-                                特別感謝幕後辛苦收音、上字、拍攝採景兼顧一切的江老師 🎛️
-                            </h4>
-                        <iframe src="https://www.youtube.com/embed/kRUBkA0_DYE" 
-                                title="新北市裕德高級中等學校109學年度小學部畢業典禮   YouTube" 
-                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
 
-                    <div class="video-block">
-                        <a target="_blank" href="https://www.youtube.com/watch?v=F5rQlydQk4M">
-                            🎞️ 美女與野獸(鋼琴&長笛）cover by HUD&榕旋
-                        </a>
-                        <h4>&nbsp;&nbsp;&nbsp;&nbsp;Muz跟HUD老師第一支合作影片，HUD老師提出時，有點小緊張，古典音樂系畢業的我，第一次這樣錄影片玩音樂 😊 意外的喜歡，讓Muz認真思考了下...可以考慮經營自媒體音樂分享?!</h4>
-                        <iframe src="https://www.youtube.com/embed/F5rQlydQk4M"
-                            title="美女與野獸(鋼琴&amp;長笛）cover by HUD&amp;榕旋" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <br>
-                        <br>
-                        
-                        <a target="_blank" href="https://youtu.be/NrxqtNiVAt4">
-                            🎞️ A Whole New World | cover by HUD&榕旋
-                        </a>
-                        <h4>&nbsp;&nbsp;&nbsp;&nbsp;這次是因為...對第一次合作的Onetake玩上癮啦!!就想持續挑戰一鏡到底不加修飾與後製的影片 🤣 但後來Muz在國際學校太忙了，同時HUD老師也成為很棒的藝人樂手，所以敬請期待 🤭</h4>
-                        <iframe src="https://www.youtube.com/embed/NrxqtNiVAt4"
-                            title="A Whole New World | cover by HUD&amp;榕旋" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
+    <div class="section-container">
+        <div class="video-section">
+            <div id="section-video" class="title1"><b>𝄞 音樂影片連結 𝄞</b></div>
+            <div class="video-container">
+                <div class="video-block">
+                    <a target="_blank" href="https://www.youtube.com/watch?v=YDzEEHW5vCk">
+                        🎞️ 英語教育資源中心-<u>109裕德高中附設國小_高年級</u>
+                    </a>
+                    <h4>
+                        &nbsp;&nbsp;&nbsp;&nbsp;這是我帶的第一屆英語歌唱比賽(區賽影片)，一場讓我在音樂教學中收穫滿滿的一次比賽經驗。<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;區賽順利取下代表權進入市賽(驕傲的告訴大家，那一年學校只有這個班級取下代表權喔)。<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;市賽比賽時，孩子們唱得太興奮大趕拍，當我覺得孩子們下一段會開天窗時...<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;孩子們卻令我驚豔的同時整齊地停在同一個動作等音樂跑完，在下一段音樂時整齊的開口➕動作也沒有忘記，身為老師經歷過大大小小場面的我都不得不佩服這一群六年級的孩子們!!!
+                        能遇見這個班的孩子，是我音樂教育生涯中的一大驕傲與成就 🏆<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;同時也很感謝一起合作的班級導師及英文導師，沒有兩位老師參與幫忙，就沒有機會看到這一甜美果實成熟 😊
+                    </h4>
+                    <iframe src="https://www.youtube.com/embed/YDzEEHW5vCk" title="109裕德高中附設國小_高年級" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="video-block">
+                    <a target="_blank" href="https://www.youtube.com/watch?v=kRUBkA0_DYE">
+                        🎞️ 新北市裕德高級中等學校-109學年度小學部畢業典禮 YouTube
+                    </a><br>
+                    <h4>
+                        &nbsp;&nbsp;&nbsp;&nbsp;結束後，這支影片應該就沒有機會於公開處看到。意外發現家長側錄放上youtube，滿滿懷念➕鼻酸。<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;那一年，疫情因素，為了不讓畢業生留下遺憾轉為線上。指導老師轉成演出者(突然降臨的演出，陳老師和我也是很緊張呢~卻也成了往後懷念的回憶)<br>
+                        🔜 "59:30" 今年夏天🌞遺憾沒能實體送畢業生們踏出校門，相信音樂會代全體老師們傳遞滿滿的祝福 💌🕊️<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;✨ 沒錯!此表演同時出現於中學部的畢業典禮直播，小學有中學肯定也有🎊<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;當天訊息響不完👉 看到家長們傳給我的截圖...認真意識到調好內分泌系統跟維持體態的重要... <br>
+                        特別感謝幕後辛苦收音、上字、拍攝採景兼顧一切的江老師 🎛️
+                    </h4>
+                    <iframe src="https://www.youtube.com/embed/kRUBkA0_DYE" title="新北市裕德高級中等學校109學年度小學部畢業典禮   YouTube"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="video-block">
+                    <a target="_blank" href="https://www.youtube.com/watch?v=F5rQlydQk4M">
+                        🎞️ 美女與野獸(鋼琴&長笛）cover by HUD&榕旋
+                    </a>
+                    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Muz跟HUD老師第一支合作影片，HUD老師提出時，有點小緊張，古典音樂系畢業的我，第一次這樣錄影片玩音樂 😊
+                        意外的喜歡，讓Muz認真思考了下...可以考慮經營自媒體音樂分享?!</h4>
+                    <iframe src="https://www.youtube.com/embed/F5rQlydQk4M" title="美女與野獸(鋼琴&amp;長笛）cover by HUD&amp;榕旋"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <br>
+                    <br>
+
+                    <a target="_blank" href="https://youtu.be/NrxqtNiVAt4">
+                        🎞️ A Whole New World | cover by HUD&榕旋
+                    </a>
+                    <h4>&nbsp;&nbsp;&nbsp;&nbsp;這次是因為...對第一次合作的Onetake玩上癮啦!!就想持續挑戰一鏡到底不加修飾與後製的影片 🤣
+                        但後來Muz在國際學校太忙了，同時HUD老師也成為很棒的藝人樂手，所以敬請期待 🤭</h4>
+                    <iframe src="https://www.youtube.com/embed/NrxqtNiVAt4"
+                        title="A Whole New World | cover by HUD&amp;榕旋" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
-
-            <div class="honor-board">
-                <div class="title1"><b>𝄞 榮譽榜 𝄞</b></div>
-                <h3>
-                    <p>
-                        <span>🎉</span> 
-                        <a target="_blank" href="http://www.yuteh.ntpc.edu.tw/p/16-1000-367.php?Lang=zh-tw">
-                        裕德雙語高級中等學校-
-                        </a><br>
-                        <span class="indent">&nbsp;&nbsp;&nbsp;</span>
-                        <a target="_blank" href="http://www.yuteh.ntpc.edu.tw/p/16-1000-367.php?Lang=zh-tw">                        
-                        恭喜本校學生參加109學年度
-                        </a><br>
-                        <span class="indent">&nbsp;&nbsp;&nbsp;</span>
-                        <a target="_blank" href="http://www.yuteh.ntpc.edu.tw/p/16-1000-367.php?Lang=zh-tw">
-                        新北市國小英語歌唱比賽獲得佳績
-                        </a><br>
-                        <br>
-
-                        <span>🎉</span>
-                        <a target="_blank" href="http://www.yuteh.ntpc.edu.tw/p/404-1000-344.php?Lang=zh-tw">
-                        裕德雙語高級中等學校-
-                        </a><br>
-                        <span class="indent">&nbsp;&nbsp;&nbsp;</span>
-                        <a target="_blank" href="http://www.yuteh.ntpc.edu.tw/p/404-1000-344.php?Lang=zh-tw">
-                        109學年度獲獎紀錄-音樂類
-                        </a><br>
-                        <br>
-
-                        <span>🎉</span>
-                        <a target="_blank" href="http://www.yuteh.ntpc.edu.tw/p/404-1000-635.php?Lang=zh-tw">
-                        裕德雙語高級中等學校-
-                        </a><br>
-                        <span class="indent">&nbsp;&nbsp;&nbsp;</span>
-                        <a target="_blank" href="http://www.yuteh.ntpc.edu.tw/p/404-1000-635.php?Lang=zh-tw">                        111學年度獲獎紀錄-藝術類
-                        </a><br>
-                    </p>
-                </h3>
-            </div>
         </div>
-    </div>     
-    
-<hr>
 
-<div class="directions-title"><b>
-M•S•= Miss & Meets      ->  錯過、想念、遇見，送上最特別的心意、關懷與陪伴 ➕ Muzisweet = Music+sweet  ->  一個喜愛烘焙甜點的音樂人</b><br></div>
-<div class="directions-d-title"><b>
-生活酸甜苦辣，離不開音樂述說與陪伴 ; 沒有不散筵席，珍惜仍留下感謝已錯過 ⏳ 觸動的旋律、手工的餅乾傳遞最真誠的關懷與心意甜入心，陪伴彼此每一刻喜怒哀樂 ❤️ </b><br></div>
+        <div class="honor-board">
+            <div id="section-honor roll" class="title1"><b>𝄞 榮譽榜 𝄞</b></div>
+            <h3>
+                <p>
+                    <span>🎉</span>
+                    <a target="_blank" href="http://www.yuteh.ntpc.edu.tw/p/16-1000-367.php?Lang=zh-tw">
+                        裕德雙語高級中等學校-
+                    </a><br>
+                    <span class="indent">&nbsp;&nbsp;&nbsp;</span>
+                    <a target="_blank" href="http://www.yuteh.ntpc.edu.tw/p/16-1000-367.php?Lang=zh-tw">
+                        恭喜本校學生參加109學年度
+                    </a><br>
+                    <span class="indent">&nbsp;&nbsp;&nbsp;</span>
+                    <a target="_blank" href="http://www.yuteh.ntpc.edu.tw/p/16-1000-367.php?Lang=zh-tw">
+                        新北市國小英語歌唱比賽獲得佳績
+                    </a><br>
+                    <br>
+
+                    <span>🎉</span>
+                    <a target="_blank" href="http://www.yuteh.ntpc.edu.tw/p/404-1000-344.php?Lang=zh-tw">
+                        裕德雙語高級中等學校-
+                    </a><br>
+                    <span class="indent">&nbsp;&nbsp;&nbsp;</span>
+                    <a target="_blank" href="http://www.yuteh.ntpc.edu.tw/p/404-1000-344.php?Lang=zh-tw">
+                        109學年度獲獎紀錄-音樂類
+                    </a><br>
+                    <br>
+
+                    <span>🎉</span>
+                    <a target="_blank" href="http://www.yuteh.ntpc.edu.tw/p/404-1000-635.php?Lang=zh-tw">
+                        裕德雙語高級中等學校-
+                    </a><br>
+                    <span class="indent">&nbsp;&nbsp;&nbsp;</span>
+                    <a target="_blank" href="http://www.yuteh.ntpc.edu.tw/p/404-1000-635.php?Lang=zh-tw">
+                        111學年度獲獎紀錄-藝術類
+                    </a><br>
+                </p>
+            </h3>
+        </div>
+    </div>
+
+    <br>
+
+    <div style="text-align: center;">
+        <a href="message.html" title="Message"><b>詢問需求 🔜 ✍️<u>直接留言</u></a></b> &nbsp&nbsp&nbsp&nbsp
+        <a href="https://github.com/shuanshuankao/weblist-project" title="Log in and register"><b>鐘點資訊 🔜
+                🔐<u>登入/註冊</u></a></b>
+        <div>🙋‍♀️更多關於我<b>👉
+                <a target="_blank" href="cookie.html" title="Cookie">🍪</a>
+                <a target="_blank" href="cake.html" title="Cake">🍰</a>
+                <a target="_blank" href="https://github.com/shuanshuankao/web.git" title="Github">💻</a>
+                <a target="_blank" href="certificate.html" title="Certificate">💳</a>
+                <a target="_blank" href="https://www.instagram.com/m.s.muzisweet?igsh=dWFnb2ExOXYybWht&utm_source=qr"
+                    title="IG">
+                    <img width="0.7%" src="images/IG.jpg" alt=""></a>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="directions-title"><b>
+            M•S•= Miss & Meets -> 錯過、想念、遇見，送上最特別的心意、關懷與陪伴 ➕ Muzisweet = Music+sweet -> 一個喜愛烘焙甜點的音樂人</b><br></div>
+    <div class="directions-d-title"><b>
+            生活酸甜苦辣，離不開音樂述說與陪伴 ; 沒有不散筵席，珍惜仍留下感謝已錯過 ⏳ 觸動的旋律、手工的餅乾傳遞最真誠的關懷與心意甜入心，陪伴彼此每一刻喜怒哀樂 ❤️ </b><br></div>
 </body>
 
 </html>

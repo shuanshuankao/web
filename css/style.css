@@ -4,107 +4,37 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color:cornsilk;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.image-text-row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 52px;
-    margin: 10px 0;
-}
-
-.image-text-row img {
-    flex: 1 1 40%;
-    max-width: 50%;
-    height: auto;
-    border: 8px outset lightyellow;
-    border-radius: 10px;
-}
-
-.image-text-row .text {
-    flex: 1 1 45%;
-    min-width: 280px;
-}
-
-.title-total{
-            text-align: center;
-        }
-
-.title {
-    color: red;
-    background-color: beige;
-    font-size: 3rem;
-    display: inline-block;
-    width: auto;
-    max-width: 90%;
-    text-align: center;
-    padding: 0px 20px;
-    border: 6px outset lightyellow;
-    border-radius: 10px;
-}
-
-.center-title {
-    margin: 0 auto;
-    text-align: center;
-    display: block; 
-}
-
-.container {
-    max-width: 95%;
-    margin: 0 auto;
-    padding: 0 5px;
-}
-
+/* 每一頁右上方各頁連結 */
 .mark-link {
-    width: 100%;
+    width: calc(100% - 40px);;
     display: inline-block;
+    margin-top: 10px;
+    margin-right: 25px;
+    font-size: 1.155rem;
+    padding: 3px 5px;
 }
 
-.main-title{
+/* 網頁大標 */
+.main-title {
     text-align: center;
     color: black;
     font-size: 4rem;
     white-space: nowrap;
 }
-        
-.vice-title{
+
+/* 網頁副標 */
+.vice-title {
     text-align: center;
     color: rgb(1, 20, 105);
     font-size: 2rem;
     white-space: nowrap;
 }
 
-.directions-title{
-    flex: 1.5;
-    font-size: 1rem;
-    line-height: 1.3;
-    text-align: center;
-    color: rgb(35, 2, 95);
-}
-
-.directions-d-title {
-    flex: 1.5;
-    font-size: 1rem;
-    line-height: 1.3;
-    text-align: center;
-    color: rgb(40, 2, 109);
-}
-
+/* 以下為每一頁分類標右下方共用下拉選單 */
 .section-heading-all {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;  /* 先靠左排，選單再微調 */
+    align-items: flex-start;
     position: relative;
     text-align: center;
     margin-top: 20px;
@@ -118,29 +48,75 @@ img {
 }
 
 .section-heading-select {
-    align-self: flex-end; /* 讓它靠右 */
-    margin-top: 5px;
-    margin-right: 200px; /* 靠右一點 */
+    align-self: flex-end;
+    margin-top: 0.5px;
+    margin-right: 230px;
 }
 
 .custom-select {
-            padding: 2px;
-            font-size: 12px;
-            border: 1px solid #141414;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-            color: #333;
-            background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
-            background-repeat: no-repeat;
-            background-position: right 1px center;
-            background-size: 20px;
-        }
+    padding: 2px;
+    font-size: 12px;
+    border: 1px solid #141414;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 1px center;
+    background-size: 20px;
+}
 
 .small-text {
-            font-size: 1em; /* 調整這個數值來控制縮小比例 */
-        }
+    font-size: 1em;
+}
 
-#picture{
+/* 每一頁內容文字 */
+body {
+    background-color: cornsilk;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 除音樂頁的分類標題 */
+.title-total {
+    text-align: center;
+}
+
+/* 除音樂頁的分類標題文字 */
+.title {
+    color: red;
+    background-color: beige;
+    font-size: 3rem;
+    display: inline-block;
+    width: auto;
+    max-width: 90%;
+    text-align: center;
+    padding: 0px 20px;
+    border: 6px outset lightyellow;
+    border-radius: 10px;
+}
+
+/* 網頁最下方說明主標 */
+.directions-title {
+    flex: 1.5;
+    font-size: 1rem;
+    line-height: 1.3;
+    text-align: center;
+    color: rgb(35, 2, 95);
+}
+
+/* 網頁最下方說明副標 */
+.directions-d-title {
+    flex: 1.5;
+    font-size: 1rem;
+    line-height: 1.3;
+    text-align: center;
+    color: rgb(40, 2, 109);
+}
+
+/* 照片區設定-除餅乾、甜點 */
+#picture {
     text-align: center;
     margin: 0px 90px;
     padding: 10px;
@@ -174,7 +150,7 @@ img {
         white-space: normal;
         overflow-wrap: break-word;
     }
-    
+
     .main-title {
         font-size: 2rem;
         white-space: normal;
@@ -256,15 +232,15 @@ img {
         padding: 0 1rem;
     }
 
-    #picture{
-    text-align: center;
-    margin: 0 auto;
-    padding: 10px;
-    /* border: 8px outset lightyellow; */
-    /* border-radius: 10px; */
-    max-width: 100%;
-    /* box-sizing: border-box; */
-    /* margin-top: 1rem; */
+    #picture {
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px;
+        /* border: 8px outset lightyellow; */
+        /* border-radius: 10px; */
+        max-width: 100%;
+        /* box-sizing: border-box; */
+        /* margin-top: 1rem; */
     }
 
     iframe {
@@ -275,18 +251,18 @@ img {
         display: block;
         margin: 0 auto;
     }
-    
+
 }
 
 @media (max-width: 1024px) {
-    
+
     .main-title,
     .vice-title {
         font-size: 2.5rem;
         white-space: normal;
         word-break: break-word;
     }
-    
+
     .image-text-row {
         flex-direction: column;
         gap: 32px;

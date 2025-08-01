@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,10 +16,11 @@
             border-collapse: collapse;
             background-color: #fffaf5;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            font-family: "Microsoft JhengHei", sans-serif;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
         }
 
-        th, td {
+        th,
+        td {
             border: 2px solid #d39e8c;
             padding: 5px;
             text-align: center;
@@ -28,8 +30,8 @@
             background-color: #ffe0cc;
             color: #4e3c31;
             font-weight: bold;
-            font-size: 1.2em;          /* 字體略大 */
-            border: 2px solid #d39e8c; 
+            font-size: 1.2em;
+            border: 2px solid #d39e8c;
         }
 
         tr:nth-child(even) {
@@ -41,9 +43,9 @@
         }
 
         /* 表格第一欄 "樣式型態" 設定 */
-        tr.style-type th{
-            background-color: #f5cbaa;  
-            color: #4e2e1e;             
+        tr.style-type th {
+            background-color: #f5cbaa;
+            color: #4e2e1e;
             font-weight: bold;
         }
 
@@ -51,7 +53,7 @@
         .ingredients {
             width: 90%;
             margin: 5px auto;
-            font-family: "Microsoft JhengHei", sans-serif;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
         }
     </style>
 
@@ -60,1289 +62,1298 @@
         document.getElementById("quick-jump").addEventListener("change", function () {
             const target = this.value;
             if (target) {
-            location.hash = target; // 跳轉到指定區塊
-            this.selectedIndex = 0; // 重置選單回到第一個項目（請選擇...）
+                location.hash = target; // 跳轉到指定區塊
+                this.selectedIndex = 0; // 重置選單回到第一個項目（請選擇...）
             }
         });
     </script>
 
 </head>
+
 <body>
     <div style="text-align: right;">
         <div class="mark-link">🙋‍♀️更多關於我<b>👉
-                <a href="index.html" title="Music">🎼</a> 
-                <a target="_blank" href="cookie.html" title="Cookie">🍪</a> 
-                <a target="_blank" href="cake.html" title="Cake">🍰</a> 
-                <a target="_blank" href="https://github.com/shuanshuankao/web.git" title="Github">💻</a> 
+                <a href="index.html" title="Music">🎼</a>
+                <a target="_blank" href="cookie.html" title="Cookie">🍪</a>
+                <a target="_blank" href="cake.html" title="Cake">🍰</a>
+                <a target="_blank" href="https://github.com/shuanshuankao/web.git" title="Github">💻</a>
                 <a target="_blank" href="portfolio.html" title="Portfolio">📝</a>
                 <a target="_blank" href="certificate.html" title="Certificate">💳</a>
-                <a target="_blank"
-                    href="https://www.instagram.com/m.s.muzisweet?igsh=dWFnb2ExOXYybWht&utm_source=qr" title="IG"> 
-                <img width="0.7%"
-                        src="images/IG.jpg" alt=""></a><br>
+                <a target="_blank" href="https://www.instagram.com/m.s.muzisweet?igsh=dWFnb2ExOXYybWht&utm_source=qr"
+                    title="IG">
+                    <img width="0.7%" src="images/IG.jpg" alt=""></a><br>
                 <a href="message.html" title="Message">✍️<u>直接留言</u></a>
-                <a href="https://github.com/shuanshuankao/weblist-project" title="Log in and register">🔐<u>登入/註冊</u></a></b>
+                <a href="https://github.com/shuanshuankao/weblist-project"
+                    title="Log in and register">🔐<u>登入/註冊</u></a></b>
         </div>
     </div>
 
-<div class="main-title"><b>🎵 M•S•慕滋思維特 個人工作室 🎵</b><br>
+    <div class="main-title"><b>🎵 M•S•慕滋思維特 個人工作室 🎵</b><br>
         <em>M•S•Muzisweet Personal Studio<br></b></em>
     </div>
 
-<div class="vice-title">關於音樂、手工餅乾、甜點的小天地 🎼🍪🍰<br>
-思慕滋生的觸動因與眾不同而維繫，將想念的滋味傳遞特別的你/妳</div>
-<br>
+    <div class="vice-title">關於音樂、手工餅乾、甜點的小天地 🎼🍪🍰<br>
+        思慕滋生的觸動因與眾不同而維繫，將想念的滋味傳遞特別的你/妳</div>
+    <br>
 
-<div class="section-heading-all">
-    <div class="section-heading">🍪 手工餅乾 🍪</div>
-    <div class="section-heading-select">
-        <label for="type">
-            <span class="small-text">快速到達:</span>
-        </label>
-        <select class="custom-select" name="type" onchange="location.href = this.value;" id="quick-jump">
-            <option value="">請選擇...</option>
-            <option value="#section-cookie"> 🍪 曲奇類</option>
-            <option value="#section-thinCookie"> 🧇 薄片類</option>
-            <option value="#section-tuiles"> 🫓 瓦片類</option>
-            <option value="#section-puffpastry"> 🥨 起酥類</option>
-        </select>
+    <div class="section-heading-all">
+        <div class="section-heading">🍪 手工餅乾 🍪</div>
+        <div class="section-heading-select">
+            <label for="type">
+                <span class="small-text">快速到達:</span>
+            </label>
+            <select class="custom-select" name="type" onchange="location.href = this.value;" id="quick-jump">
+                <option value="">請選擇...</option>
+                <option value="#section-cookie"> 🍪 曲奇類</option>
+                <option value="#section-thinCookie"> 🧇 薄片類</option>
+                <option value="#section-tuiles"> 🫓 瓦片類</option>
+                <option value="#section-puffpastry"> 🥨 起酥類</option>
+            </select>
+        </div>
     </div>
-</div>
-<hr width="80%" size="5">
-<br>
+    <hr width="80%" size="5">
+    <br>
 
-<div class="title-total">
-<div id="section-cookie" class="title"><b>🍪 曲奇類</b></div>
-</div>
-<br>
-
-<div id="cookie">
-    <table border="5">
-        <thead>
-            <tr class="style-type">
-                <th>樣式型態</th>
-                <th colspan="11">常態樣式 - 話語傳情 (1月 ~ 12月)</th>
-            </tr>
-            
-            <tr>
-                <th>樣式模具</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-
-            <tr>
-                <th>樣式圖片</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-
-            <tr>
-                <th>樣式圖片(加字)</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <th>樣式名稱</th>
-                <td>圓形</td>
-                <td>星形</td>
-                <td>貓咪(頭)</td>
-                <td>愛心形</td>
-                <td>長方形</td>
-                <td>正方形</td>
-                <td>四葉幸運草</td>
-            </tr>
-
-            <tr>
-                <th>單片克數</th>
-                <td>約 XX 克</td>
-                <td>約 XX 克</td>
-                <td>約 XX 克</td>
-                <td>約 XX 克</td>
-                <td>約 XX 克</td>
-                <td>約 XX 克</td>
-                <td>約 XX 克</td>
-            </tr>
-
-            <tr>
-                <th>規格<br>(長x寬x厚)</th>
-                <td>XX x XX x 5</td>
-                <td>XX x XX x 5</td>
-                <td>XX x XX x 5</td>
-                <td>XX x XX x 5</td>
-                <td>XX x XX x 5</td>
-                <td>XX x XX x 5</td>
-                <td>XX x XX x 5</td>
-            </tr>
-
-            <tr>
-                <th>口味種類<br>(無加字樣式)</th>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                    <option value="almond chocolate">杏仁巧克力</option>
-                    <option value="almond matcha">杏仁抹茶</option>
-                    <option value="plain cranberry">原味蔓越莓</option>
-                    <option value="matcha cranberry">抹茶蔓越莓</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                    <option value="almond chocolate">杏仁巧克力</option>
-                    <option value="almond matcha">杏仁抹茶</option>
-                    <option value="plain cranberry">原味蔓越莓</option>
-                    <option value="matcha cranberry">抹茶蔓越莓</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                    <option value="almond chocolate">杏仁巧克力</option>
-                    <option value="almond matcha">杏仁抹茶</option>
-                    <option value="plain cranberry">原味蔓越莓</option>
-                    <option value="matcha cranberry">抹茶蔓越莓</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                    <option value="almond chocolate">杏仁巧克力</option>
-                    <option value="almond matcha">杏仁抹茶</option>
-                    <option value="plain cranberry">原味蔓越莓</option>
-                    <option value="matcha cranberry">抹茶蔓越莓</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                    <option value="almond chocolate">杏仁巧克力</option>
-                    <option value="almond matcha">杏仁抹茶</option>
-                    <option value="plain cranberry">原味蔓越莓</option>
-                    <option value="matcha cranberry">抹茶蔓越莓</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                    <option value="almond chocolate">杏仁巧克力</option>
-                    <option value="almond matcha">杏仁抹茶</option>
-                    <option value="plain cranberry">原味蔓越莓</option>
-                    <option value="matcha cranberry">抹茶蔓越莓</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                    <option value="almond chocolate">杏仁巧克力</option>
-                    <option value="almond matcha">杏仁抹茶</option>
-                    <option value="plain cranberry">原味蔓越莓</option>
-                    <option value="matcha cranberry">抹茶蔓越莓</option>
-                </select></td>
-            </tr>
-
-            <tr>
-                <th>單價</th>
-                <td>15 / 片</td>
-                <td>15 / 片</td>
-                <td>15 / 片</td>
-                <td>15 / 片</td>
-                <td>15 / 片</td>
-                <td>15 / 片</td>
-                <td>15 / 片</td>
-            </tr>
-            
-            <tr>
-                <th>口味種類<br>(有加字樣式)</th>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                </select></td>
-            </tr>
-
-            <tr>
-                <th>加字樣式<br><span style="font-size: small;">(成品為英文呈現，中文是頁面註解)</span></th>
-                <td><select>
-                    <option value="">請選擇文字</option>
-                    <option value="話語傳情 (1月 ~ 12月)">💌 話語傳情 (1月 ~ 12月)</option>
-                    <option value="">👇-------------------------👇</option>
-                    <option value="For U">For U (給你/妳)</option>
-                    <option value="See U">See U (見你/妳)</option>
-                    <option value="Like U">Like U (喜歡你/妳)</option>
-                    <option value="With U">With U (與你/妳同在)</option>
-                    <option value="Miss U">Miss U (想你/妳)</option>
-                    <option value="Meet U">Meet U (遇見你/妳)</option>
-                    <option value="Wish U">Wish U (祝福你/妳)</option>
-                    <option value="Love U">Love U (愛你/妳)</option>
-                    <option value="Marry U">Marry U (和你/妳結婚)</option>
-                    <option value="Thank U">Thank U (謝謝你/妳)</option>
-                    <option value="Congrats">Congrats (恭喜)</option>
-                    <option value="Good Luck">Good Luck (祝你/妳好運)</option>
-                    <option value="冬季限定 (12月 ~ 2月)">💌 冬季限定 (12月 ~ 2月)</option>
-                    <option value="">👇-------------------------👇</option>
-                    <option value="Merry Xmas">Merry Xmas (聖誕快樂)</option>
-                    <option value="Happy New Year">Happy New Year (新年快樂)</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇文字</option>
-                    <option value="話語傳情 (1月 ~ 12月)">💌 話語傳情 (1月 ~ 12月)</option>
-                    <option value="">👇-------------------------👇</option>
-                    <option value="For U">For U (給你/妳)</option>
-                    <option value="See U">See U (見你/妳)</option>
-                    <option value="Like U">Like U (喜歡你/妳)</option>
-                    <option value="With U">With U (與你/妳同在)</option>
-                    <option value="Miss U">Miss U (想你/妳)</option>
-                    <option value="Meet U">Meet U (遇見你/妳)</option>
-                    <option value="Wish U">Wish U (祝福你/妳)</option>
-                    <option value="Love U">Love U (愛你/妳)</option>
-                    <option value="Marry U">Marry U (和你/妳結婚)</option>
-                    <option value="Thank U">Thank U (謝謝你/妳)</option>
-                    <option value="Congrats">Congrats (恭喜)</option>
-                    <option value="Good Luck">Good Luck (祝你/妳好運)</option>
-                    <option value="冬季限定 (12月 ~ 2月)">💌 冬季限定 (12月 ~ 2月)</option>
-                    <option value="">👇-------------------------👇</option>
-                    <option value="Merry Xmas">Merry Xmas (聖誕快樂)</option>
-                    <option value="Happy New Year">Happy New Year (新年快樂)</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇文字</option>
-                    <option value="話語傳情 (1月 ~ 12月)">💌 話語傳情 (1月 ~ 12月)</option>
-                    <option value="">👇-------------------------👇</option>
-                    <option value="For U">For U (給你/妳)</option>
-                    <option value="See U">See U (見你/妳)</option>
-                    <option value="Like U">Like U (喜歡你/妳)</option>
-                    <option value="With U">With U (與你/妳同在)</option>
-                    <option value="Miss U">Miss U (想你/妳)</option>
-                    <option value="Meet U">Meet U (遇見你/妳)</option>
-                    <option value="Wish U">Wish U (祝福你/妳)</option>
-                    <option value="Love U">Love U (愛你/妳)</option>
-                    <option value="Marry U">Marry U (和你/妳結婚)</option>
-                    <option value="Thank U">Thank U (謝謝你/妳)</option>
-                    <option value="Congrats">Congrats (恭喜)</option>
-                    <option value="Good Luck">Good Luck (祝你/妳好運)</option>
-                    <option value="冬季限定 (12月 ~ 2月)">💌 冬季限定 (12月 ~ 2月)</option>
-                    <option value="">👇-------------------------👇</option>
-                    <option value="Merry Xmas">Merry Xmas (聖誕快樂)</option>
-                    <option value="Happy New Year">Happy New Year (新年快樂)</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇文字</option>
-                    <option value="話語傳情 (1月 ~ 12月)">💌 話語傳情 (1月 ~ 12月)</option>
-                    <option value="">👇-------------------------👇</option>
-                    <option value="For U">For U (給你/妳)</option>
-                    <option value="See U">See U (見你/妳)</option>
-                    <option value="Like U">Like U (喜歡你/妳)</option>
-                    <option value="With U">With U (與你/妳同在)</option>
-                    <option value="Miss U">Miss U (想你/妳)</option>
-                    <option value="Meet U">Meet U (遇見你/妳)</option>
-                    <option value="Wish U">Wish U (祝福你/妳)</option>
-                    <option value="Love U">Love U (愛你/妳)</option>
-                    <option value="Marry U">Marry U (和你/妳結婚)</option>
-                    <option value="Thank U">Thank U (謝謝你/妳)</option>
-                    <option value="Congrats">Congrats (恭喜)</option>
-                    <option value="Good Luck">Good Luck (祝你/妳好運)</option>
-                    <option value="冬季限定 (12月 ~ 2月)">💌 冬季限定 (12月 ~ 2月)</option>
-                    <option value="">👇-------------------------👇</option>
-                    <option value="Merry Xmas">Merry Xmas (聖誕快樂)</option>
-                    <option value="Happy New Year">Happy New Year (新年快樂)</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇文字</option>
-                    <option value="話語傳情 (1月 ~ 12月)">💌 話語傳情 (1月 ~ 12月)</option>
-                    <option value="">👇-------------------------👇</option>
-                    <option value="For U">For U (給你/妳)</option>
-                    <option value="See U">See U (見你/妳)</option>
-                    <option value="Like U">Like U (喜歡你/妳)</option>
-                    <option value="With U">With U (與你/妳同在)</option>
-                    <option value="Miss U">Miss U (想你/妳)</option>
-                    <option value="Meet U">Meet U (遇見你/妳)</option>
-                    <option value="Wish U">Wish U (祝福你/妳)</option>
-                    <option value="Love U">Love U (愛你/妳)</option>
-                    <option value="Marry U">Marry U (和你/妳結婚)</option>
-                    <option value="Thank U">Thank U (謝謝你/妳)</option>
-                    <option value="Congrats">Congrats (恭喜)</option>
-                    <option value="Good Luck">Good Luck (祝你/妳好運)</option>
-                    <option value="冬季限定 (12月 ~ 2月)">💌 冬季限定 (12月 ~ 2月)</option>
-                    <option value="">👇-------------------------👇</option>
-                    <option value="Merry Xmas">Merry Xmas (聖誕快樂)</option>
-                    <option value="Happy New Year">Happy New Year (新年快樂)</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇文字</option>
-                    <option value="話語傳情 (1月 ~ 12月)">💌 話語傳情 (1月 ~ 12月)</option>
-                    <option value="">👇-------------------------👇</option>
-                    <option value="For U">For U (給你/妳)</option>
-                    <option value="See U">See U (見你/妳)</option>
-                    <option value="Like U">Like U (喜歡你/妳)</option>
-                    <option value="With U">With U (與你/妳同在)</option>
-                    <option value="Miss U">Miss U (想你/妳)</option>
-                    <option value="Meet U">Meet U (遇見你/妳)</option>
-                    <option value="Wish U">Wish U (祝福你/妳)</option>
-                    <option value="Love U">Love U (愛你/妳)</option>
-                    <option value="Marry U">Marry U (和你/妳結婚)</option>
-                    <option value="Thank U">Thank U (謝謝你/妳)</option>
-                    <option value="Congrats">Congrats (恭喜)</option>
-                    <option value="Good Luck">Good Luck (祝你/妳好運)</option>
-                    <option value="冬季限定 (12月 ~ 2月)">💌 冬季限定 (12月 ~ 2月)</option>
-                    <option value="">👇-------------------------👇</option>
-                    <option value="Merry Xmas">Merry Xmas (聖誕快樂)</option>
-                    <option value="Happy New Year">Happy New Year (新年快樂)</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇文字</option>
-                    <option value="話語傳情 (1月 ~ 12月)">💌 話語傳情 (1月 ~ 12月)</option>
-                    <option value="">👇-------------------------👇</option>
-                    <option value="For U">For U (給你/妳)</option>
-                    <option value="See U">See U (見你/妳)</option>
-                    <option value="Like U">Like U (喜歡你/妳)</option>
-                    <option value="With U">With U (與你/妳同在)</option>
-                    <option value="Miss U">Miss U (想你/妳)</option>
-                    <option value="Meet U">Meet U (遇見你/妳)</option>
-                    <option value="Wish U">Wish U (祝福你/妳)</option>
-                    <option value="Love U">Love U (愛你/妳)</option>
-                    <option value="Marry U">Marry U (和你/妳結婚)</option>
-                    <option value="Thank U">Thank U (謝謝你/妳)</option>
-                    <option value="Congrats">Congrats (恭喜)</option>
-                    <option value="Good Luck">Good Luck (祝你/妳好運)</option>
-                    <option value="冬季限定 (12月 ~ 2月)">💌 冬季限定 (12月 ~ 2月)</option>
-                    <option value="">👇-------------------------👇</option>
-                    <option value="Merry Xmas">Merry Xmas (聖誕快樂)</option>
-                    <option value="Happy New Year">Happy New Year (新年快樂)</option>
-                </select></td>
-            </tr>
-
-            <tr>
-                <th>加字單價</th>
-                <td>25 / 片</td>
-                <td>25 / 片</td>
-                <td>25 / 片</td>
-                <td>25 / 片</td>
-                <td>25 / 片</td>
-                <td>25 / 片</td>
-                <td>25 / 片</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <div class="ingredients">
-        <ul>
-            ➡️&nbsp&nbsp<b style="color: red;font-size: large;">請注意!! 依選定樣式與文字評估「 文字換行需求 」，若不能接受文字換行呈現，請勿下單，謝謝 😊</b><br>
-            ➡️&nbsp&nbsp<b>成份 : 無鹽奶油、砂糖、雞蛋、低筋麵粉、各式茶粉、堅果類及果乾類</b><br>
-            ➡️&nbsp&nbsp<b>皆使用「 減糖 」配方製作</b><br>
-        </ul>
+    <div class="title-total">
+        <div id="section-cookie" class="title"><b>🍪 曲奇類</b></div>
     </div>
-</div>
-<br>
-<div>
-    <table border="5">
-        <thead>
-            <tr class="style-type">
-                <th>樣式型態</th>
-                <th colspan="11">常態樣式 - 造型壓模 (3月 ~ 11月)</th>
-            </tr>
+    <br>
 
-            <tr>
-                <th>樣式模具</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th>敬請期待 🤗</th>
-                <th>敬請期待 🤗</th>
-            </tr>
+    <div id="cookie">
+        <table border="5">
+            <thead>
+                <tr class="style-type">
+                    <th>樣式型態</th>
+                    <th colspan="11">常態樣式 - 話語傳情 (1月 ~ 12月)</th>
+                </tr>
 
-            <tr>
-                <th>樣式圖片</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th>敬請期待 🤗</th>
-                <th>敬請期待 🤗</th>
-            </tr>
-        </thead>
+                <tr>
+                    <th>樣式模具</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
 
-        <tbody>
-            <tr>
-                <th>樣式名稱</th>
-                <td>米奇</td>
-                <td>天使</td>
-                <td>櫻桃</td>
-                <td>楓葉</td>
-                <td>熊熊</td>
-                <td>松鼠(正)</td>
-                <td>貓咪搬禮物</td>
-                <td>卡皮巴拉(鈴鐺花圈)</td>
-                <td></td>
-                <td></td>
-            </tr>
+                <tr>
+                    <th>樣式圖片</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
 
-            <tr>
-                <th>單片克數</th>
-                <td>約 XX 克</td>
-                <td>約 XX 克</td>
-                <td>約 XX 克</td>
-                <td>約 XX 克</td>
-                <td>約 XX 克</td>
-                <td>約 XX 克</td>
-                <td>約 XX 克</td>
-                <td>約 XX 克</td>
-                <td></td>
-                <td></td>
-            </tr>
+                <tr>
+                    <th>樣式圖片(加字)</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
 
-            <tr>
-                <th>規格<br>(長x寬x厚)</th>
-                <td>XX x XX x 5</td>
-                <td>XX x XX x 5</td>
-                <td>XX x XX x 5</td>
-                <td>XX x XX x 5</td>
-                <td>XX x XX x 5</td>
-                <td>XX x XX x 5</td>
-                <td>XX x XX x 5</td>
-                <td>XX x XX x 5</td>
-                <td></td>
-                <td></td>
-            </tr>
+            <tbody>
+                <tr>
+                    <th>樣式名稱</th>
+                    <td>圓形</td>
+                    <td>星形</td>
+                    <td>貓咪(頭)</td>
+                    <td>愛心形</td>
+                    <td>長方形</td>
+                    <td>正方形</td>
+                    <td>四葉幸運草</td>
+                </tr>
 
-            <tr>
-                <th>口味種類</th>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                    <option value="almond chocolate">杏仁巧克力</option>
-                    <option value="almond matcha">杏仁抹茶</option>
-                    <option value="plain cranberry">原味蔓越莓</option>
-                    <option value="matcha cranberry">抹茶蔓越莓</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                    <option value="almond chocolate">杏仁巧克力</option>
-                    <option value="almond matcha">杏仁抹茶</option>
-                    <option value="plain cranberry">原味蔓越莓</option>
-                    <option value="matcha cranberry">抹茶蔓越莓</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                    <option value="almond chocolate">杏仁巧克力</option>
-                    <option value="almond matcha">杏仁抹茶</option>
-                    <option value="plain cranberry">原味蔓越莓</option>
-                    <option value="matcha cranberry">抹茶蔓越莓</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                    <option value="almond chocolate">杏仁巧克力</option>
-                    <option value="almond matcha">杏仁抹茶</option>
-                    <option value="plain cranberry">原味蔓越莓</option>
-                    <option value="matcha cranberry">抹茶蔓越莓</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                    <option value="almond chocolate">杏仁巧克力</option>
-                    <option value="almond matcha">杏仁抹茶</option>
-                    <option value="plain cranberry">原味蔓越莓</option>
-                    <option value="matcha cranberry">抹茶蔓越莓</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                </select></td>
-                <td></td>
-                <td></td>
-            </tr>
+                <tr>
+                    <th>單片克數</th>
+                    <td>約 XX 克</td>
+                    <td>約 XX 克</td>
+                    <td>約 XX 克</td>
+                    <td>約 XX 克</td>
+                    <td>約 XX 克</td>
+                    <td>約 XX 克</td>
+                    <td>約 XX 克</td>
+                </tr>
 
-            <tr>
-                <th>單價</th>
-                <td>15 / 片</td>
-                <td>15 / 片</td>
-                <td>20 / 片</td>
-                <td>20 / 片</td>
-                <td>20 / 片</td>
-                <td>20 / 片</td>
-                <td>20 / 片</td>
-                <td>20 / 片</td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
+                <tr>
+                    <th>規格<br>(長x寬x厚)</th>
+                    <td>XX x XX x 5</td>
+                    <td>XX x XX x 5</td>
+                    <td>XX x XX x 5</td>
+                    <td>XX x XX x 5</td>
+                    <td>XX x XX x 5</td>
+                    <td>XX x XX x 5</td>
+                    <td>XX x XX x 5</td>
+                </tr>
 
-    <div class="ingredients">
-        <ul>
-            ➡️&nbsp&nbsp<b>成份 : 無鹽奶油、砂糖、雞蛋、低筋麵粉、各式茶粉、堅果類及果乾類</b><br>
-            ➡️&nbsp&nbsp<b>皆使用「 減糖 」配方製作</b><br>
-        </ul>
+                <tr>
+                    <th>口味種類<br>(無加字樣式)</th>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                            <option value="almond chocolate">杏仁巧克力</option>
+                            <option value="almond matcha">杏仁抹茶</option>
+                            <option value="plain cranberry">原味蔓越莓</option>
+                            <option value="matcha cranberry">抹茶蔓越莓</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                            <option value="almond chocolate">杏仁巧克力</option>
+                            <option value="almond matcha">杏仁抹茶</option>
+                            <option value="plain cranberry">原味蔓越莓</option>
+                            <option value="matcha cranberry">抹茶蔓越莓</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                            <option value="almond chocolate">杏仁巧克力</option>
+                            <option value="almond matcha">杏仁抹茶</option>
+                            <option value="plain cranberry">原味蔓越莓</option>
+                            <option value="matcha cranberry">抹茶蔓越莓</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                            <option value="almond chocolate">杏仁巧克力</option>
+                            <option value="almond matcha">杏仁抹茶</option>
+                            <option value="plain cranberry">原味蔓越莓</option>
+                            <option value="matcha cranberry">抹茶蔓越莓</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                            <option value="almond chocolate">杏仁巧克力</option>
+                            <option value="almond matcha">杏仁抹茶</option>
+                            <option value="plain cranberry">原味蔓越莓</option>
+                            <option value="matcha cranberry">抹茶蔓越莓</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                            <option value="almond chocolate">杏仁巧克力</option>
+                            <option value="almond matcha">杏仁抹茶</option>
+                            <option value="plain cranberry">原味蔓越莓</option>
+                            <option value="matcha cranberry">抹茶蔓越莓</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                            <option value="almond chocolate">杏仁巧克力</option>
+                            <option value="almond matcha">杏仁抹茶</option>
+                            <option value="plain cranberry">原味蔓越莓</option>
+                            <option value="matcha cranberry">抹茶蔓越莓</option>
+                        </select></td>
+                </tr>
+
+                <tr>
+                    <th>單價</th>
+                    <td>15 / 片</td>
+                    <td>15 / 片</td>
+                    <td>15 / 片</td>
+                    <td>15 / 片</td>
+                    <td>15 / 片</td>
+                    <td>15 / 片</td>
+                    <td>15 / 片</td>
+                </tr>
+
+                <tr>
+                    <th>口味種類<br>(有加字樣式)</th>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                        </select></td>
+                </tr>
+
+                <tr>
+                    <th>加字樣式<br><span style="font-size: small;">(成品為英文呈現，中文是頁面註解)</span></th>
+                    <td><select>
+                            <option value="">請選擇文字</option>
+                            <option value="話語傳情 (1月 ~ 12月)">💌 話語傳情 (1月 ~ 12月)</option>
+                            <option value="">👇-------------------------👇</option>
+                            <option value="For U">For U (給你/妳)</option>
+                            <option value="See U">See U (見你/妳)</option>
+                            <option value="Like U">Like U (喜歡你/妳)</option>
+                            <option value="With U">With U (與你/妳同在)</option>
+                            <option value="Miss U">Miss U (想你/妳)</option>
+                            <option value="Meet U">Meet U (遇見你/妳)</option>
+                            <option value="Wish U">Wish U (祝福你/妳)</option>
+                            <option value="Love U">Love U (愛你/妳)</option>
+                            <option value="Marry U">Marry U (和你/妳結婚)</option>
+                            <option value="Thank U">Thank U (謝謝你/妳)</option>
+                            <option value="Congrats">Congrats (恭喜)</option>
+                            <option value="Good Luck">Good Luck (祝你/妳好運)</option>
+                            <option value="冬季限定 (12月 ~ 2月)">💌 冬季限定 (12月 ~ 2月)</option>
+                            <option value="">👇-------------------------👇</option>
+                            <option value="Merry Xmas">Merry Xmas (聖誕快樂)</option>
+                            <option value="Happy New Year">Happy New Year (新年快樂)</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇文字</option>
+                            <option value="話語傳情 (1月 ~ 12月)">💌 話語傳情 (1月 ~ 12月)</option>
+                            <option value="">👇-------------------------👇</option>
+                            <option value="For U">For U (給你/妳)</option>
+                            <option value="See U">See U (見你/妳)</option>
+                            <option value="Like U">Like U (喜歡你/妳)</option>
+                            <option value="With U">With U (與你/妳同在)</option>
+                            <option value="Miss U">Miss U (想你/妳)</option>
+                            <option value="Meet U">Meet U (遇見你/妳)</option>
+                            <option value="Wish U">Wish U (祝福你/妳)</option>
+                            <option value="Love U">Love U (愛你/妳)</option>
+                            <option value="Marry U">Marry U (和你/妳結婚)</option>
+                            <option value="Thank U">Thank U (謝謝你/妳)</option>
+                            <option value="Congrats">Congrats (恭喜)</option>
+                            <option value="Good Luck">Good Luck (祝你/妳好運)</option>
+                            <option value="冬季限定 (12月 ~ 2月)">💌 冬季限定 (12月 ~ 2月)</option>
+                            <option value="">👇-------------------------👇</option>
+                            <option value="Merry Xmas">Merry Xmas (聖誕快樂)</option>
+                            <option value="Happy New Year">Happy New Year (新年快樂)</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇文字</option>
+                            <option value="話語傳情 (1月 ~ 12月)">💌 話語傳情 (1月 ~ 12月)</option>
+                            <option value="">👇-------------------------👇</option>
+                            <option value="For U">For U (給你/妳)</option>
+                            <option value="See U">See U (見你/妳)</option>
+                            <option value="Like U">Like U (喜歡你/妳)</option>
+                            <option value="With U">With U (與你/妳同在)</option>
+                            <option value="Miss U">Miss U (想你/妳)</option>
+                            <option value="Meet U">Meet U (遇見你/妳)</option>
+                            <option value="Wish U">Wish U (祝福你/妳)</option>
+                            <option value="Love U">Love U (愛你/妳)</option>
+                            <option value="Marry U">Marry U (和你/妳結婚)</option>
+                            <option value="Thank U">Thank U (謝謝你/妳)</option>
+                            <option value="Congrats">Congrats (恭喜)</option>
+                            <option value="Good Luck">Good Luck (祝你/妳好運)</option>
+                            <option value="冬季限定 (12月 ~ 2月)">💌 冬季限定 (12月 ~ 2月)</option>
+                            <option value="">👇-------------------------👇</option>
+                            <option value="Merry Xmas">Merry Xmas (聖誕快樂)</option>
+                            <option value="Happy New Year">Happy New Year (新年快樂)</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇文字</option>
+                            <option value="話語傳情 (1月 ~ 12月)">💌 話語傳情 (1月 ~ 12月)</option>
+                            <option value="">👇-------------------------👇</option>
+                            <option value="For U">For U (給你/妳)</option>
+                            <option value="See U">See U (見你/妳)</option>
+                            <option value="Like U">Like U (喜歡你/妳)</option>
+                            <option value="With U">With U (與你/妳同在)</option>
+                            <option value="Miss U">Miss U (想你/妳)</option>
+                            <option value="Meet U">Meet U (遇見你/妳)</option>
+                            <option value="Wish U">Wish U (祝福你/妳)</option>
+                            <option value="Love U">Love U (愛你/妳)</option>
+                            <option value="Marry U">Marry U (和你/妳結婚)</option>
+                            <option value="Thank U">Thank U (謝謝你/妳)</option>
+                            <option value="Congrats">Congrats (恭喜)</option>
+                            <option value="Good Luck">Good Luck (祝你/妳好運)</option>
+                            <option value="冬季限定 (12月 ~ 2月)">💌 冬季限定 (12月 ~ 2月)</option>
+                            <option value="">👇-------------------------👇</option>
+                            <option value="Merry Xmas">Merry Xmas (聖誕快樂)</option>
+                            <option value="Happy New Year">Happy New Year (新年快樂)</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇文字</option>
+                            <option value="話語傳情 (1月 ~ 12月)">💌 話語傳情 (1月 ~ 12月)</option>
+                            <option value="">👇-------------------------👇</option>
+                            <option value="For U">For U (給你/妳)</option>
+                            <option value="See U">See U (見你/妳)</option>
+                            <option value="Like U">Like U (喜歡你/妳)</option>
+                            <option value="With U">With U (與你/妳同在)</option>
+                            <option value="Miss U">Miss U (想你/妳)</option>
+                            <option value="Meet U">Meet U (遇見你/妳)</option>
+                            <option value="Wish U">Wish U (祝福你/妳)</option>
+                            <option value="Love U">Love U (愛你/妳)</option>
+                            <option value="Marry U">Marry U (和你/妳結婚)</option>
+                            <option value="Thank U">Thank U (謝謝你/妳)</option>
+                            <option value="Congrats">Congrats (恭喜)</option>
+                            <option value="Good Luck">Good Luck (祝你/妳好運)</option>
+                            <option value="冬季限定 (12月 ~ 2月)">💌 冬季限定 (12月 ~ 2月)</option>
+                            <option value="">👇-------------------------👇</option>
+                            <option value="Merry Xmas">Merry Xmas (聖誕快樂)</option>
+                            <option value="Happy New Year">Happy New Year (新年快樂)</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇文字</option>
+                            <option value="話語傳情 (1月 ~ 12月)">💌 話語傳情 (1月 ~ 12月)</option>
+                            <option value="">👇-------------------------👇</option>
+                            <option value="For U">For U (給你/妳)</option>
+                            <option value="See U">See U (見你/妳)</option>
+                            <option value="Like U">Like U (喜歡你/妳)</option>
+                            <option value="With U">With U (與你/妳同在)</option>
+                            <option value="Miss U">Miss U (想你/妳)</option>
+                            <option value="Meet U">Meet U (遇見你/妳)</option>
+                            <option value="Wish U">Wish U (祝福你/妳)</option>
+                            <option value="Love U">Love U (愛你/妳)</option>
+                            <option value="Marry U">Marry U (和你/妳結婚)</option>
+                            <option value="Thank U">Thank U (謝謝你/妳)</option>
+                            <option value="Congrats">Congrats (恭喜)</option>
+                            <option value="Good Luck">Good Luck (祝你/妳好運)</option>
+                            <option value="冬季限定 (12月 ~ 2月)">💌 冬季限定 (12月 ~ 2月)</option>
+                            <option value="">👇-------------------------👇</option>
+                            <option value="Merry Xmas">Merry Xmas (聖誕快樂)</option>
+                            <option value="Happy New Year">Happy New Year (新年快樂)</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇文字</option>
+                            <option value="話語傳情 (1月 ~ 12月)">💌 話語傳情 (1月 ~ 12月)</option>
+                            <option value="">👇-------------------------👇</option>
+                            <option value="For U">For U (給你/妳)</option>
+                            <option value="See U">See U (見你/妳)</option>
+                            <option value="Like U">Like U (喜歡你/妳)</option>
+                            <option value="With U">With U (與你/妳同在)</option>
+                            <option value="Miss U">Miss U (想你/妳)</option>
+                            <option value="Meet U">Meet U (遇見你/妳)</option>
+                            <option value="Wish U">Wish U (祝福你/妳)</option>
+                            <option value="Love U">Love U (愛你/妳)</option>
+                            <option value="Marry U">Marry U (和你/妳結婚)</option>
+                            <option value="Thank U">Thank U (謝謝你/妳)</option>
+                            <option value="Congrats">Congrats (恭喜)</option>
+                            <option value="Good Luck">Good Luck (祝你/妳好運)</option>
+                            <option value="冬季限定 (12月 ~ 2月)">💌 冬季限定 (12月 ~ 2月)</option>
+                            <option value="">👇-------------------------👇</option>
+                            <option value="Merry Xmas">Merry Xmas (聖誕快樂)</option>
+                            <option value="Happy New Year">Happy New Year (新年快樂)</option>
+                        </select></td>
+                </tr>
+
+                <tr>
+                    <th>加字單價</th>
+                    <td>25 / 片</td>
+                    <td>25 / 片</td>
+                    <td>25 / 片</td>
+                    <td>25 / 片</td>
+                    <td>25 / 片</td>
+                    <td>25 / 片</td>
+                    <td>25 / 片</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="ingredients">
+            <ul>
+                ➡️&nbsp&nbsp<b style="color: rgb(4, 0, 255);font-size: larger; background-color: yellow;">請注意!!
+                    依選定樣式與文字評估「 文字換行需求 」，若不能接受「 文字換行呈現
+                    」，請勿下單，謝謝
+                    😊</b><br>
+                ➡️&nbsp&nbsp<b>成份 : 無鹽奶油、砂糖、雞蛋、低筋麵粉、各式茶粉、堅果類及果乾類</b><br>
+                ➡️&nbsp&nbsp<b>皆使用「 減糖 」配方製作</b><br>
+            </ul>
+        </div>
     </div>
-</div>
-<br>
-<div>
-    <table border="5">
-        <thead>
-            <tr class="style-type">
-                <th>樣式型態</th>
-                <th colspan="11">節慶樣式 - 聖誕節 (冬季限定，12月 ~ 1月)</th>
-            </tr>
+    <br>
+    <div>
+        <table border="5">
+            <thead>
+                <tr class="style-type">
+                    <th>樣式型態</th>
+                    <th colspan="11">常態樣式 - 造型壓模 (3月 ~ 11月)</th>
+                </tr>
 
-            <tr>
-                <th>樣式模具</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
+                <tr>
+                    <th>樣式模具</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th>敬請期待 🤗</th>
+                    <th>敬請期待 🤗</th>
+                </tr>
 
-            <tr>
-                <th>樣式圖片</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-        </thead>
+                <tr>
+                    <th>樣式圖片</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th>敬請期待 🤗</th>
+                    <th>敬請期待 🤗</th>
+                </tr>
+            </thead>
 
-        <tbody>
-            <tr>
-                <th>樣式名稱</th>
-                <td>麋鹿</td>
-                <td>聖誕小手套</td>
-                <td>薑餅人</td>
-                <td>聖誕老人</td>
-                <td>麋鹿(臉)</td>
-                <td>雪花</td>
-                <td>狗掌</td>
-                <td>樹熊</td>
-                <td>雪人</td>
-                <td>聖誕松鼠(側)</td>   
-            </tr>
+            <tbody>
+                <tr>
+                    <th>樣式名稱</th>
+                    <td>米奇</td>
+                    <td>天使</td>
+                    <td>櫻桃</td>
+                    <td>楓葉</td>
+                    <td>熊熊</td>
+                    <td>松鼠(正)</td>
+                    <td>貓咪搬禮物</td>
+                    <td>卡皮巴拉(鈴鐺花圈)</td>
+                    <td></td>
+                    <td></td>
+                </tr>
 
-            <tr>
-                <th>單片克數</th>
-                <td>約 XX 克</td>
-                <td>約 XX 克</td>
-                <td>約 XX 克</td>
-                <td>約 XX 克</td>
-                <td>約 XX 克</td>
-                <td>約 XX 克</td>
-                <td>約 XX 克</td>
-                <td>約 XX 克</td>
-                <td>約 XX 克</td>
-                <td>約 XX 克</td>
-            </tr>
+                <tr>
+                    <th>單片克數</th>
+                    <td>約 XX 克</td>
+                    <td>約 XX 克</td>
+                    <td>約 XX 克</td>
+                    <td>約 XX 克</td>
+                    <td>約 XX 克</td>
+                    <td>約 XX 克</td>
+                    <td>約 XX 克</td>
+                    <td>約 XX 克</td>
+                    <td></td>
+                    <td></td>
+                </tr>
 
-            <tr>
-                <th>規格<br>(長x寬x厚)</th>
-                <td>XX x XX x 5</td>
-                <td>XX x XX x 5</td>
-                <td>XX x XX x 5</td>
-                <td>XX x XX x 5</td>
-                <td>XX x XX x 5</td>
-                <td>XX x XX x 5</td>
-                <td>XX x XX x 5</td>
-                <td>XX x XX x 5</td>
-                <td>XX x XX x 5</td>
-                <td>XX x XX x 5</td>
-            </tr>
+                <tr>
+                    <th>規格<br>(長x寬x厚)</th>
+                    <td>XX x XX x 5</td>
+                    <td>XX x XX x 5</td>
+                    <td>XX x XX x 5</td>
+                    <td>XX x XX x 5</td>
+                    <td>XX x XX x 5</td>
+                    <td>XX x XX x 5</td>
+                    <td>XX x XX x 5</td>
+                    <td>XX x XX x 5</td>
+                    <td></td>
+                    <td></td>
+                </tr>
 
-            <tr>
-                <th>口味種類</th>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                    <option value="almond chocolate">杏仁巧克力</option>
-                    <option value="almond matcha">杏仁抹茶</option>
-                    <option value="plain cranberry">原味蔓越莓</option>
-                    <option value="matcha cranberry">抹茶蔓越莓</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                </select></td>
-                <td><select>
-                    <option value="">請選擇口味</option>
-                    <option value="plain">原味</option>
-                    <option value="Milo">美祿</option>
-                    <option value="matcha">抹茶</option>
-                    <option value="coffee">咖啡</option>
-                    <option value="hojicha">焙茶</option>
-                    <option value="milk tea">奶茶</option>
-                    <option value="red oolong">紅烏龍</option>
-                    <option value="tieguanyin">鐵觀音</option>
-                    <option value="honey black tea ">蜜香紅茶</option>
-                    <option value="peach oolong">蜜桃烏龍</option>
-                    <option value="assam black tea">阿薩姆紅茶</option>
-                    <option value="twinings earl grey tea">唐寧伯爵茶</option>
-                    <option value="chocolate">巧克力</option>
-                </select></td>
-            </tr>
+                <tr>
+                    <th>口味種類</th>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                            <option value="almond chocolate">杏仁巧克力</option>
+                            <option value="almond matcha">杏仁抹茶</option>
+                            <option value="plain cranberry">原味蔓越莓</option>
+                            <option value="matcha cranberry">抹茶蔓越莓</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                            <option value="almond chocolate">杏仁巧克力</option>
+                            <option value="almond matcha">杏仁抹茶</option>
+                            <option value="plain cranberry">原味蔓越莓</option>
+                            <option value="matcha cranberry">抹茶蔓越莓</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                            <option value="almond chocolate">杏仁巧克力</option>
+                            <option value="almond matcha">杏仁抹茶</option>
+                            <option value="plain cranberry">原味蔓越莓</option>
+                            <option value="matcha cranberry">抹茶蔓越莓</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                            <option value="almond chocolate">杏仁巧克力</option>
+                            <option value="almond matcha">杏仁抹茶</option>
+                            <option value="plain cranberry">原味蔓越莓</option>
+                            <option value="matcha cranberry">抹茶蔓越莓</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                            <option value="almond chocolate">杏仁巧克力</option>
+                            <option value="almond matcha">杏仁抹茶</option>
+                            <option value="plain cranberry">原味蔓越莓</option>
+                            <option value="matcha cranberry">抹茶蔓越莓</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                        </select></td>
+                    <td></td>
+                    <td></td>
+                </tr>
 
-            <tr>
-                <th>單價</th>
-                <td>15 / 片</td>
-                <td>20 / 片</td>
-                <td>20 / 片</td>
-                <td>20 / 片</td>
-                <td>20 / 片</td>
-                <td>20 / 片</td>
-                <td>20 / 片</td>
-                <td>20 / 片</td>
-                <td>20 / 片</td>
-                <td>20 / 片</td>
-            </tr>
-        </tbody>
-    </table>
+                <tr>
+                    <th>單價</th>
+                    <td>15 / 片</td>
+                    <td>15 / 片</td>
+                    <td>20 / 片</td>
+                    <td>20 / 片</td>
+                    <td>20 / 片</td>
+                    <td>20 / 片</td>
+                    <td>20 / 片</td>
+                    <td>20 / 片</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
 
-    <div class="ingredients">
-        <ul>
-            ➡️&nbsp&nbsp<b>成份 : 無鹽奶油、砂糖、雞蛋、低筋麵粉、各式茶粉、堅果類及果乾類</b><br>
-            ➡️&nbsp&nbsp<b>皆使用「 減糖 」配方製作</b><br>
-        </ul>
+        <div class="ingredients">
+            <ul>
+                ➡️&nbsp&nbsp<b>成份 : 無鹽奶油、砂糖、雞蛋、低筋麵粉、各式茶粉、堅果類及果乾類</b><br>
+                ➡️&nbsp&nbsp<b>皆使用「 減糖 」配方製作</b><br>
+            </ul>
+        </div>
     </div>
-</div>
-<br>
-<div>
-    <table border="5">
-        <thead>
-            <tr class="style-type">
-                <th>樣式型態</th>
-                <th colspan="11">節慶樣式 - 跨新年 (冬季限定，12月 ~ 2月)</th>
-            </tr>
+    <br>
+    <div>
+        <table border="5">
+            <thead>
+                <tr class="style-type">
+                    <th>樣式型態</th>
+                    <th colspan="11">節慶樣式 - 聖誕節 (冬季限定，12月 ~ 1月)</th>
+                </tr>
 
-            <tr>
-                <th>樣式模具</th>
-                <th>敬請期待 🤗</th>
-                <th>敬請期待 🤗</th>
-                <th>敬請期待 🤗</th>
-                <th>敬請期待 🤗</th>
-                <th>敬請期待 🤗</th>
-                <th>敬請期待 🤗</th>
-                <th>敬請期待 🤗</th>
-                <th>敬請期待 🤗</th>
-                <th>敬請期待 🤗</th>
-                <th>敬請期待 🤗</th>
-            </tr>
+                <tr>
+                    <th>樣式模具</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
 
-            <tr>
-                <th>樣式圖片</th>
-                <th>敬請期待 🤗</th>
-                <th>敬請期待 🤗</th>
-                <th>敬請期待 🤗</th>
-                <th>敬請期待 🤗</th>
-                <th>敬請期待 🤗</th>
-                <th>敬請期待 🤗</th>
-                <th>敬請期待 🤗</th>
-                <th>敬請期待 🤗</th>
-                <th>敬請期待 🤗</th>
-                <th>敬請期待 🤗</th>
-            </tr>
-        </thead>
+                <tr>
+                    <th>樣式圖片</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
 
-        <tbody>
-            <tr>
-                <th>樣式名稱</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
+            <tbody>
+                <tr>
+                    <th>樣式名稱</th>
+                    <td>麋鹿</td>
+                    <td>聖誕小手套</td>
+                    <td>薑餅人</td>
+                    <td>聖誕老人</td>
+                    <td>麋鹿(臉)</td>
+                    <td>雪花</td>
+                    <td>狗掌</td>
+                    <td>樹熊</td>
+                    <td>雪人</td>
+                    <td>聖誕松鼠(側)</td>
+                </tr>
 
-            <tr>
-                <th>單片克數</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td> 
-            </tr>
+                <tr>
+                    <th>單片克數</th>
+                    <td>約 XX 克</td>
+                    <td>約 XX 克</td>
+                    <td>約 XX 克</td>
+                    <td>約 XX 克</td>
+                    <td>約 XX 克</td>
+                    <td>約 XX 克</td>
+                    <td>約 XX 克</td>
+                    <td>約 XX 克</td>
+                    <td>約 XX 克</td>
+                    <td>約 XX 克</td>
+                </tr>
 
-            <tr>
-                <th>規格<br>(長x寬x厚)</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td> 
-            </tr>
+                <tr>
+                    <th>規格<br>(長x寬x厚)</th>
+                    <td>XX x XX x 5</td>
+                    <td>XX x XX x 5</td>
+                    <td>XX x XX x 5</td>
+                    <td>XX x XX x 5</td>
+                    <td>XX x XX x 5</td>
+                    <td>XX x XX x 5</td>
+                    <td>XX x XX x 5</td>
+                    <td>XX x XX x 5</td>
+                    <td>XX x XX x 5</td>
+                    <td>XX x XX x 5</td>
+                </tr>
 
-            <tr>
-                <th>口味種類</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td> 
-            </tr>
+                <tr>
+                    <th>口味種類</th>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                            <option value="almond chocolate">杏仁巧克力</option>
+                            <option value="almond matcha">杏仁抹茶</option>
+                            <option value="plain cranberry">原味蔓越莓</option>
+                            <option value="matcha cranberry">抹茶蔓越莓</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                        </select></td>
+                    <td><select>
+                            <option value="">請選擇口味</option>
+                            <option value="plain">原味</option>
+                            <option value="Milo">美祿</option>
+                            <option value="matcha">抹茶</option>
+                            <option value="coffee">咖啡</option>
+                            <option value="hojicha">焙茶</option>
+                            <option value="milk tea">奶茶</option>
+                            <option value="red oolong">紅烏龍</option>
+                            <option value="tieguanyin">鐵觀音</option>
+                            <option value="honey black tea ">蜜香紅茶</option>
+                            <option value="peach oolong">蜜桃烏龍</option>
+                            <option value="assam black tea">阿薩姆紅茶</option>
+                            <option value="twinings earl grey tea">唐寧伯爵茶</option>
+                            <option value="chocolate">巧克力</option>
+                        </select></td>
+                </tr>
 
-            <tr>
-                <th>單價</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td> 
-            </tr>
-        </tbody>
-    </table>
+                <tr>
+                    <th>單價</th>
+                    <td>15 / 片</td>
+                    <td>20 / 片</td>
+                    <td>20 / 片</td>
+                    <td>20 / 片</td>
+                    <td>20 / 片</td>
+                    <td>20 / 片</td>
+                    <td>20 / 片</td>
+                    <td>20 / 片</td>
+                    <td>20 / 片</td>
+                    <td>20 / 片</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <div class="ingredients">
-        <ul>
-            ➡️&nbsp&nbsp<b>成份 : 無鹽奶油、砂糖、雞蛋、低筋麵粉、各式茶粉、堅果類及果乾類</b><br>
-            ➡️&nbsp&nbsp<b>皆使用「 減糖 」配方製作</b><br>
-        </ul>
+        <div class="ingredients">
+            <ul>
+                ➡️&nbsp&nbsp<b>成份 : 無鹽奶油、砂糖、雞蛋、低筋麵粉、各式茶粉、堅果類及果乾類</b><br>
+                ➡️&nbsp&nbsp<b>皆使用「 減糖 」配方製作</b><br>
+            </ul>
+        </div>
     </div>
-</div>
-<br>
+    <br>
+    <div>
+        <table border="5">
+            <thead>
+                <tr class="style-type">
+                    <th>樣式型態</th>
+                    <th colspan="11">節慶樣式 - 跨新年 (冬季限定，12月 ~ 2月)</th>
+                </tr>
 
-<div class="title-total">
-<div id="section-thinCookie" class="title"><b>🧇 薄片類</b></div>
-</div>
-<br>
+                <tr>
+                    <th>樣式模具</th>
+                    <th>敬請期待 🤗</th>
+                    <th>敬請期待 🤗</th>
+                    <th>敬請期待 🤗</th>
+                    <th>敬請期待 🤗</th>
+                    <th>敬請期待 🤗</th>
+                    <th>敬請期待 🤗</th>
+                    <th>敬請期待 🤗</th>
+                    <th>敬請期待 🤗</th>
+                    <th>敬請期待 🤗</th>
+                    <th>敬請期待 🤗</th>
+                </tr>
 
-<div id="cookie">
-    <div style="text-align: center;">
-        <h2>
-           敬請期待，謝謝您 🤗             
-        </h2>
+                <tr>
+                    <th>樣式圖片</th>
+                    <th>敬請期待 🤗</th>
+                    <th>敬請期待 🤗</th>
+                    <th>敬請期待 🤗</th>
+                    <th>敬請期待 🤗</th>
+                    <th>敬請期待 🤗</th>
+                    <th>敬請期待 🤗</th>
+                    <th>敬請期待 🤗</th>
+                    <th>敬請期待 🤗</th>
+                    <th>敬請期待 🤗</th>
+                    <th>敬請期待 🤗</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>樣式名稱</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <th>單片克數</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <th>規格<br>(長x寬x厚)</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <th>口味種類</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <th>單價</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="ingredients">
+            <ul>
+                ➡️&nbsp&nbsp<b>成份 : 無鹽奶油、砂糖、雞蛋、低筋麵粉、各式茶粉、堅果類及果乾類</b><br>
+                ➡️&nbsp&nbsp<b>皆使用「 減糖 」配方製作</b><br>
+            </ul>
+        </div>
     </div>
-<br>
+    <br>
 
-<div class="title-total">
-<div id="section-tuiles" class="title"><b>🫓 瓦片類</b></div>
-</div>
-<br>
-
-<div id="tuiles">
-    <div style="text-align: center;">
-        <h2>
-           敬請期待，謝謝您 🤗             
-        </h2>
+    <div class="title-total">
+        <div id="section-thinCookie" class="title"><b>🧇 薄片類</b></div>
     </div>
-<br>
+    <br>
 
-<div class="title-total">
-<div id="section-puffpastry" class="title"><b>🥨 起酥類</b></div>
-</div>
-<br>
+    <div id="cookie">
+        <div style="text-align: center;">
+            <h2>
+                敬請期待，謝謝您 🤗
+            </h2>
+        </div>
+        <br>
 
-<div id="puffpastry">
-    <div style="text-align: center;">
-        <h2>
-           敬請期待，謝謝您 🤗             
-        </h2>
-    </div>
-<br>
-<br>
+        <div class="title-total">
+            <div id="section-tuiles" class="title"><b>🫓 瓦片類</b></div>
+        </div>
+        <br>
 
-<div style="text-align: center;">
-    <a href="message.html" title="Message"><b>詢問需求 🔜✍️<u>直接留言</u></a></b> &nbsp&nbsp&nbsp&nbsp
-    <a href="index.html" title="Music"><b>返回首頁 🔜 🎼<u>音樂</u></a></b> &nbsp&nbsp&nbsp&nbsp
-    <a href="https://github.com/shuanshuankao/weblist-project" title="Log in and register"><b>訂購需求 🔜 🔐<u>登入/註冊</u></a></b>
-    <div>🙋‍♀️更多關於我<b>👉
-        <a target="_blank" href="cake.html" title="Cake">🍰</a> 
-        <a target="_blank" href="https://github.com/shuanshuankao/web.git" title="Github">💻</a> 
-        <a target="_blank" href="portfolio.html" title="Portfolio">📝</a>
-        <a target="_blank" href="certificate.html" title="Certificate">💳</a>
-        <a target="_blank" href="https://www.instagram.com/m.s.muzisweet?igsh=dWFnb2ExOXYybWht&utm_source=qr" title="IG"> 
-        <img width="0.7%" src="images/IG.jpg" alt=""></a></b>       
-    </div>
-</div>
+        <div id="tuiles">
+            <div style="text-align: center;">
+                <h2>
+                    敬請期待，謝謝您 🤗
+                </h2>
+            </div>
+            <br>
 
-<hr>
-<div class="directions-title"><b>
-M•S•= Miss & Meets      ->  錯過、想念、遇見，送上最特別的心意、關懷與陪伴 ➕ Muzisweet = Music+sweet  ->  一個喜愛烘焙甜點的音樂人</b><br></div>
-<div class="directions-d-title"><b>
-生活酸甜苦辣，離不開音樂述說與陪伴 ; 沒有不散筵席，珍惜仍留下感謝已錯過 ⏳ 觸動的旋律、手工的餅乾傳遞最真誠的關懷與心意甜入心，陪伴彼此每一刻喜怒哀樂 ❤️ </b><br></div>
+            <div class="title-total">
+                <div id="section-puffpastry" class="title"><b>🥨 起酥類</b></div>
+            </div>
+            <br>
+
+            <div id="puffpastry">
+                <div style="text-align: center;">
+                    <h2>
+                        敬請期待，謝謝您 🤗
+                    </h2>
+                </div>
+                <br>
+                <br>
+
+                <div style="text-align: center;">
+                    <a href="message.html" title="Message"><b>詢問需求 🔜 ✍️<u>直接留言</u></a></b> &nbsp&nbsp&nbsp&nbsp
+                    <a href="index.html" title="Music"><b>返回首頁 🔜 🎼<u>音樂</u></a></b> &nbsp&nbsp&nbsp&nbsp
+                    <a href="https://github.com/shuanshuankao/weblist-project" title="Log in and register"><b>訂購需求 🔜
+                            🔐<u>登入/註冊</u></a></b>
+                    <div>🙋‍♀️更多關於我<b>👉
+                            <a target="_blank" href="cake.html" title="Cake">🍰</a>
+                            <a target="_blank" href="https://github.com/shuanshuankao/web.git" title="Github">💻</a>
+                            <a target="_blank" href="portfolio.html" title="Portfolio">📝</a>
+                            <a target="_blank" href="certificate.html" title="Certificate">💳</a>
+                            <a target="_blank"
+                                href="https://www.instagram.com/m.s.muzisweet?igsh=dWFnb2ExOXYybWht&utm_source=qr"
+                                title="IG">
+                                <img width="0.7%" src="images/IG.jpg" alt=""></a></b>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="directions-title"><b>
+                        M•S•= Miss & Meets -> 錯過、想念、遇見，送上最特別的心意、關懷與陪伴 ➕ Muzisweet = Music+sweet -> 一個喜愛烘焙甜點的音樂人</b><br>
+                </div>
+                <div class="directions-d-title"><b>
+                        生活酸甜苦辣，離不開音樂述說與陪伴 ; 沒有不散筵席，珍惜仍留下感謝已錯過 ⏳ 觸動的旋律、手工的餅乾傳遞最真誠的關懷與心意甜入心，陪伴彼此每一刻喜怒哀樂 ❤️ </b><br></div>
 </body>
+
 </html>
