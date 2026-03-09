@@ -1,630 +1,946 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
-
+<html lang="zh-TW">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hi!歡迎來到 🎵 M•S•慕滋思維特 個人工作室🎵 ，這是記錄一個音樂老師在音樂教育、烘焙與程式的相關歷程及介紹，並為斜槓創業準備的一個歷程 ❤️">
-    <meta name="keywords" content="音樂,長笛,鋼琴,樂理,烘焙,手工餅乾,蛋糕,甜點,程式語言,網頁設計">
-    <title>📇 履歷介紹 📇</title>
-    <link rel="stylesheet" href="css/style.css">
-    <!-- 影響整個網頁css設計 -->
-    <style>
-        .title1 {
-            text-align: center;
-            color: red;
-            background-color: beige;
-            font-size: 1.5rem;
-            display: inline-block;
-            width: auto;
-            max-width: 90%;
-            padding: px 20px;
-            border: 6px outset lightyellow;
-            border-radius: 10px;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>高榕旋｜技術專案管理 × 產品規劃 × Python × Web系統</title>
 
-        .center-title {
-            margin: 0 auto;
-            text-align: center;
-            display: block;
-        }
+<style>
+/* 限制產品區 */
+* {
+    box-sizing: border-box;
+}
 
-        /* 上半部照片用 */
-        .container {
-            max-width: 100%;
-            margin: 0px 80px;
-            padding: 0px 15px;
-        }
+/* ------ */
 
-        img {
-            max-width: 100%;
-            height: auto;
-        }
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
 
-        .image-text-row {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            gap: 50px;
-            margin: 5px auto;
-        }
+header {
+    background: #1f2937;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
 
-        .image-text-row img {
-            flex: 1 1 45%;
-            max-width: 47%;
-            height: auto;
-            border: 8px outset lightyellow;
-            border-radius: 8px;
-        }
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
 
-        .image-text-row .text {
-            flex: 1 1 45%;
-            min-width: 50%;
-        }
+header p {
+    margin-top: 10px;
+    font-size: 16px;
+    opacity: 0.9;
+}
 
-        /* 以下為影片區上方文字區 */
-        .experience-table,
-        .experience-table2 {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1.5rem;
-            font-size: inherit;
-            display: block;
-            overflow-x: auto;
-        }
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
 
-        .experience-table td {
-            vertical-align: top;
-            padding: 1px 3px;
-        }
+section {
+    margin-bottom: 50px;
+}
 
-        .experience-table td:first-child {
-            width: 50%;
-            font-weight: bold;
-            white-space: nowrap;
-        }
+h2 {
+    border-left: 5px solid #2563eb;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
 
-        .experience-table td:nth-child(2) {
-            padding-left: 1rem;
-        }
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
 
-        .experience-table2 th:first-child,
-        .experience-table2 td:first-child {
-            width: 15%;
-            white-space: nowrap;
-        }
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
 
-        .experience-table2 td {
-            padding: 0px 110px;
-            vertical-align: top;
-        }
+a:hover {
+    text-decoration: underline;
+}
 
-        .experience-table2 td:nth-child(2) {
-            padding-left: 0rem;
-        }
+ul {
+    padding-left: 20px;
+}
 
-        /* 以下為下方影片及榮譽區 */
-        .section-container {
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            margin-left: 3.5rem;
-            text-align: left;
-        }
 
-        .video-section {
-            flex: 32;
-        }
+/* 專業證照區塊 */
+/* 卡片樣式統一 */
+.cert-category {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
 
-        .honor-board {
-            flex: 8;
-            text-align: left;
-        }
+.cert-group-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;   /* 兩欄 */
+    /* grid-template-columns: repeat(2, 1fr); 兩欄 */
+    gap: 25px;
+}
 
-        .video-container {
-            display: flex;
-            gap: 2.5rem;
-            flex-wrap: wrap;
-        }
+/* 上方那張卡片橫跨兩欄 */
+.cert-full {
+  grid-column: span 2;
+}
 
-        .video-block {
-            max-width: 460px;
-        }
+/* 每一行證照 */
+.cert-category ul li {
+  display: flex;
+  justify-content: space-between; /* 名稱左、日期右 */
+  align-items: center;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
 
-        .video-block iframe {
-            width: 100%;
-            max-width: 460px;
-            aspect-ratio: 16 / 9;
-            border-radius: 10px;
-        }
+/* 日期樣式（小標籤風格） */
+.cert-date {
+  font-size: 12px;
+  color: #2563eb;
+  background: #f0f9ff;
+  padding: 2px 8px;
+  border-radius: 12px;
+  white-space: nowrap;
+  margin-left: 10px;
+}
 
-        .indent {
-            text-decoration: none;
-        }
-    </style>
+.cert-category h4 a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+}
+
+.cert-category h4 a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background: #2563eb;
+  transition: width 0.3s ease;
+}
+
+.cert-category h4 a:hover::after {
+  width: 100%;
+}
+
+
+/* 產品思維實作｜個人品牌網站 */
+.product-case {
+    display: grid;
+    /* grid-template-columns: 60% 40%; */
+    grid-template-columns: 3fr 2fr;
+    gap: 30px;
+    /* align-items: start; */
+}
+
+.product-links {
+    margin-bottom: 15px;
+}
+
+.product-links a {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 8px 14px;
+    background: #2563eb;
+    color: white;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.product-links a:hover {
+    background: #1d4ed8;
+}
+
+.tech-highlight {
+    background: #f8fafc;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.feature-list span {
+    display: inline-block;
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin: 4px 6px 4px 0;
+}
+
+.feature-list a {
+    display: inline-block;
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin: 4px 6px 4px 0;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.feature-list a:hover {
+    background: #2563eb;
+    color: white;
+    transform: translateY(-2px);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* 技術作品 / 專案展示區塊 */
+.tech-projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 兩欄 */
+    gap: 25px;
+}
+
+.tech-projects .card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    background: white;
+}
+
+
+/* 專案經歷區塊 */
+.project-group {
+    display: grid;
+    grid-template-columns: 52% 48%;  /* 左右兩欄 */
+    gap: 25px;
+}
+
+
+
+/* 專業技能與核心能力區塊 */
+.skill-group {
+    display: grid;
+    grid-template-columns: 35% 65%; /* 左35%、右65% */
+    gap: 25px;
+    align-items: stretch; /* 讓左右卡片等高 */
+}
+
+/* 左側卡片內部調整 padding 與寬度 */
+.skill-group > div:first-child .card {
+    width: 100%;       /* 保持卡片填滿左側欄位 */
+    box-sizing: border-box;
+}
+
+/* 右側卡片拉滿整個右側欄位 */
+.skill-group > div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.skill-group > div:last-child .card {
+    height: 100%; /* 拉高與左側總高度一致 */
+}
+
+
+/* 學歷區塊 */
+.education-group {
+    display: grid;
+    gap: 20px;
+}
+
+.education-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* 左1 / 右2比例 */
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    align-items: start;
+    gap: 20px;
+}
+
+.edu-left {
+    font-weight: 600;
+    font-size: 16px;
+    color: #1e40af;
+}
+
+.edu-right {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.edu-right ul {
+    padding-left: 20px;
+    margin: 8px 0;
+}
+
+.edu-right li {
+    margin-bottom: 4px;
+}
+
+.edu-date {
+    font-size: 13px;
+    color: #0369a1;
+    background: #e0f2fe;
+    padding: 2px 8px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+
+/* 職涯亮點轉化 */
+.career-highlights {
+    display: grid;
+    gap: 20px;
+}
+
+.career-card {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; 左右兩欄 */
+    grid-template-columns: 25% 75%; /* 左35%、右65% */
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    gap: 250x;
+    align-items: start
+}
+
+.career-left h3,
+.career-right h3 {
+    color: #1e40af;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.career-left ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.career-left li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.career-right p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* 右側：跨領域整合歷程 */
+.career-right {
+    padding-left: 0px;  /* 調整往左靠一些 */
+}
+
+/* 經歷區塊 */
+.experience-group {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; 兩欄排版 */
+    grid-template-columns: repeat(12, 1fr); /* 12欄網格 */
+    gap: 25px;
+}
+
+/* 幹部與社團經歷縮小 */
+.experience-card.small-width {
+    grid-column: span 5; /* 桌面版占 4/12 */
+}
+
+/* 其他經歷與大型演出拉大 */
+.experience-card.large-width {
+    grid-column: span 7; /* 桌面版占 8/12 */
+}
+
+.experience-card h3 {
+    font-size: 18px;
+    color: #1e40af;
+    margin-bottom: 10px;
+}
+
+.experience-card h4 {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    color: #2563eb;
+}
+
+.experience-card ul {
+    list-style: disc inside;
+    line-height: 1.6;
+    padding-left: 10px;
+}
+
+.experience-card li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.exp-date {
+    display: inline-block;
+    min-width: 70px;
+    background: #e0f2fe;
+    color: #0369a1;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 12px;
+    margin-right: 10px;
+}
+
+
+/* 下方更多關於我 */
+/* 上層 footer（淺色） */
+.sub-footer {
+    background: #f9fafb;
+    border-top: 1px solid #e5e7eb;
+    padding: 20px 0;
+}
+
+.sub-footer-content {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.sub-footer-content span {
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.sub-footer-content a {
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+.sub-footer-content a:hover {
+    opacity: 0.7;
+}
+
+.sub-footer-content img {
+    width: 18px;
+    vertical-align: middle;
+}
+
+/* 下層正式 footer（深色） */
+footer {
+    background: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 14px;
+}
+
+
+/* 手機版自動變單欄 */
+@media (max-width: 768px) {
+    /* 技術作品 / 專案展示區塊 */
+    .tech-projects {
+        grid-template-columns: 1fr;
+    }
+    
+    /* 專案經歷區塊 */
+    .project-group {
+        grid-template-columns: 1fr;
+    }
+
+    /* 學歷區塊 */
+    .education-card {
+        grid-template-columns: 1fr; /* 單欄 */
+    }
+
+    /* 職涯亮點轉化 */
+    .career-card {
+        grid-template-columns: 1fr; /* 單欄 */
+    }
+
+    .career-left,
+    .career-right {
+        margin-bottom: 15px;
+    }
+
+    /* 經歷區塊 */
+    .experience-group {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-card {
+        grid-column: span 12 !important; /* 手機版全寬 */
+    }
+}
+</style>
 </head>
 
 <body>
-    <div style="text-align: right;">
-        <div class="mark-link">🙋‍♀️更多關於我<b>👉
-                <a href="index.html" title="Resume">📇</a>
-                <a target="_blank" href="music.html" title="Music">🎼</a>
-                <a target="_blank" href="cookie.html" title="Cookie">🍪</a>
-                <a target="_blank" href="cake.html" title="Cake">🍰</a>
-                <a target="_blank" href="https://github.com/shuanshuankao/web.git" title="Github">💻</a>
-                <a target="_blank" href="portfolio.html" title="Portfolio">📝</a>
-                <a target="_blank" href="certificate.html" title="Certificate">💳</a>
-                <a target="_blank" href="https://www.instagram.com/m.s.muzisweet?igsh=dWFnb2ExOXYybWht&utm_source=qr"
+
+<header>
+    <h1>高榕旋</h1>
+    <p>
+        1993 / 12 / 22 ｜
+        0989-304022 ｜ 
+        <a href="mailto:shuanshuankao1222@gmail.com" style="color:#93c5fd;">Email</a> ｜ 
+        <a href="https://github.com/shuanshuankao" target="_blank" style="color:#93c5fd;">GitHub</a>
+    </p>
+    <p>技術專案管理 × 產品規劃 × Python 開發 × 網路爬蟲 × 資料/數據分析</p>
+</header>
+
+<div class="container">
+
+<section>
+<h2>職涯摘要</h2>
+<div class="card">
+跨教育、行政與資訊科技背景的技術型專案管理人才，具備完整專案執行能力：從需求分析、流程設計、跨部門協作到系統化落地。
+<br>曾擔任國際學校教務課務組長(實職為教學組長)、資訊助理，以及上市櫃遊戲公司董事長秘書，累積多年流程整合與專案管理經驗。
+並曾參與政府網站建置專案、ERP 系統與企業內部流程導入，能將模糊需求轉化為可執行方案、功能規格與專案計畫，並協助團隊排除問題、確保專案落地。具備 Python、Flask、Django 基礎開發與資料分析能力，理解 Web 系統架構、API 與資料庫運作，能與工程團隊進行技術層級溝通。
+<br>工作風格重視系統化流程完整、系統可運作、專案落地與團隊協作效率，擅長將模糊需求先整理可行方案再協同討論，確保專案順利推進。期望在技術專案或產品團隊中，擔任能整合需求、理解技術並推動專案成功的 Technical PM / Product Manager。
+</div>
+</section>
+
+
+<section>
+<h2>專業證照</h2>
+
+<div class="cert-group-wrapper">
+   <!-- 上方整排 -->
+  <div class="cert-category cert-full">
+    <h4>
+        <a href="#">🖥️ 程式 / 技術證照與證書</a>
+    </h4>
+    <ul>
+      <li>經濟部產業發展署 - 產業AI智慧加值服務整合計畫 - Python程式資料分析 (經濟部產業AI人才培訓第11313667號)<span class="cert-date">2025.08.25</span></li>
+      <li>經濟部產業發展署 - 產業AI智慧加值服務整合計畫 - PythonDjangoWeb (經濟部產業AI人才培訓第11316192號)<span class="cert-date">2025.10.07</span></li>
+      <li> TQC+ Python 大數據分析專業人員 <span class="cert-date">2025.03.03</span></li>
+      <li> TQC+ 網頁資料擷取與分析 <span class="cert-date">2025.03.03</span></li>
+      <li> TQC+ 軟體開發知識 <span class="cert-date">2025.03.03</span></li>
+      <li> TQC+ Python 3 程式語言 <span class="cert-date">2024.11.18</span></li>
+    </ul>
+  </div>
+
+  <!-- 左下 -->
+  <div class="cert-category">
+    <h4>
+        <a href="#">📝 行政管理 / 語言能力</a>
+    </h4>
+    <ul>
+      <li> 中華人事主管協會 專業秘書暨行政管理師認證班 <span class="cert-date">2017.08.09</span></li>
+      <li> 多益 <span class="cert-date">2017.08.09</span></li>
+      <li> TQC 中/英文輸入 <span class="cert-date">2016.10.29</span></li>
+    </ul>
+    <h4>
+        <a href="#">🎨 設計 / 軟體工具</a>
+    </h4>
+    <ul>
+      <li> Adobe Photoshop 2022 <span class="cert-date">2024.09.19</span></li>
+    </ul>
+  </div>
+
+  <!-- 右下 -->
+  <div class="cert-category">
+    <h4>📚 2027 預計進修 / 考證</h4>
+    <ul>
+      <li> TQC+ 機器學習 (進修及考證)</li>
+      <li> 深度學習 (進修)</li>
+    </ul>
+  </div>
+</section>
+
+
+<section>
+<h2>產品思維實作｜個人品牌網站</h2>
+
+<div class="card product-case">
+
+  <!-- 左側：產品思維 -->
+  <div>
+    <h3>專案定位</h3>
+    <p>
+    1. 從產品規劃角度設計個人品牌網站，整合履歷、作品與個人品牌內容，並規劃未來可擴充的後端系統。<br>
+    2. 從使用者視角出發，規劃資訊架構與模組分類，優化瀏覽動線與專案呈現。<br>
+    3. 建立具擴充性的網站基礎架構，未來可延伸後台管理、課程預約與訂單系統，將規劃為個人工作室的品牌網站。<br>
+    </p>
+
+    <h3>產品規劃思維</h3>
+    <ul>
+      <li>規劃網站資訊架構與使用者瀏覽動線</li>
+      <li>設計模組化內容（履歷 / 作品 / 品牌內容）</li>
+      <li>建立可擴充的網站架構，預留未來後台系統</li>
+      <li>品牌定位整合（技術 × 音樂 × 創作）</li>
+    </ul>
+
+    <h3>網站模組</h3>
+    <div class="feature-list">
+        <a href="index.html" title="Resume">📇 個人履歷(當前頁面)</a>&nbsp;&nbsp;
+        <a target="_blank" href="music.html" title="Music">🎼 音樂</a>&nbsp;&nbsp;
+        <a target="_blank" href="cookie.html" title="Cookie">🍪 手工餅乾</a>&nbsp;&nbsp;
+        <a target="_blank" href="cake.html" title="Cake">🍰 甜點蛋糕</a>&nbsp;&nbsp;<br>
+        <a target="_blank" href="portfolio.html" title="Portfolio">📝 作品集 詳細介紹</a>&nbsp;&nbsp;
+        <a target="_blank" href="certificate.html" title="Certificate">💳 專業證照/課程認證 詳細介紹</a>&nbsp;&nbsp;
+        <a href="https://github.com/shuanshuankao/web" target="_blank">💻 GitHub</a>&nbsp;&nbsp;
+        <a target="_blank" href="https://www.instagram.com/m.s.muzisweet?igsh=dWFnb2ExOXYybWht&utm_source=qr"
                     title="IG">
-                    <img width="0.7%" src="images/IG.jpg" alt=""></a><br>
-                <a href="message.html" title="Message">✍️<u>直接留言</u></a>
-                <a href="https://github.com/shuanshuankao/weblist-project"
-                    title="Log in and register">🔐<u>登入/註冊</u></a></b>
-        </div>
+                    <img style="width:14px;" src="images/IG.jpg" alt="">&nbsp;&nbsp;IG 連結</a>
+    </div>
+  </div>
+
+  <!-- 右側：技術與入口 -->
+  <div>
+    <div class="product-links">
+      <a href="https://shuanshuankao.github.io/web/" target="_blank">🔗 進入網站</a>
+      <a href="https://github.com/shuanshuankao/web" target="_blank">💻 GitHub</a>
     </div>
 
-    <div class="main-title"><b>📇 個人資訊履歷介紹</b></div>
-
-    <div class="section-heading-all">
-        <div class="section-heading-select">
-            <label for="type">
-                <span class="small-text">快速到達:</span>
-            </label>
-            <!-- 待調整 -->
-            <select class="custom-select" name="type" onchange="location.href = this.value;" id="quick-jump">
-                <option value="">請選擇...</option>
-                <option value="#section-teacher"> 🎼 教授講師</option>
-                <option value="#section-type"> 🎼 教授項目</option>
-                <option value="#section-area"> 🎼 教授地點</option>
-                <option value="#section-teach experience"> 🎼 教授經歷</option>
-                <option value="#section-experience"> 🎼 音樂 表演/教學/比賽/評審 相關經歷</option>
-                <option value="#section-video"> 𝄞 音樂影片連結 𝄞</option>
-                <option value="#section-honor roll"> 𝄞 榮譽榜 𝄞</option>
-            </select>
-        </div>
+    <div class="tech-highlight">
+      <strong>技術亮點</strong>
+      <ul>
+        <li>HTML / CSS / JavaScript</li>
+        <li>響應式設計（RWD）</li>
+        <li>GitHub Pages 部署</li>
+        <li>前端互動與視覺設計</li>
+        <li>展示完整個人專案與技能</li>
+      </ul>
     </div>
-    <hr width="80%" size="5">
-    <br>
+  </div>
+</div>
+</section>
 
-    <div class="container">
-        <div class="image-text-row">
-            <img src="images/IMG_9263.JPG" alt="">
-            <div class="text">
-                <div id="section-teacher" class="title"><b>🎼 教授講師</b></div>
-                <h1>
-                    <table class="experience-table">
-                        <tr>
-                            <td>💁‍♀️ Muz 慕梓老師</d>
-                        </tr>
-                    </table>
-                </h1>
 
-                <div id="section-type" class="title"><b>🎼 教授項目</b></div>
-                <h2>
-                    <table class="experience-table">
-                        <tr>
-                            <td>🪈 長笛演奏/陪練 (&nbsp;可以試上✔️&nbsp;&nbsp;家長可以旁聽🙆‍♀️&nbsp;)</td>
-                        </tr>
-                        <td> 🎹 鋼琴演奏/陪練 (&nbsp;可以試上✔️&nbsp;&nbsp;家長可以旁聽🙆‍♀️&nbsp;)</td>
-                        </tr>
-                        <td> 🎶 音樂班/音樂系升學考試 (&nbsp;器樂課程可以試上✔️&nbsp;&nbsp;家長可以旁聽🙆‍♀️&nbsp;) <br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;𝄞 𝄡 𝄢 升學樂理、和聲教學 - 音樂班/音樂系專屬課程 ♭ ♮ ♯</td>
-                        </tr>
-                    </table>
-                </h2>
+<section>
+<h2>技術作品 / 專案展示</h2>
 
-                <div id="section-area" class="title"><b>🎼 教授地點</b></div>
-                <h2>
-                    <table class="experience-table">
-                        <tr>
-                            <td>🚅 捷運環狀線 - 中和捷運站<br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;(出站後走路約3-5分鐘抵達)</td>
-                        </tr>
-                    </table>
-                </h2>
+<div class="tech-projects">
+  <div class="card">
+    <strong>Flask - PM2.5 空氣品質查詢系統</strong><br>
+    <p>專案類型：空氣品質監測 Web 應用</p>
+    <p>簡介：<br>
+    使用 Flask 開發，提供即時 PM2.5 空氣品質查詢與視覺化，結合 API 抓取資料並呈現於網頁上，展示後端開發、API 整合與資料呈現能力。<br>
+    </p>
+    
+    技術亮點：<br>
+    Python + Flask 架構<br>
+    API 資料抓取與 JSON 處理<br>
+    網頁簡單互動與資料呈現<br>
+    部署於雲端平台 Render<br>
+    <p>
+    🔗 <a href="https://flask-pm2-5.onrender.com" target="_blank">網站連結</a> ｜ 
+    💻 <a href="https://github.com/shuanshuankao/Flask-PM2.5" target="_blank">GitHub</a>
+    </p>
+  </div>
 
-                <div id="section-teach experience" class="title"><b>🎼 教授經歷</b></div>
-                <h2>
-                    <table class="experience-table">
-                        <tr>
-                            <td>📚 <u>新北市</u>私立裕德雙語高級中學</td>
-                            <td>教務處課務組長兼音樂老師</td>
-                        </tr>
-                        <tr>
-                            <td>📚 <u>新北市</u>松本樂器&音樂教室</td>
-                            <td>長笛老師、鋼琴老師</td>
-                        </tr>
-                        <tr>
-                            <td>📚 <u>基隆市</u>河合安可音樂教室</td>
-                            <td>長笛老師、鋼琴老師</td>
-                        </tr>
-                        <tr>
-                            <td>📚 <u>台北市</u>河合璟欣音樂教室</td>
-                            <td>長笛老師、鋼琴老師、烏克麗麗老師、<br>
-                                吉他老師、爵士鼓老師、樂理老師</td>
-                        </tr>
-                        <tr>
-                            <td>📚 <u>基隆市</u>河合筱錄音樂教室</td>
-                            <td>長笛老師、鋼琴老師、烏克麗麗老師、<br>
-                                吉他老師、爵士鼓老師、樂理老師</td>
-                        </tr>
-                        <tr>
-                            <td>📚 <u>基隆市</u>建德國小管樂班</td>
-                            <td>長笛老師</td>
-                        </tr>
-                        <tr>
-                            <td>📚 <u>基隆市</u>銘傳國中管樂團</td>
-                            <td>長笛老師</td>
-                        </tr>
-                        <tr>
-                            <td>📚 佳家 Do Re Mi 個人音樂工作室</td>
-                            <td>長笛老師、鋼琴老師</td>
-                        </tr>
-                        <tr>
-                            <td>📚 碇內個人音樂工作室</td>
-                            <td>長笛老師、鋼琴老師</td>
-                        </tr>
-                        <tr>
-                            <td>📚 小作曲家樂器行</td>
-                            <td>鋼琴老師</td>
-                        </tr>
-                        <tr>
-                            <td>📚 帕姆琴克樂器</td>
-                            <td>鋼琴老師</td>
-                        </tr>
-                    </table>
-                </h2>
-            </div>
-        </div>
+  <div class="card">
+    <strong>Django - TodoList 專案</strong><br>
+    <p>專案類型：任務管理 Todo List Web 應用</p>
+    <p>簡介：<br>
+    使用 Django 開發，實作任務新增、刪除、完成與分類查詢功能，強化後端資料庫設計、串接整合、使用者互動與 CRUD 操作能力。</p>
+    
+    技術亮點：<br>
+    Python + Django 架構<br>
+    SQLite 資料庫整合<br>
+    使用者 CRUD 操作（新增、刪除、修改、分類查詢）<br>
+    部署於雲端平台 Render<br>
+    <p>
+    🔗 <a href="https://django-todolist-project-yzlm.onrender.com" target="_blank">網站連結</a> ｜ 
+    💻 <a href="https://github.com/shuanshuankao/Django-todolist-project" target="_blank">GitHub</a>
+    </p>
+  </div>
+</div>
+</section>
+
+
+<section>
+<h2>專案經歷</h2>
+<div class="project-group">
+    <div class="card">
+    <strong>NPS 內政部國家公園署主題網架構建置及維運案｜資訊專案執行</strong>
+    <ul>
+    <li>後台頁面及功能架構重新規劃與流程操作</li>
+    <li>功能測試與缺陷修正流程建立與追蹤</li>
+    <li>使用流程優化與資訊架構調整</li>
+    <li>協助原有後台文件資料整理</li>
+    <li>社群網站維護及營運</li>
+    </ul>
     </div>
 
-    <hr width="95%" size="5" color="SlateGray">
+    <div class="card">
+    <strong>銓敘部 115 年全球資訊網改版建置案｜專案協作與規劃支援</strong>
+    <ul>
+    <li>協同撰寫政府資訊系統標案服務建議書</li>
+    <li>盤點舊網站內容架構並規劃新網站資訊架構</li>
+    <li>協助分析網站使用需求並提供功能優化建議</li>
+    <li>整理需求情境、提供解決建議與功能規格草稿</li>
+    </ul>
+    </div>
+</div>
+</section>
 
-    <div style="margin-left: 3rem;">
-        <div id="section-experience" class="center-title title" style="width: 50%;"><b>🎼 音樂 表演/教學/比賽/評審 相關經歷</b></div>
-        <div>
-            <h2>
-                <table class="experience-table2">
 
-                    <tr>
-                        <td>🏅 2025.08</td>
-                        <td>指導學生參加 2025 松本樂器&音樂教室年度音樂會並擔任學生演出鋼琴伴奏</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2025.07</td>
-                        <td>參與《經典與未來》國家音樂廳音樂會演出 (長笛)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2025.06</td>
-                        <td>指導學生錄取國立屏東大學音樂系 (原一般高中普通班重考學生－長笛副修老師)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2025.05</td>
-                        <td>指導學生參加學校年級班級直笛競賽 (擔任鋼琴伴奏)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2025.05</td>
-                        <td>指導學生參加布拉格音樂機構檢定通過 (鋼琴1人)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2024.11</td>
-                        <td>指導學生參加布拉格音樂機構檢定通過 (長笛1人)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2019~2024</td>
-                        <td>擔任裕德雙語高級中等學校街頭藝人評審 (共十學期)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2024.05</td>
-                        <td>指導學生參加布拉格音樂機構檢定通過 (長笛4人、鋼琴4人)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2024.03</td>
-                        <td>指導學生參加2024松本樂器&音樂教室年度音樂會並擔任學生演出鋼琴伴奏</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2023.11</td>
-                        <td>指導學生參加布拉格音樂機構檢定通過 (長笛2人)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2023</td>
-                        <td>指導裕德雙語高級中等學校四年級學生參加新北市112年度國民小學中區英語歌曲演唱競賽榮獲中年級組佳作 (區賽)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2022</td>
-                        <td>指導裕德雙語高級中等學校國小三年級學生參加新北市111年度國民小學英語歌曲演唱競賽榮獲優等 (市賽)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2022</td>
-                        <td>指導裕德雙語高級中等學校國小二、三年級學生參加新北市111年度國民小學中區英語歌曲演唱競賽榮獲 ---
-                            <br>低年級組佳作、中年級組特優 (區賽)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2022.06</td>
-                        <td>擔任裕德雙語高級中等學校畢業典禮音樂表演指導老師</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2021.08</td>
-                        <td>指導學生參加東和河合檢定通過</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2021.06</td>
-                        <td>擔任裕德雙語高級中等學校畢業典禮音樂饗宴表演者 (長笛)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2021.03</td>
-                        <td>指導長笛學生代表基隆市參加全國音樂比賽榮獲長笛全國甲等 (國賽)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2021.03</td>
-                        <td>參與<<琴深藝濃>>國家音樂廳音樂會演出 (長笛)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2020.12</td>
-                        <td>指導裕德雙語高級中等學校國小六年級學生參加新北市109年度國民小學英語歌曲演唱競賽榮獲佳作 (市賽)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2020.11</td>
-                        <td>指導長笛學生參加基隆市學生音樂比賽榮獲優等第一名 - 取得全國學生音樂比賽代表權 (市賽)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2020.10</td>
-                        <td>指導裕德雙語高級中等學校國小六年級學生參加新北市109年度國民小學中區英語歌曲演唱競賽榮獲高年級組特優 (區賽)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2020.09</td>
-                        <td>指導學生參加2020年Vienna維也納菁英獎全國音樂大賽鋼琴組榮獲優等獎 <br>
-                            (分別有兒童二年級組、兒童三年級組、兒童四年級組、少年組、高中組)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2020.09</td>
-                        <td>參加基隆市河合安可音樂教室秋季音樂會當任主持人並指導學生表演</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2020.08</td>
-                        <td>指導學生錄取國立臺灣藝術大學音樂系 (高中音樂班-長笛主修陪練老師)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2019.08</td>
-                        <td>指導學生參加東和河合檢定通過</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2018.08</td>
-                        <td>指導學生參加東和河合檢定通過</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2018.08</td>
-                        <td>指導學生錄取國立屏東大學音樂系 (高中音樂班-長笛主修陪練老師)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2017.06</td>
-                        <td>擔任關貿網路股份有限公司-魏總經理退休歡送會音樂表演者</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2016</td>
-                        <td>與台灣新北市新店高中音樂班同至馬來西亞擔任國際音樂交流會音樂志工-協助華僑學校募款 (長笛)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2016</td>
-                        <td>舉辦<u>高X旋</u>長笛獨奏會</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2014~2016</td>
-                        <td>擔任實習音樂會、畢業音樂會主持人、總召、招待、工作人員</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2016</td>
-                        <td>參與培德工家105級畢業音樂會 (長笛)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2014~2015</td>
-                        <td>參與實踐大學系上音樂會演出 (長笛;國家音樂廳)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2015</td>
-                        <td>參與培德工家104級畢業音樂會及校友音樂會 (長笛)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2015</td>
-                        <td>參與國際指揮營示範樂隊 (長笛)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2015</td>
-                        <td>參與第十二屆台北國際爵士音樂營 (長笛)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2015</td>
-                        <td>參與實踐大學與示範樂隊合作音樂會 (長笛)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2014~2015</td>
-                        <td>參與實踐大學畢業典禮典禮樂隊 (國父紀念館)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2014.11</td>
-                        <td>參與Mr.Big大人物合唱團演唱會工作人員 (Ticc)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2014</td>
-                        <td>參與實踐大學音樂系與中央音樂學院學術交流 (長笛)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2014</td>
-                        <td>參與雙連安養院音樂志工演出 (長笛)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2013~2014</td>
-                        <td>參與和信治癌中心音樂志工演出 (長笛)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2013~2014</td>
-                        <td>參與真理大學系上音樂會演出 (長笛;國家演奏廳、淡水圖書館)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2010</td>
-                        <td>受台北市政府邀請參與國際三八婦女節100週年慶祝晚會 (合唱團;小巨蛋)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2010</td>
-                        <td>受實踐大學音樂系邀請參與貝多芬第九號交響曲演出協演 (合唱團;國家音樂廳)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2008~2010</td>
-                        <td>受邀基隆市中元祭遊行行進樂隊 (長笛)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2008~2010</td>
-                        <td>參與基隆市中小學聯運典禮樂隊 (長笛)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2008~2010</td>
-                        <td>參與全國學生管樂音樂比賽代表基隆市參與全國決賽 (長笛)</td>
-                    </tr>
-                    <tr>
-                        <td>🏅 2004~2007</td>
-                        <td>參與全國學生合唱團音樂比賽代表基隆市參與全國決賽 (國語與鄉土民謠)</td>
-                    </tr>
-                </table>
-            </h2>
-        </div>
+<section>
+<h2>專業技能與核心能力</h2>
+
+<div class="skill-group">
+<!-- 左側 -->
+ <div>
+    <div class="card">
+    <h3>專案管理/技術專案管理</h3>
+    <ul>
+    <li>需求分析與功能規格撰寫</li>
+    <li>專案時程規劃與進度追蹤</li>
+    <li>專案風險控管與問題排除</li>
+    <li>跨部門溝通與資源協調整合</li>
+    <li>政府標案與資訊系統專案執行</li>
+    </ul>
     </div>
 
-    <hr width="95%" size="3" color="SlateGray">
+    <div class="card">
+    <h3>產品規劃</h3>
+    <ul>
+    <li>使用者需求分析與流程設計</li>
+    <li>資訊架構重整與功能重構</li>
+    <li>後台系統使用體驗改善</li>
+    <li>數據整理與決策支援</li>
+    <li>產品優化建議與版本更新</li>
+    </ul>
+    </div>
+</div>
+
+<!-- 右側 -->
+<div class="card">
+<h3>技術能力與系統理解</h3>
+<ul>
+ <h4>技術理解</h4>
+ <li>Web 系統架構 (Frontend / Backend / API)</li>
+ <li>REST API 與 JSON 資料處理</li>
+ <li>資料庫基本概念(SQLite / MSSQL / MySQL)</li>
+
+<h4>程式能力</h4>
+<li>Python（TQC+ 認證）</li>
+<li>Python - Django / Flask (Web)</li>
+<li>HTML / CSS / JavaScript / Jinja</li>
+
+<h4>資料與系統整合</h4>
+<li>Python - 資料 / 數據分析 (Pandas、NumPy、Matplotlib)</li>
+<li>Python - 網路爬蟲 (Requests、BeautifulSoup、Selenium、json)</li>
+
+<h4>工具與系統</h4>
+<li>Git / GitHub</li>
+<li>Spyder / Jupyter Notebook / VS Code</li>
+<li>Figma / Adobe Photoshop / Leonardo AI / Adobe Firefly（設計軟體，需求溝通與介面討論）</li>
+<li>Dynamics 365 Business Central (ERP)</li>
+<li>ChatGPT / Google Workspace / Microsoft Office</li>
+</ul>
+
+<h4>具備 Web 系統架構與 Python 開發基礎，瞭解 API、資料庫與系統流程，
+能與工程團隊進行技術溝通並協助專案推進。</h4>
+</div>
+</div>
 
 
-    <div class="section-container">
-        <div class="video-section">
-            <div id="section-video" class="title1"><b>𝄞 音樂影片連結 𝄞</b></div>
-            <div class="video-container">
-                <div class="video-block">
-                    <a target="_blank" href="https://www.youtube.com/watch?v=YDzEEHW5vCk">
-                        🎞️ 英語教育資源中心-<u>109裕德高中附設國小_高年級</u>
-                    </a>
-                    <h4>
-                        &nbsp;&nbsp;&nbsp;&nbsp;這是我帶的第一屆英語歌唱比賽(區賽影片)，一場讓我在音樂教學中收穫滿滿的一次比賽經驗。<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;區賽順利取下代表權進入市賽(驕傲的告訴大家，那一年學校只有這個班級取下代表權喔)。<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;市賽比賽時，孩子們唱得太興奮大趕拍，當我覺得孩子們下一段會開天窗時...<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;孩子們卻令我驚豔的同時整齊地停在同一個動作等音樂跑完，在下一段音樂時整齊的開口➕動作也沒有忘記，身為老師經歷過大大小小場面的我都不得不佩服這一群六年級的孩子們!!!
-                        能遇見這個班的孩子，是我音樂教育生涯中的一大驕傲與成就 🏆<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;同時也很感謝一起合作的班級導師及英文導師，沒有兩位老師參與幫忙，就沒有機會看到這一甜美果實成熟 😊
-                    </h4>
-                    <iframe src="https://www.youtube.com/embed/YDzEEHW5vCk" title="109裕德高中附設國小_高年級" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+<section>
+<h2>學歷</h2>
+<div class="education-group">
+  <div class="education-card">
+    <!-- 左側：學校與學位 -->
+    <div class="edu-left">
+      <strong>私立實踐大學</strong><br>
+      音樂學系 學士
+    </div>
+    <!-- 右側：時間與主修/副修 -->
+    <div class="edu-right">
+      <span class="edu-date">2012 – 2016</span><br>
+      <ul>
+        <li>🎵 主修：長笛</li>
+        <li>📝 副修：鋼琴</li>
+        <li>🎹 選修：爵士鋼琴 / 長笛</li>
+      </ul>
+      <p>音樂培養我高度紀律性、細節與時間掌控能力，以及團隊合作思維，奠定專案流程規劃與舞台執行管理基礎。</p>
+    </div>
+  </div>
+</div>
+</section>
 
-                <div class="video-block">
-                    <a target="_blank" href="https://www.youtube.com/watch?v=kRUBkA0_DYE">
-                        🎞️ 新北市裕德高級中等學校-109學年度小學部畢業典禮 YouTube
-                    </a><br>
-                    <h4>
-                        &nbsp;&nbsp;&nbsp;&nbsp;結束後，這支影片應該就沒有機會於公開處看到。意外發現家長側錄放上youtube，滿滿懷念➕鼻酸。<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;那一年，疫情因素，為了不讓畢業生留下遺憾轉為線上。指導老師轉成演出者(突然降臨的演出，陳老師和我也是很緊張呢~卻也成了往後懷念的回憶)<br>
-                        🔜 "59:30" 今年夏天🌞遺憾沒能實體送畢業生們踏出校門，相信音樂會代全體老師們傳遞滿滿的祝福 💌🕊️<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;✨ 沒錯!此表演同時出現於中學部的畢業典禮直播，小學有中學肯定也有🎊<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;當天訊息響不完👉 看到家長們傳給我的截圖...認真意識到調好內分泌系統跟維持體態的重要... <br>
-                        特別感謝幕後辛苦收音、上字、拍攝採景兼顧一切的江老師 🎛️
-                    </h4>
-                    <iframe src="https://www.youtube.com/embed/kRUBkA0_DYE" title="新北市裕德高級中等學校109學年度小學部畢業典禮   YouTube"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
 
-                <div class="video-block">
-                    <a target="_blank" href="https://www.youtube.com/watch?v=F5rQlydQk4M">
-                        🎞️ 美女與野獸(鋼琴&長笛）cover by HUD&榕旋
-                    </a>
-                    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Muz跟HUD老師第一支合作影片，HUD老師提出時，有點小緊張，古典音樂系畢業的我，第一次這樣錄影片玩音樂 😊
-                        意外的喜歡，讓Muz認真思考了下...可以考慮經營自媒體音樂分享?!</h4>
-                    <iframe src="https://www.youtube.com/embed/F5rQlydQk4M" title="美女與野獸(鋼琴&amp;長笛）cover by HUD&amp;榕旋"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <br>
-                    <br>
-
-                    <a target="_blank" href="https://youtu.be/NrxqtNiVAt4">
-                        🎞️ A Whole New World | cover by HUD&榕旋
-                    </a>
-                    <h4>&nbsp;&nbsp;&nbsp;&nbsp;這次是因為...對第一次合作的Onetake玩上癮啦!!就想持續挑戰一鏡到底不加修飾與後製的影片 🤣
-                        但後來Muz在國際學校太忙了，同時HUD老師也成為很棒的藝人樂手，所以敬請期待 🤭</h4>
-                    <iframe src="https://www.youtube.com/embed/NrxqtNiVAt4"
-                        title="A Whole New World | cover by HUD&amp;榕旋" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-
-        <div class="honor-board">
-            <div id="section-honor roll" class="title1"><b>𝄞 榮譽榜 𝄞</b></div>
-            <h3>
-                <p>
-                    <span>🎉</span>
-                    <a target="_blank" href="http://www.yuteh.ntpc.edu.tw/p/16-1000-367.php?Lang=zh-tw">
-                        裕德雙語高級中等學校-
-                    </a><br>
-                    <span class="indent">&nbsp;&nbsp;&nbsp;</span>
-                    <a target="_blank" href="http://www.yuteh.ntpc.edu.tw/p/16-1000-367.php?Lang=zh-tw">
-                        恭喜本校學生參加109學年度
-                    </a><br>
-                    <span class="indent">&nbsp;&nbsp;&nbsp;</span>
-                    <a target="_blank" href="http://www.yuteh.ntpc.edu.tw/p/16-1000-367.php?Lang=zh-tw">
-                        新北市國小英語歌唱比賽獲得佳績
-                    </a><br>
-                    <br>
-
-                    <span>🎉</span>
-                    <a target="_blank" href="http://www.yuteh.ntpc.edu.tw/p/404-1000-344.php?Lang=zh-tw">
-                        裕德雙語高級中等學校-
-                    </a><br>
-                    <span class="indent">&nbsp;&nbsp;&nbsp;</span>
-                    <a target="_blank" href="http://www.yuteh.ntpc.edu.tw/p/404-1000-344.php?Lang=zh-tw">
-                        109學年度獲獎紀錄-音樂類
-                    </a><br>
-                    <br>
-
-                    <span>🎉</span>
-                    <a target="_blank" href="http://www.yuteh.ntpc.edu.tw/p/404-1000-635.php?Lang=zh-tw">
-                        裕德雙語高級中等學校-
-                    </a><br>
-                    <span class="indent">&nbsp;&nbsp;&nbsp;</span>
-                    <a target="_blank" href="http://www.yuteh.ntpc.edu.tw/p/404-1000-635.php?Lang=zh-tw">
-                        111學年度獲獎紀錄-藝術類
-                    </a><br>
-                </p>
-            </h3>
-        </div>
+<section>
+<h2>職涯亮點轉化</h2>
+<div class="career-highlights">
+  <div class="career-card">
+    <!-- 左側：核心能力 -->
+    <div class="career-left">
+      <h3>📌 核心能力亮點</h3>
+      <ul>
+        <li>大型專案拆解與流程規劃</li>
+        <li>跨部門協作與資源整合</li>
+        <li>需求分析與決策支援</li>
+        <li>專案時程控管與成果落地</li>
+        <li>系統化流程優化能力</li>
+      </ul>
     </div>
 
-    <br>
-
-    <div style="text-align: center;">
-        <a href="message.html" title="Message"><b>詢問需求 🔜 ✍️<u>直接留言</u></a></b> &nbsp&nbsp&nbsp&nbsp
-        <a href="https://github.com/shuanshuankao/weblist-project" title="Log in and register"><b>鐘點資訊 🔜
-                🔐<u>登入/註冊</u></a></b>
-        <div>🙋‍♀️更多關於我<b>👉
-                <a target="_blank" href="music.html" title="Music">🎼</a>
-                <a target="_blank" href="cookie.html" title="Cookie">🍪</a>
-                <a target="_blank" href="cake.html" title="Cake">🍰</a>
-                <a target="_blank" href="https://github.com/shuanshuankao/web.git" title="Github">💻</a>
-                <a target="_blank" href="portfolio.html" title="Portfolio">📝</a>
-                <a target="_blank" href="certificate.html" title="Certificate">💳</a>
-                <a target="_blank" href="https://www.instagram.com/m.s.muzisweet?igsh=dWFnb2ExOXYybWht&utm_source=qr"
-                    title="IG">
-                    <img width="0.7%" src="images/IG.jpg" alt=""></a>
-        </div>
+    <!-- 右側：跨領域整合歷程 -->
+    <div class="career-right">
+      <h3>🔗 跨領域經驗</h3>
+      <p>音樂專業 → 行政與秘書　→ 教務行政專案 → Python / Web 系統 → ERP 系統 → 政府網站專案，讓我習慣將複雜任務拆解、結合技術與流程設計，確保專案順利落地，並能在不同角色間靈活切換，成為團隊中可依靠的核心支援者。</p>
+      <p>興趣與經驗累積：烘焙(餅乾/蛋糕/甜點)、玩拼圖/樂高/線上MMORPG遊戲、室內設計，培養結構思考與流程優化能力。</p>
     </div>
+  </div>
+</div>
+</section>
 
-    <hr>
 
-    <div class="directions-title"><b>
-            M•S•= Miss & Meets -> 錯過、想念、遇見，送上最特別的心意、關懷與陪伴 ➕ Muzisweet = Music+sweet -> 一個喜愛烘焙甜點的音樂人</b><br></div>
-    <div class="directions-d-title"><b>
-            生活酸甜苦辣，離不開音樂述說與陪伴 ; 沒有不散筵席，珍惜仍留下感謝已錯過 ⏳ 觸動的旋律、手工的餅乾傳遞最真誠的關懷與心意甜入心，陪伴彼此每一刻喜怒哀樂 ❤️ </b><br></div>
+<section>
+<h2>工作經歷</h2>
+
+<div class="card">
+<strong>鈕酷樂股份有限公司（電腦軟體服務業）｜資訊專案執行</strong><br>
+台北市大安區｜2026/01 – Present
+<ul>
+<li>參與政府官方網站建置與維運專案，協助需求整理、功能規劃與資訊架構調整。</li>
+<li>負責網站功能測試與問題回報追蹤，整理缺陷清單並確認修正結果，確保系統品質與穩定性。</li>
+<li>參與網站營運維護與社群平台（Facebook）管理，蒐集使用回饋並提出改善建議。</li>
+<li>參與政府資訊系統標案專案執行，支援需求訪談、規劃設計與開發協作流程。</li>
+<li>彙整客戶需求訪談內容與會議紀錄，釐清使用情境與業務流程，整理成功能規格文件，協助工程團隊落地開發。</li>
+<li>協助專案時程規劃與進度追蹤，確保專案符合政府驗收規範並依期交付。</li>
+</ul>
+</div>
+
+<div class="card">
+<strong>擎雷防偽科技股份有限公司（電腦軟體服務業）｜資訊助理</strong><br>
+新北市中和區｜2025/05 – 2025/12 （約8個月）
+<ul>
+<li>參與客服機器人專案導入，協助功能規劃、流程設計與系統測試。</li>
+<li>使用 Dynamics 365 Business Central ERP 系統，支援工廠與業務部門操作流程。</li>
+<li>查找與整理資料庫資料，提供數據分析與報表支援，協助主管進行業務決策。</li>
+<li>建立與執行工廠人員及業務考核評核系統，支援流程規劃與系統建置操作。</li>
+<li>負責過帳業務處理，確保數據與系統操作正確性，維持業務流程順暢。</li>
+<li>處理資訊部門主管臨時交辦事項，整理專案與跨部門資料。</li>
+</ul>
+</div>
+
+
+<div class="card">
+<span class="exp-date">此為大型專案管理經驗</span><strong>新北市裕德雙語高級中等學校（教育服務業）｜教務處課務組長兼音樂老師（職務同等於教學組長）</strong><br>
+新北市土城區｜2019/04 – 2024/07 （約5.5年）
+<ul>
+專案與行政管理
+<li>管理跨學制考試流程，涉及學生 2500 人，確保評分公平與流程準確。</li>
+<li>規劃並承辦跨學制校內外大型學術及藝術競賽流程，設計活動流程與簡章修改、分配資源、監控執行、追蹤進度與成果驗收與報告製作，確保活動順利完成並達成預期目標。
+</li>
+<li>統籌跨學制教師研習與報名流程，規劃期程並落實執行。</li>
+<li>規劃小學部課表與寒暑假課程，平衡教學資源與需求。</li>
+<li>統籌薪資計算與核對，包括兼課老師、超時薪資及調代課薪資，維持薪資流程準確性與效率。</li>
+<li>安排教師公開授課與共同備課期程，統整資料並落實教學流程專案，確保教學與活動順利推進。</li>
+<li>規劃並執行小學部作業調閱期程，確保作業管理流程完整並符合校方規範。</li>
+教學與活動執行
+<li>授課科目涵蓋音樂、資訊及生活課程，兼任校內音樂活動及比賽評審，規劃比賽流程與評分標準，確保活動公正與成果明確。</li>
+<li>訓練學生參與英語歌唱比賽與合唱團比賽，負責排練規劃、活動執行及成果評估，提升學生表現與團隊合作成果。</li>
+</ul>
+</div>
+
+
+<section>
+<h2>幹部與社團 / 其他 / 大型演出經歷</h2>
+
+<div class="experience-group">
+
+  <!-- 幹部與社團 -->
+  <div class="card experience-card small-width">
+    <h3>幹部與社團經歷</h3>
+    <h4>高中</h4>
+    <ul>
+      <li>班級 : 班長、輔導股長、環保股長、國文/英文/地理/樂理小老師</li>
+      <li>音樂會 : 總幹事、舞台監督（流程規劃、資源協調）、事務總務組</li>
+      <li>社團 : 合唱團、管樂團、管弦樂團</li>
+    </ul>
+    <h4>大學</h4>
+    <ul>
+      <li>系學會 : 執秘/活動組長 （組織活動、跨部門協作）</li>
+      <li>音樂會 : 演奏組負責人</li>
+      <li>社團 : 長笛團、管樂團、國標舞社、熱音/舞社、吉他社、佛學社</li>
+    </ul>
+  </div>
+
+  <!-- 其他經歷 -->
+  <div class="card experience-card large-width">
+    <h3>其他經歷</h3>
+    <ul>
+      <li><span class="exp-date">2024/09 – 2025/03 （約7個月）</span> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 宇峻奧汀科技股份有限公司（電腦軟體服務業）｜約聘行政助理（實職為董事長兼總經理秘書）</li>
+      <li><span class="exp-date">2019/01 – 2019/03（約3個月）</span> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 富信大飯店（旅館業）｜行銷公關部助理</li>
+      <li><span class="exp-date">2017/05 – 2018/06（約1年2個月）</span> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 關貿網路股份有限公司（電腦系統整合服務業）｜行政及財務部約聘行政助理</li>
+      <li><span class="exp-date">2014.11</span> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 參與 Mr.Big 大人物合唱團演唱會工作人員 (TICC)</li>
+      <li><span class="exp-date">2014.03</span> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 參與 GE 航空集團和長榮航太簽約合資成立新引擎維修公司記者會工作人員</li>
+      <li><span class="exp-date">2021/09 – 現在</span> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 新北市松本音樂教室（安親／才藝班）｜鋼琴、長笛老師</li>
+      <li><span class="exp-date">2017/01 – 2023/05（約6年5個月）</span> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 基隆市河合安可音樂教室（安親／才藝班）｜鋼琴、長笛老師</li>
+      <li><span class="exp-date">2016/08 – 2018/08（約2年1個月）</span> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 基隆市建德國小（小學教育事業）｜長笛老師</li>
+      <li><span class="exp-date">2012/08 – 2016/08（約4年1個月）</span> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 河合璟欣音樂教室（安親／才藝班）｜鋼琴、長笛老師、行政人員</li>
+      <li><span class="exp-date">2012/08 – 2016/08（約4年1個月）</span> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 基隆市河合筱錄音樂教室（安親／才藝班）｜鋼琴、長笛老師、行政人員</li>
+    </ul>
+  </div>
+
+</div>
+  <!-- 大型演出及志工經歷 -->
+  <div class="card experience-card large-width">
+    <h3>大型演出及志工經歷</h3>
+    <p>(更多經歷在音樂頁面 👉 <a target="_blank" href="music.html" title="Music">點我前往 🎼 音樂</a>)</p>
+    <ul>
+      <li><span class="exp-date">2025.08</span> 指導學生參加松本樂器&音樂教室年度音樂會並擔任學生演出鋼琴伴奏</li>
+      <li><span class="exp-date">2025.07</span> 參與《經典與未來》國家音樂廳音樂會演出 (長笛)</li>
+      <li><span class="exp-date">2024.03</span> 指導學生參加松本樂器&音樂教室年度音樂會並擔任學生演出鋼琴伴奏</li>
+      <li><span class="exp-date">2021.06</span> 擔任裕德雙語高級中等學校畢業典禮音樂饗宴表演者 (長笛)</li>
+      <li><span class="exp-date">2021.03</span> 參與《琴深藝濃》國家音樂廳音樂會演出 (長笛)</li>
+      <li><span class="exp-date">2020.09</span> 參加基隆市河合安可音樂教室秋季音樂會當任主持人並指導學生表演</li>
+      <li><span class="exp-date">2017.06</span> 擔任關貿網路股份有限公司-魏總經理退休歡送會音樂表演者</li>
+      <li><span class="exp-date">2016</span> 與台灣新北市新店高中音樂班同至馬來西亞擔任國際音樂交流會音樂志工-協助華僑學校募款 (長笛)</li>
+      <li><span class="exp-date">2016</span> 舉辦高榕旋長笛獨奏會</li>
+      <li><span class="exp-date">2014 ~ 2016</span> 擔任實習音樂會、畢業音樂會主持人、總召、招待、工作人員</li>
+      <li><span class="exp-date">2014</span> 參與實踐大學音樂系與中央音樂學院學術交流 (長笛)</li>
+      <li><span class="exp-date">2014</span> 參與雙連安養院音樂志工演出 (長笛)</li>
+      <li><span class="exp-date">2013 ~ 2014</span> 參與和信治癌中心音樂志工演出 (長笛)</li>
+      <li><span class="exp-date">2010</span> 受台北市政府邀請參與國際三八婦女節100週年慶祝晚會 (合唱團;小巨蛋)</li>
+      <li><span class="exp-date">2008 ~ 2010</span> 受邀基隆市中元祭遊行行進樂隊 (長笛)</li>
+      <li><span class="exp-date">2008 ~ 2010</span> 參與基隆市中小學聯運典禮樂隊 (長笛)</li>
+    </ul>
+  </div>
+</section>
+</div>
+
+
+<!-- 下層正式 Footer -->
+<footer>
+
+<div class="sub-footer-content">
+    <span>🙋‍♀️ 更多關於我</span>
+    <a target="_blank" href="music.html" title="Music">🎼</a>
+    <a href="cookie.html" target="_blank" title="Cookie">🍪</a>
+    <a href="cake.html" target="_blank" title="Cake">🍰</a>
+    <a href="portfolio.html" target="_blank" title="Portfolio">📝</a>
+    <a href="certificate.html" target="_blank" title="Certificate">💳</a>
+    <a href="https://github.com/shuanshuankao" target="_blank" title="Github">💻</a>
+    <a href="https://www.instagram.com/m.s.muzisweet" target="_blank" title="IG">
+        <img src="images/IG.jpg" alt="IG">
+    </a>
+</div>
+© 2026 高榕旋 ｜ 專案管理 × 技術整合 × 流程優化 × 產品規劃
+
+</footer>
+
 </body>
-
 </html>
