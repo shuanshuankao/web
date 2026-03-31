@@ -9,23 +9,28 @@
     <title>✍️ 直接留言 ✍️</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-    .main-title em {
-        display: block;
-        margin-top: 5px;
-    }
-    
-    .form-text {
-        text-align: left;
-        font-size: 1.5rem;
+        .main-title em {
+            display: block;
+            margin-top: 5px;
+        }
 
-        width: 100%;
-        max-width: 900px;     /* 控制最大寬度 */
-        margin: 0 auto;       /* 自動置中 */
-        padding: 40px 40px;   /* 不要用超大左右 padding */
-        border: 5px outset lightyellow;
-        border-radius: 10px;
-        box-sizing: border-box;  /* ⭐ 很重要 */
-    }
+        .form-text {
+            text-align: left;
+            font-size: 1.5rem;
+
+            width: 100%;
+            max-width: 900px;
+            /* 控制最大寬度 */
+            margin: 0 auto;
+            /* 自動置中 */
+            padding: 40px 40px;
+            /* 不要用超大左右 padding */
+            border: 5px outset lightyellow;
+            border-radius: 10px;
+            box-sizing: border-box;
+            /* ⭐ 很重要 */
+        }
+
         /* .form-text {
             text-align: left;
             margin-left: 20rem;
@@ -65,6 +70,7 @@
             width: auto;
             margin: 0;
         }
+
         /* .form-text input,
         .form-text select,
         .form-text textarea,
@@ -82,6 +88,7 @@
             line-height: 1.4;
             box-sizing: border-box;
         }
+
         /* textarea {
             line-height: 1;
         } */
@@ -91,7 +98,8 @@
             display: flex;
             align-items: center;
             gap: 15px;
-            flex-wrap: wrap; /* 手機窄時換行 */
+            flex-wrap: wrap;
+            /* 手機窄時換行 */
             margin-top: 1rem;
         }
 
@@ -99,7 +107,8 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            flex-wrap: wrap;   /* 手機才不會爆掉 */
+            flex-wrap: wrap;
+            /* 手機才不會爆掉 */
             /* margin-bottom: 0.5rem; */
         }
 
@@ -137,11 +146,12 @@
 
             .form-text input,
             .form-text select,
-            .form-text textarea{
-                width: 100%;   /* 手機螢幕時自動撐滿 */
+            .form-text textarea {
+                width: 100%;
+                /* 手機螢幕時自動撐滿 */
                 max-width: 100%;
             }
-            
+
             .form-text button {
                 font-size: 1rem !important;
             }
@@ -253,11 +263,11 @@
         <div class="directions-d-title"><b>
                 生活酸甜苦辣，離不開音樂述說與陪伴 ; 沒有不散筵席，珍惜仍留下感謝已錯過 ⏳ 觸動的旋律、手工的餅乾傳遞最真誠的關懷與心意甜入心，陪伴彼此每一刻喜怒哀樂 ❤️ </b><br></div>
 
-    <script>
-        document.getElementById('hasFile').addEventListener('change', function() {
-            document.getElementById('fileInput').style.display = this.checked ? 'block' : 'none';
-        });
-    </script>
+        <script>
+            document.getElementById('hasFile').addEventListener('change', function () {
+                document.getElementById('fileInput').style.display = this.checked ? 'block' : 'none';
+            });
+        </script>
 
 </body>
 
